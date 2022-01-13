@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+  font-size: 100%;
+  vertical-align: top;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Styrene A Web'!important;
+    color: #000;
+}
+a{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+h1 h2 h3 h4{
+    color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* color: white; */
+        font-weight: 100;
+        padding: 0px 10px;
+        position: sticky;
+        width: 100%;
+        z-index: 15;
+        background-color: #ecebdd;
+        height: 63px;
+        /* border-bottom: 2px solid gray; */
+}
+ .left{
+     display: flex;
+   justify-content: center;
+   
+    
+
+}
+.logo{
+        margin: 0px 62px;
+        font-size: 34px;
+}
+.right {
+    display: flex;
+    }
+
+.right ul li a{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 12px;
+} 
+.page-width{
+    padding-left: 55px;
+    padding-right: 55px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+
+ .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 123px;
+} 
+h1{
+   font-size: 36px; 
+}
+.container{
+
+    transform: translate3d(0,0,0);
+    transition: all .4s cubic-bezier(.29, .63, .44, 1);
+    position: relative;
+    overflow: hidden;
+    background-color: #ecebdd;
+     
+    }
+    .toolbar-wrapper{
+        margin-bottom: 55px;
+        border-bottom: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+
+    }
+    .filters-toolbar{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .filters-toolber_item-wrapper{
+        display: flex;
+        width: 100%;
+        flex: 1 1 33%;
+    }
+    @media only screen and (min-width: 750px){
+.filters-toolbar__item-child:first-child {
+    margin-right: 3rem;
+}
+    }
+    .filters-toolbar__label {
+        display: inline-block;
+        font-size: 1em;
+        text-transform:uppercase;
+    }
+    label[for]{
+        cursor: pointer;
+
+
+    }
+    label{
+        margin-bottom: 5px;
+        touch-action: manipulation;
+    }
+    
+    .filters-toolbar__input {
+        display: flex;
+        border: 0 solid transparent;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        height: 55px;
+        opacity: 1;
+        position: relative;
+    }
+.select-group{
+    position: absolute;
+        z-index: 2;
+        background-image: none;
+        background-color: transparent;
+        
+
+
+
+}
+.select-group .disclosure__toggle, .select-group select {
+    background-image: none;
+    background-color: transparent;
+    margin: -25px 88px;
+}
+option {
+    color: #3a3a3a;
+    background-color: #ecebdd;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    }
+.item{
+    height: 330px;
+    width: 245px;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    margin: 5px;
+
+}
+.grid-container.item.image{
+    height: 280px;
+    width: 263px; 
+}
+h4{
+    font-size: 20px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 325px;
+    flex-grow: 1;
+}
+.newsletter__input {
+    margin: 5px 0 0 0;
+    width: 66%;
+    background: 0 0;
+    border: 1px solid #000;
+    height: 45px;
+    border-radius: 2px;
+
+}
+
+
+ .submit {
+     display: block;
+    background-color: black;
+    margin: 5px 0 0 0;
+    width: 133%;
+    border: 1px solid #000;
+    height: 45px;
+    color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 10px 2px;
+
+}
+.list-item{
+    display: inline-block;
+    margin: 20px 38px;
+}
+.linklist  li a{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+@media only screen and (max-width: 360px){
+
+
+    .header {
+        display: flex;
+          width: 100%;
+    
+          background-color: yellow;
+       
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ahana fitness</title>
+</head>
+<link rel="stylesheet" href="ccs/style.css">
+<style>
+    /* css reseat */
+    body {
+        /* color: white; */
+        margin: 0%;
+        padding: 0px;
+        background-color: pink;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+
+    }
+
+    .mid {
+        position: sticky;
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid red; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 14px;
+        top: 25px;
+
+        display: inline-block;
+        /* border: 2px solid red; */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        position: sticky;
+        color: rgb(169, 86, 224);
+        padding: 10px 12px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+
+    }
+
+    .left {
+        width: 82px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 21px;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        border-radius: 13px;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+
+
+        border: 2px solid black;
+        margin: 58px 80px;
+        padding: 57px 75px;
+        width: 33%;
+        border-radius: 10px;
+
+    }
+    .form-group input {
+     text-align: center;
+     display: block;
+    width: 328px;
+    padding: 9px;
+    border: 2px solid black;
+    margin: 12px auto;
+    border-radius: 10px;
+    font-size: 20px;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div>ahana fitness</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a herf="#" class="active">home</a></li>
+                <li><a herf="#">about us</a></li>
+                <li><a herf="#">classes</a></li>
+                <li><a herf="#">trainers</a></li>
+                <li><a herf="#">events</a></li>
+                <!-- <li><a herf="#">blog</a></li> -->
+                <!-- <li><a herf="#">contact</a></li> -->
+            </ul>
+        </div>
+
+        <!--  right boxfor button -->
+        <div class="right">
+            <button class="btn">call us now</button><button class="btn">email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym of delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name=" " placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="enter your email id">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="enter your phone number">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

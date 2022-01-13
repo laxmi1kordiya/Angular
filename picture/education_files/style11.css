@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 40px;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+}
+.header .menu ul li a{
+text-decoration: none;
+margin: 5px 25px;
+font-size: 22px;
+}
+.logo{
+    display: block;
+}

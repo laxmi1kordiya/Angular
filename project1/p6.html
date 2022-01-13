@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+  <title>jQuery next sibling example</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      float: left;
+      border: 1px black solid;
+      padding: 3px;
+    }
+  </style>
+   
+  </head>
+  <body>
+   
+  <p><button>Move to Next</button></p> 
+  <p><button>Move to prev</button></p> 
+
+  <div id="start">div</div>
+  <div>div2</div>
+  <div>div3</div>
+  <div>div4</div>
+  <div>div5</div>
+  <div id="startPrev" >div6</div>
+   
+    
+  <script>
+  var $currDiv = $( "#start" );
+  $currDiv .css( "background-color", "red" );
+  $( "button" ).click(function() {
+    $currDiv  = $currDiv .next();
+    $( "div" ).css( "background-color", "" );
+    $currDiv .css( "background-color", "red" );
+  });
+  var $urrDiv = $( "#startPrev" );
+    $urrDiv .css( "background", "red" );
+    $( "button" ).click(function() {
+      $urrDiv  = $urrDiv .prev();
+      $( "div" ).css( "background", "" );
+      $urrDiv .css( "background", "red" );
+    });
+  </script>
+  
+    
+  </body>
+  </html>
+  

@@ -1,0 +1,97 @@
+@media screen and (max-width:979px){
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+header {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+ @media screen and(max-width:979px) {
+     
+ 
+    .header.logo{
+        width: 130px;
+        padding: 0px;
+
+    }
+    .header .logo {
+        padding: 0 30px;
+    }
+}
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:white;
+        font-weight: 100;
+        padding: 15px 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+        background-color: #0b1075;
+
+    }
+    
+
+
+    a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .header .menu { 
+         width: calc(100% -175px);
+    }
+    .header .menu .menubar {
+        text-align: center;
+        position: fixed;
+        height: 0vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        color: #000;
+        flex-direction: row;
+        transition: all 0.4s;
+        text-decoration: none;
+        margin: auto;
+    }
+    .header .menu .menubar li { 
+        font-size: 18px; 
+        margin-bottom: 20px; 
+        margin: 5px 26px;
+       list-style: none;
+    }
+    
+.header .menu .menubar li a.active {
+    color: #21dbbc;
+}
+
+
+.header .menu .menubar li a {
+    display: inline-block;
+    color: white;
+}
+   
+.menu-is-active {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+}

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>shopfy document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".openContact").click(function () {
+                // console.log("bar click");
+
+                $(".contactpopup").addClass("active");
+                $(".contactus-form .close").click(function () {
+                    // console.log("click");
+                    $(".contactpopup").removeClass("active")
+                });
+
+            });
+
+
+            $(document).ready(function () {
+                $("")
+            })
+
+            $("#menu .fa-bars").click(function () {
+
+                console.log("bar click");
+                $("ul").toggleClass("open");
+
+
+                console.log($(".open").length)
+                // if($(".open").length == 0){
+                //     $("ul").addClass("open");
+                // }else{
+                //     $("ul").removeClass("open");
+                // }
+
+            });
+            // $(document).ready(function(){
+
+
+
+        });
+        // $(document).ready(function () {
+        //     $(".item").each(function (e) {
+        //         if (e != 0)
+        //             $(this).hide();
+        //     });
+
+        //     $("#prev").click(function () {
+        //         if ($(".item:visible").prev().length != 0)
+        //             $(".item:visible").prev().show().next().hide();
+        //         else {
+        //             $(".item:visible").hide();
+        //             $(".item:last").show();
+        //         }
+        //         return false;
+        //     });
+
+        //     $("#next").click(function () {
+        //         if ($(".item:visible").next().length != 0)
+        //             $(".item:visible").next().show().prev().hide();
+        //         else {
+        //             $(".item:visible").hide();
+        //             $(".item:first").show();
+        //         }
+        //         return false;
+        //     });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            var tabtitle = document.querySelectorAll(".tabtitle");
+            for (let i = 0; i < tabtitle.length; i++) {
+                const active = tabtitle[i];
+                active.addEventListener("click", function () {
+                    document.querySelectorAll(".tabtitle").forEach(tabtitle => {
+                        tabtitle.classList.remove("active");
+                    });
+                    active.classList.add("active")
+                });
+            }
+
+        });
+    </script>
+
+    
+    <!-- //     $(document).ready(function () {
+
+    //         var tabtitle = document.querySelectorAll(".tabtitle");
+    //         for (let i = 0; i < tabtitle.length; i++) {
+    //             console.log("length")
+    //             const active = tabtitle[i];
+    //             active.addEventListener("click", function () {
+    //                 console.log("on click")
+    //                 document.querySelectorAll(".tabdetail").forEach(tabtitle => {
+    //                     tabdetail.classList.remove("active");
+    //                 });
+    //                 active.classList.add("active")
+    //             });
+    //         }
+    //     });
+
+    
+
+
+
+    //     $(document).ready(function () {
+    //         $("")
+
+    //         $(".tabtitle").click(function () {
+    //             // $(".tabdetail").addClass("active");
+    //             console.log("on click")
+    //         });
+
+    //         console.log($(".tabtitle").length)
+    //         if ($(".tabtitle").length ==1) {
+    //             $(".tabdetail").addClass(".active");
+    //         } 
+    //         else {
+    //             $(".tabdetail").removeClass(".active");
+    //         }
+    //     });
+     -->
+     <script>
+        $("document").ready(function(){
+            $(".tabtitle").click(function(){
+                $(".tabdetail").addClass("active");
+
+                $(".tabdetail-all").show();
+            });
+            $(".tabtitle").click(function(){
+                $(".tabdetail-all").hide();
+                $("tabtitle"+$(this).attr("tabdetail")).show();
+
+            });
+
+        });
+    </script> 
+
+
+
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="header background" id="nav">
+                <div class="logo">
+                    <img src="/project1/project2.html/logo.png">
+                </div>
+                <div class="menubar" id="menu">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+
+                    <ul>
+                        <li>
+                            <a href="#home" class="navigation__link " data-link="home"> home</a>
+                        </li>
+                        <li>
+                            <a href="/project1/shopify- expert.html" class="navigation__link" onclick="changeNavLink()"
+                                data-link="shopify-expert">Shopify Expert</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="navigation__link" data-link="aboutus"> About</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="navigation__link" data-link="services"> services</a>
+
+                        </li>
+                        <li>
+
+                            <a href="#portfolio" class="navigation__link multipage-portfolio"
+                                data-link="portfolio">Portfolio</a>
+                        </li>
+
+                        <li>
+                            <a href="#blog" class="navigation__link multipage-blog" data-link="blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#testimonail" class="navigation__link" data-link="testimonail">Testimonail</a>
+                        </li>
+                        <li>
+                            <a href="#" class="openContact openCommonContact navigation__link "
+                                data-target="common">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="contactpopup" data-popup="common">
+            <div class="contactus-form common-contact">
+                <div class="close">×</div>
+                <div class="title">
+                    <h2> CONTACT US </h2>
+                </div>
+                <div class="contact">
+                    <div class="left">
+                        <h2>We'd love to hear from you </h2>
+                        <h5>Feel free to talk to us if you have any questions. <br>just fill the form and we will get in
+                            touch with you shortly.</h5>
+                        <div class="img">
+                            <div class="image">
+                                <img src="/picture/contactus.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div role="form" class="wpcf7" id="wpcf7-f70-o1" lang="en-US" dir="ltr">
+                            <div class="screen-reader-response"></div>
+                            <form action="/blog/#wpcf7-f70-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="70">
+                                    <input type="hidden" name="_wpcf7_version" value="5.1.3">
+                                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f70-o1">
+                                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                                    <input type="hidden" name="g-recaptcha-response"
+                                        value="03AGdBq24KxywKmhhJ9soSM7mUN3A9oetULcrEkFJ_9QqqgLFFHAgFuANhAQSV2HmtfXtMXeDeSdUbq6bbcun4AB55Y8wydwC8ARsseFTtoW5V3SNw9Kq7h3UinzVy4i3Do4rsSM2GEWSd0gNC2J32E1jmmcA31XwJ_hRfFgdPnndAh92gFQiLaMo92dndPnr5X5zv3-y9275GchwBEFfCGbq-D_MpEyt7kWp11dd-2qKLwRsNO3kFqOea5iSLsd6OFtJMigEf0MKs9mVEcx_KsaZK66AZB1qyzfepVVapvVmkGDKebQOw50wExIkdo-Dij2skWo-UgBnMKF7VjEjcrviOuF5qjtsJAdc4e8Rt4IWlabgertHMlmBlgsP8IhVEGtCbGVgFMXWKmp-GjriBJh-K1tC7bBdjsv6uxGlVK_f7-NBGNf8s1wMjzoPSITLOaPRsBoL-cesb4SL9OSTFqfaskum_zSYXDrFE5yQNaE7Pw5iBDzy8KQz1HE9uyfMTdSTs0uf62y01NZiatk87ncBCET58GpUZkg">
+                                </div>
+                                <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name"
+                                            value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                            aria-required="true" aria-invalid="false" placeholder="Name"></span> </p>
+                                <p><span class="wpcf7-form-control-wrap your-email"><input type="email"
+                                            name="your-email" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                            aria-required="true" aria-invalid="false"
+                                            placeholder="Email Address"></span>
+                                </p>
+                                <p><span class="wpcf7-form-control-wrap your-number"><input type="text"
+                                            name="your-number" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                            aria-required="true" aria-invalid="false" placeholder="Number"></span></p>
+                                <p><span class="wpcf7-form-control-wrap your-id"><input type="text" name="your-id"
+                                            value="" size="40" class="wpcf7-form-control wpcf7-text"
+                                            aria-invalid="false" placeholder="Skype ID/ Whatsapp No"></span></p>
+                                <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message"
+                                            cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                            aria-invalid="false" placeholder="Your Message"></textarea></span></p>
+                                <p><input type="submit" value="Send Request"
+                                        class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <section class="background">
+        <div id="hero">
+            <div class="container">
+                <div class="hero-section  ">
+                    <div class="hero-left">
+                        <div class="hero-text">
+                            <h1>
+                                implementimg ideas to the successful solutions!
+                            </h1>
+                            <button class="btn openContact" data-target="common">Let’s get started!</button>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="img">
+                            <img src="/picture/hero-img.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-section">
+            <div class="container">
+                <div class="about-text">
+                    <div class="title">
+                        <h1>about us</h1>
+                    </div>
+                    <p>
+                        "Webrex studio, recognized as leading Web Design and Web app development company. The Team’s
+                        focus
+                        is on UI/UX development and web app development services that will improve the business sector.
+                        Webrex studio prides itself in a team of innovative developers who provide IT solutions for
+                        different kinds of organizations."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services-section">
+            <div class="container">
+                <div class="title">
+                    <h1>
+                        services
+                    </h1>
+                    <div class="services-text">
+                        <p>
+                            We focus highly on Quality, Time and Cost-Effective web Design and Development Services for
+                            our Customers
+                        </p>
+                    </div>
+                </div>
+                <div class="services-list">
+                    <div class="details">
+                        <div class="img">
+                            <img src="/picture/ui-img.png">
+                        </div>
+                        <div class="title">
+                            <h3>UI/UX Design</h3>
+
+                        </div>
+                        <div class="text">UI is the thing which actually communicate with your User. We make such out of
+                            the
+                            box Interfaces with Excellent User Experience by being the User itself.</div>
+                    </div>
+
+                    <div class="details">
+                        <div class="img">
+                            <img src="/picture/web-design-img.png">
+                        </div>
+                        <div class="title">
+                            <h3>Web Design</h3>
+
+                        </div>
+                        <div class="text"> create unique, Smart, Effective Web Design Solutions which will help our
+                            Client’s
+                            business to expand their customer base and achieve their business goals.</div>
+                    </div>
+
+                    <div class="details">
+                        <div class="img">
+                            <img src="/picture/web-dev-img.png">
+                        </div>
+                        <div class="title">
+                            <h3>Web App Development</h3>
+                        </div>
+                        <div class="text">Enhancing Business Capabilities with Custom Web Applications Developed to meet
+                            Client’s Business Challenges.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+    <section id="portfolio">
+        <div class="portfolio-section">
+            <div class="container">
+                <div class="title">
+                    <h1>portfolio</h1>
+                </div>
+                <div class="text">
+                    <p>
+                        We are constantly satisfying the needs of Various Industries all over the World with our
+                        Innovative solutions to evolve their business.
+                    </p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a id="showall">
+                            <div class="tabtitle" tabtitle="all">
+                                <img src="/picture/hospital.png" alt="">
+                                <p>all</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="1">
+
+                            <div class="tabtitle" tabtitle="saffing">
+                                <img src="/picture/s2.svg" alt="">
+                                <p>saffing and recruiting</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a class="tabtitle" target="2">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s3.svg" alt="">
+                                <p>sales</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="3">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s4.svg" alt="">
+                                <p>information and technology</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="4">
+
+                            <div class="tabtitle">
+                                <img src="/picture/hospital.png" alt="">
+                                <p>medical and healthcare</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="5">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s66.svg" alt="">
+                                <p>fashion</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="6">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s77.png" alt="">
+                                <p>logistics</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="7">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s8.svg" alt="">
+                                <p>animation</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="8">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s99.svg" alt="">
+                                <p>non profit</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="9">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s99.svg" alt="">
+                                <p>retail</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="10">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s10.svg" alt="">
+                                <p>lead generetion</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="tabtitle" target="11">
+
+                            <div class="tabtitle">
+                                <img src="/picture/s11.svg" alt="">
+                                <p>event management</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- <div class="buttom">
+                    <a href="#" id=                        "prev" class="previous round">&#8249;</a>
+                        <a href="#" id="next" class="next round">&#8250;</a>
+                    
+                      </div> -->
+
+                </div>
+                <section class="target_box">
+                    <div id="showall" class="target-1 tabdetail">
+
+                        <div class="photo-section">
+                            <div id="all" class="tabdetail ">
+                                <div class="all-project">
+                                    <div class="block" onclick="location.href='jobfair';">
+
+                                        <div class="image">
+                                            <img src="/picture/l1.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l2.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l3.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l4.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l5.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l6.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l7.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l8.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l9.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l10.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+                                    <div class="block" onclick="location.href='jobfair-recruiter';">
+                                        <div class="image">
+                                            <img src="/picture/l10.png" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p>
+
+                                                Jobs Fair is the online hub for job seekers who are looking for a job as
+                                                per their designation and preferred location.
+
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <span>Jobs Fair</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div1" class="target tabdetail">
+
+                        <div class="saffing-section tabdetail">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l1.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text sky-blue">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg1.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div2" class="target tabdetail">
+
+                        <div class="sales">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l2.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text orange-yellow">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg2.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div3" class="target tabdetail">
+
+                        <div class="it">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l3.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div4" class="target tabdetail">
+
+
+                        <div class="medical">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l4.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div5" class="target tabdetail">
+
+                        <div class="fashion">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l5.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div6" class="target tabdetail">
+
+                        <div class="logistics">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l6.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div7" class="target tabdetail">
+
+
+                        <div class="animation">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l7.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div8" class="target tabdetail">
+
+
+                        <div class="profit">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l8.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div9" class="target tabdetail">
+
+
+                        <div class="retail">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l9.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div10" class="target tabdetail">
+
+
+                        <div class="lead">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l9.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div11" class="target tabdetail">
+
+
+
+                        <div class="event">
+
+                            <div id="saffing">
+                                <div class="block-p">
+                                    <div class="tabdetail-image">
+                                        <img src="/picture/l10.png" alt="">
+                                    </div>
+                                    <div class="tabdetail-text pink">
+                                        <div class="tabdetail-text-bg">
+                                            <img src="/picture/bg3.png">
+                                        </div>
+                                        <div class="text-title">job-fair</div>
+
+                                        <p>
+                                            Jobs Fair is the online hub for job seekers who are looking for a job as
+                                            per their designation and preferred location.
+                                        </p>
+
+                                        <div class="btn">
+                                            <a href="jobfair">
+                                                <span>view project</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+    <section id="blog">
+        <div class="blog-section">
+            <div class="container">
+                <div class="title">
+                    <h1>
+                        blog
+                    </h1>
+                </div>
+                <div class="blog-image">
+                    <div class="box">
+                        <a>
+                            <div class="first">
+                                <img src="/picture/bl1.jpg" alt="">
+                                <div class="text">
+
+                                    <h3>virtual reality</h3>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+
+                        <a>
+                            <div class="first">
+
+                                <img src="/picture/bl2.jpg" alt="">
+                            </div>
+                            <div class="text">
+
+                                <h3>
+                                    whats new in shopify unite 2019?
+                                </h3>
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="btn">
+                    <span> view all</span>
+                </div>
+
+
+    </section>
+    <section>
+        <div id="testimonail">
+            <div class="testimonail-section">
+                <div class="container">
+                    <div class="title">
+                        <h1>testimonail</h1>
+                    </div>
+                    <div class="photo-text">
+                        <div class="left">
+                            <div class="testimonail-mark">
+
+                                <div class="quote-mark">
+                                    <img src="/picture/m1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>“They have done phenomenal job in such a short time. Definitely will hire them
+                                        for future
+                                        website improvements."
+                                    </p>
+                                    <span>- Unipine Technologies</span>
+
+                                </div>
+                                <div class="photo">
+                                    <img src="/picture/sp1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="testimonail-mark">
+                                <div class="quote-mark">
+                                    <img src="/picture/m1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Webrex was Great. They took the initiative to view my proposal and communicate
+                                        with me
+                                        upfront when most other contractors went silent. They were very cooperative and
+                                        adhered to
+                                        the schedule. I was pleased with the outcome.
+                                    </p>
+                                    <span>- Chris Braun</span>
+                                </div>
+                                <div class="photo">
+                                    <img src="/picture/sp2.png" alt="">
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttom">
+                        <div class="testimonail-mark">
+                            <div class="quote-mark">
+                                <img src="/picture/m1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>"Webrex Studio provided consistent availability, easy communication and good
+                                    quality
+                                    HTML/CSS designs for my project. Will use again."
+                                </p>
+                                <span>- Nikhil Tilwali</span>
+                            </div>
+
+                            <div class="photo">
+                                <img src="/picture/sp3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer>
+        <section id="footer">
+            <div class="footer-section">
+                <div class="title">
+                    <h2>
+                        contact us
+                    </h2>
+                </div>
+                <div class="text-details">
+                    <div class="box">
+                        <p>209, Saumya Square near Govardhan Party plot, Thaltej, Ahmedabad</p>
+
+                        <p>hello@webrexstudio.com</p>
+
+                        <p>+91 9724690996</p>
+
+
+                    </div>
+                    <div class="box">
+                        <p>
+                            We estimate your project accurately.
+                            Calculating realistic project timelines.</p>
+
+                    </div>
+                    <div class="box">
+                        <div class="concact-form">
+                            <form>
+                                <input type="text" size="40" placeholder="name">
+                                <input type="text" size="40" placeholder="e-mail address">
+                                <input type="text" size="40" placeholder="Number">
+                                <input type="text" size="40" placeholder="skype-id/Whatsapp-no">
+                                <textarea rows="4" cols="40" placeholder="your massage"></textarea>
+                                <div class="btn">
+                                    send Request
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="copyright">
+                <div class="text">
+
+                    <p>Copyright © 2010 - 2017 Webrex Studio.</p>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(function () {
+            $("#showall").click(function () {
+                // console.log("all show");
+                $(".tabdetail").addClass("active")
+                $('.target-1').show();
+                $('.target').hide();
+
+            });
+            $('.target').hide();
+
+            $(".tabtitle").click(function () {
+                // console.log("one show");
+                $('.target').hide();
+                $('#div' + $(this).attr('target')).show();
+                $('.target-1').hide();
+
+
+            });
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 40,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

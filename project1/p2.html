@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<htmlabout="en" class="background-fixed">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopity</title>
+    <link rel="stylesheet" href="tut13.css">
+
+
+    
+    
+
+    <!-- <script>
+        $(document).ready(function(){
+    var scrolllink =$('.scroll');
+    
+    scrolllink.click(function(e){
+    e.preventdefault();
+    $('body,html').animate({
+       scrolltop: $(this.hash).offset().top
+    },1000);   
+    });
+    
+    // active link
+    $(window).scroll(function(){
+      var scrollbarlocation = $(this).scrolltop();
+    
+      scrolllink.each(function(){
+          var sectionoffset =$(this.hash).offset().top -20;
+    
+          if(sectionoffset <= scrollbarlocation){
+              $(this).parent().addclass('active');
+              $(this).parent().sibiling().removeclass('active')
+          }
+      });
+    });
+    });
+    </script> -->
+</head>
+<body>
+    <section>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="https://www.webrexstudio.com/wp-content/themes/twentyseventeen-child/images/logo.png">
+
+                </div>
+                <div class="menu">
+                    <ul class="menubar navigation" id="mainNav">
+                        <li>
+                            <a class="navigation__link active" href="/#home" data-link="home"> Home</a>
+                        </li>
+                        <!-- <li>
+                            <a href="/project1/shopify- expert.html" class="navigation__link" onclick="changeNavLink()" data-link="shopify-expert">Shopify Expert</a>
+                        </li> -->
+                        <li>
+                            <a href="/#aboutus" class="navigation__link scroll" data-link="aboutus"> About</a>
+                        </li>
+                        <li>
+                            <a href="/#service" class="navigation__link scroll" data-link="service">Services</a>
+                        </li>
+                        <li>
+                            <a href="/#portfolio" class="navigation__link multipage-portfolio">Portfolio</a>
+                         </li>
+                         <li>
+                            <a href="/#technology" class="navigation__link">Technology</a>
+                        </li> 
+
+                         <li>
+                            <a href="/#latestblog" class="navigation__link multipage-blog">Blog</a>
+                        </li> 
+                         <li>
+                            <a href="/#testimonial" class="navigation__link">Testimonial</a>
+                        </li> 
+
+                         <li>
+                    <a href="/#contactus" class="navigation__link">Contact Us</a>
+                </li>
+                        <li>
+                            <a href="/project1/concoct us.html" class="openContact openCommonContact navigation__link" data-target="common">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-responsive">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="page-section page-body" id="home" data-page="home">
+
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-texts">
+                        <h1>Implementing ideas to the successful solutions!</h1>
+                        <button class="btn openContact" data-target="common"><a href="/project1/concoct us.html" class="navigation_link" data-link="concact">
+                            Let’s get started!</a>
+                        </button>
+                    </div>
+                    <div class="hero-img">
+                        <img
+                            src="https://www.webrexstudio.com/wp-content/themes/twentyseventeen-child/images/hero-img.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="page-section" >
+        <div class="container">
+            <div class="about-company">
+                <div class="title">
+                    <h2>
+                        ABOUT US
+                    </h2>
+                </div>
+                <p> "Webrex studio, recognized as leading Web Design and Web app development company. The Team’s focus
+                    is on UI/UX development and web app development services that will improve the business sector.
+                    Webrex studio prides itself in a team of innovative developers who provide IT solutions for
+                    different kinds of organizations."</p>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="page-section">
+        <div class="development">
+            <div class="container">
+                <div class="development-content">
+                    <div class="title">
+                        <h2>SERVICES</h2>
+                        <p>We focus highly on Quality, Time and Cost-Effective web Design and Development Services for
+                            our Customers</p>
+                    </div>
+                    <div class="dev-list">
+                        <div class="dev-detail">
+                            <div class="dev-img">
+                                <img
+                                    src="https://www.webrexstudio.com/wp-content/themes/twentyseventeen-child/images/ui-img.png">
+                            </div>
+                            <div class="dev-text">
+                                <h3>UI/UX Design</h3>
+                                <p>UI is the thing which actually communicate with your User. We make such out of the
+                                    box Interfaces with Excellent User Experience by being the User itself.</p>
+                            </div>
+                        </div>
+                        <div class="dev-detail">
+                            <div class="dev-img">
+                                <img
+                                    src="https://www.webrexstudio.com/wp-content/themes/twentyseventeen-child/images/web-design-img.png">
+                            </div>
+                            <div class="dev-text">
+                                <h3>Web Design</h3>
+                                <p>We create unique, Smart, Effective Web Design Solutions which will help our Client’s
+                                    business to expand their customer base and achieve their business goals.</p>
+                            </div>
+                        </div>
+                        <div class="dev-detail">
+                            <div class="dev-img">
+                                <img
+                                    src="https://www.webrexstudio.com/wp-content/themes/twentyseventeen-child/images/web-dev-img.png">
+                            </div>
+                            <div class="dev-text">
+                                <h3>Web App Development</h3>
+                                <p>Enhancing Business Capabilities with Custom Web Applications Developed to meet
+                                    Client’s Business Challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+p{
+    color: #666;
+
+}
+h1{
+    font-size: 12px;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    background-color: rgb(25, 75, 226);
+}
+.text{
+  color: white;  
+}
