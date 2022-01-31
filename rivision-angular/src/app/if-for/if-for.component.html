@@ -1,0 +1,35 @@
+<button (click)="onCreatBox()">creat box</button>
+<div class="box" *ngIf= "isvalid; else elsebox"></div>
+
+<ng-template #elsebox>
+    <div>no box has been created yet.</div>
+</ng-template>
+<button (click)="deletebox()">Delete</button>
+<div class="container">
+    <div class="row">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>product srno.</th>
+                    <th>product Image</th>
+                    <th>product Name</th>
+                    <th>product Id</th>
+                    <th>product price</th>
+
+
+                </tr>
+            </thead>
+
+            <tr *ngFor= "let pro of products index as i">
+                <td>{{i+1}}</td>
+                <td><img src="{{pro.image}}" width="70px" alt=""></td>
+                <td>{{pro.name}}</td>
+                <td>{{pro.id}}</td>
+                <td>{{pro.price}}</td>
+
+
+            </tr>
+        </table>
+    </div>
+</div>
