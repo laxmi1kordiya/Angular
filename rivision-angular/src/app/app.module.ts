@@ -5,17 +5,23 @@ import { AppComponent } from './app.component';
 import { IfForComponent } from './if-for/if-for.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { ArryformComponent } from './arryform/arryform.component';
+import { Arryform2Component } from './arryform2/arryform2.component';
+import { ServiceComponent } from './service/service.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     IfForComponent,
     ReactiveformComponent,
-    ArryformComponent
+    ArryformComponent,
+    Arryform2Component,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  
+    "users" : [
+        {
+            "id" : "1",
+            "firstname" :"nitin",
+            "lastname" :"makvana",
+            "email" :"nitin.makvana@gmail.com",
+            "mobile" :"6626435362",        
+            "salary" :"15000"
+        },
+        {
+            "id" : "2",
+            "firstname" :"ajay",
+            "lastname" :"patel",
+            "email" :"ajay.patel@gmail.com",
+            "mobile" :"6626434839",        
+            "salary" :"18000"
+        },
+        {
+          "id" : "3",
+          "firstname" :"mona",
+          "lastname" :"makvana",
+          "email" :"mona.makvana@gmail.com",
+          "mobile" :"6626438211",        
+          "salary" :"20000"
+      },
+      {
+          "id" : "4",
+          "firstname" :"rahul",
+          "lastname" :"trivadi",
+          "email" :"rahul.trivadi@gmail.com",
+          "mobile" :"6626456789",        
+          "salary" :"8000"
+      }
+      
+    ]
+}
+

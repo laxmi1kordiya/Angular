@@ -1,0 +1,36 @@
+{
+    "users" : [
+        {
+            "id" : "1",
+            "firstname" :"nitin",
+            "lastname" :"makvana",
+            "email" :"nitin.makvana@gmail.com",
+            "mobile" :"6626435362",        
+            "salary" :"15000"
+        },
+        {
+            "id" : "2",
+            "firstname" :"nitin",
+            "lastname" :"makvana",
+            "email" :"nitin.makvana@gmail.com",
+            "mobile" :"6626435362",        
+            "salary" :"15000"
+        },
+        {
+            "id" : "3",
+            "firstname" :"nitin",
+            "lastname" :"makvana",
+            "email" :"nitin.makvana@gmail.com",
+            "mobile" :"6626435362",        
+            "salary" :"15000"
+        },
+        {
+            "id" : "4",
+            "firstname" :"nitin",
+            "lastname" :"makvana",
+            "email" :"nitin.makvana@gmail.com",
+            "mobile" :"6626435362",        
+            "salary" :"15000"
+        }
+    ]
+}
