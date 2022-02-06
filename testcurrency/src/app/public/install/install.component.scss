@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Lato&family=Lobster&family=Open+Sans&family=Roboto+Condensed&display=swap");
+$brand-color: #3e82b0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h3,
+label {
+    font-family: "Lato", sans-serif;
+}
+.container {
+    header {
+        .header {
+            display: block;
+            text-align: center;
+            padding: 20px 0px;
+            img {
+                width: 60px;
+                height: 60px;
+                cursor: pointer;
+            }
+        }
+    }
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero {
+            background: linear-gradient(#00000080, #00000080), url("../../../assets/hero-img.png");
+            color: white;
+            width: 100%;
+            height: 70vh;
+            text-align: center;
+
+            .hero-text {
+                padding: 150px 0px;
+                h1 {
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+                h3 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    form {
+        .hero-form {
+            .sinjal-input {
+                .input {
+                    margin: auto;
+                    width: 600px;
+                    padding: 50px 0px;
+                    label {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        display: block;
+                        overflow: hidden;
+                    }
+                    .input1 {
+                        width: 100%;
+                        display: flex;
+                        input {
+                            width: 100%;
+                            border: 1px solid #f8f8f8;
+                            border-radius: 3px;
+                            padding: 15px 10px;
+                            background: #fff;
+                            box-shadow: 0 0 2px 1px #f3f3f3 inset;
+                            &:hover {
+                                border: 1px solid $brand-color;
+                            }
+                        }
+
+                        .btn {
+                            border: 1px;
+                            padding: 10px 25px;
+                            font-size: 18px;
+                            background-color: $brand-color;
+                            color: #fff;
+                            border-radius: 3px;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #fff;
+                                color: $brand-color;
+                                border: 1px solid $brand-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
