@@ -1,21 +1,22 @@
 <app-sidebar></app-sidebar>
 <div class="container">
 
-    <!-- <p>country works!</p> -->
-
-    <!-- <div class="table-responsive">
-        <ngx-datatable class="material new-styled" [rows]="countries" [headerHeight]="50" [footerHeight]="50"
+    <button mat-raised-button class="btn" (click)="gopop()"> Add Country</button>
+    <!-- <mat-button-toggle class="btn" >Add Country</mat-button-toggle> -->
+    <div class="table-responsive">
+        <ngx-datatable class="material new-styled   " [rows]="countries" [headerHeight]="50" [footerHeight]="50"
             [externalPaging]="false" [rowHeight]="'auto'" [columnMode]="'force'" [limit]="page.limit"
             [offset]="page.offset" [count]="page.count">
             <ngx-datatable-column name="Country"></ngx-datatable-column>
             <ngx-datatable-column name="Name"></ngx-datatable-column>
             <ngx-datatable-column name="Currency"></ngx-datatable-column>
         </ngx-datatable>
-    </div> -->
+    </div>
+</div>
 
 
 
-    <div class="table-responsive">
+<!-- <div class="table-responsive">
         <div class="col-md-12 mb-3" style="margin-top: 10px;">
             <ngx-datatable class="material " [rows]="rows" [columnMode]="'force'" [headerHeight]="50"
                 [footerHeight]="50" rowHeight="auto">
@@ -41,8 +42,7 @@
                 </ngx-datatable-column>
 
             </ngx-datatable>
-            <div>
-            </div>
+
         </div>
-    </div>
-</div>
+    </div> -->
+<!-- </div> -->

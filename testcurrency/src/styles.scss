@@ -1,4 +1,529 @@
-/* You can add global styles to this file, and also import other style files */
-// .max-width{
-//     height: 200px;
+@import "~@swimlane/ngx-datatable/index.css";
+@import "~@swimlane/ngx-datatable/themes/material.css";
+@import "~@swimlane/ngx-datatable/assets/icons.css";
+
+$brand-color: #3e82b0;
+$brand-hover-color: #276996;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: top;
+}
+
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+span,
+input,
+textarea,
+select {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.container {
+  position: absolute;
+  margin-left: 203px;
+  top: 0;
+  z-index: 12;
+  .table-responsive {
+    width: 1000px;
+    height: auto;
+    margin-top: 20px;
+    text-align: left;
+
+    ngx-datatable {
+      margin: 0px 0px;
+      border: 1px solid #ececec;
+      box-shadow: none !important;
+      background: rgba(241, 243, 247, 0.05) !important;
+      min-width: 900px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+      datatable-body {
+        margin-bottom: -8px;
+
+        datatable-body-cell {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &.ngx-datatable {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        &.fixed-header {
+          .datatable-header {
+            .datatable-header-inner {
+              .datatable-header-cell {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ececec;
+                font-weight: 400;
+                background-color: #f5f5f5;
+                color: $brand-color;
+
+                &:last-child {
+                  justify-content: center;
+                }
+                &:first-child {
+                  justify-content: flex-start;
+
+                  .datatable-header-cell-template-wrap {
+                    text-align: left;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.material {
+          box-shadow: none;
+
+          .datatable-body {
+            .datatable-body-row {
+              &:hover {
+                background-color: $brand-hover-color;
+              }
+              .datatable-body-cell {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px 10px 20px;
+                border-bottom: 1px solid #ececec;
+                font-weight: 100;
+                color: #565656;
+                display: flex;
+                align-items: inherit;
+                justify-content: flex-start;
+                text-align: left;
+
+                &:last-child {
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .secondary-btn {
+                  display: flex;
+
+                  button {
+                    margin: 0px;
+                    margin-right: 10px;
+
+                    &:last-child {
+                      margin-right: 0px;
+                    }
+                    &:first-child {
+                      justify-content: flex-start;
+                    }
+                    &:hover {
+                      color: $brand-hover-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .datatable-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+          }
+        }
+      }
+
+      .datatable-footer {
+        background: #f5f5f5;
+        text-align: left;
+      }
+    }
+  }
+  .hint {
+    &.danger {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 12px;
+      margin-top: 10px;
+      background-color: #f7eeee;
+      padding: 6px 8px;
+    }
+  }
+  .output {
+    display: flex;
+    .clm {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      padding: 5px 14px;
+    }
+
+    .box {
+      background-color: #fff;
+      box-shadow: 0px 0px 0px 5px #fdf9f9;
+      width: 50px;
+      height: 30px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+
+// /*Sidebar Design*
+
+.sidebar {
+  width: 18%;
+  background: $brand-color;
+  height: 100vh;
+  color: white;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  z-index: 99;
+  overflow: auto;
+  padding: 0px 20px;
+  &.active {
+    transform: translateX(0%);
+    background: $brand-color;
+  }
+  .sidebar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .logo {
+      img {
+        height: 80px;
+        width: 80px;
+        margin: 2px 37px;
+      }
+      a {
+        display: block;
+      }
+    }
+
+    ul {
+      .sidebar-top {
+        position: relative;
+        top: 100px;
+        height: calc(100vh - 270px);
+        overflow: auto;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 5px 0px;
+        .menu-icon {
+          height: 50px;
+          width: 50px;
+          min-width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+
+          svg {
+            height: 30px;
+            width: 30px;
+            fill: #fff;
+
+            g {
+              g {
+                g {
+                  path {
+                    fill: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
+
+          .menu-icon {
+            background: #fff;
+
+            svg {
+              fill: $brand-color;
+
+              g {
+                g {
+                  g {
+                    path {
+                      fill: $brand-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &.active {
+          cursor: default;
+
+          .menu-icon {
+            background: #fff;
+
+            svg {
+              fill: $brand-color;
+
+              g {
+                g {
+                  g {
+                    path {
+                      fill: $brand-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .menu-text {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .sidebar-bottom {
+    bottom: 10px;
+    left: 20px;
+    width: calc(100% - 40px);
+
+    justify-content: center;
+    margin-top: 150px;
+  }
+}
+// button css
+.btn {
+  padding: 11px 15px;
+  color: #3e82b0;
+  border: 1.5px solid #3e82b0;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    background-color: $brand-color;
+    color: #fff;
+  }
+}
+select {
+  height: 35px;
+  width: 100%;
+  border: solid #f8f4f4;
+  border-radius: 3px;
+  line-height: 1.3;
+}
+
+// swich
+
+// .switch-btn {
+//   display: flex;
+//   .text {
+//     font-size: 13px;
+//     margin: 6px 2px;
+//   }
+//   .switch {
+//     position: relative;
+//     display: inline-block;
+//     width: 18px;
+//     height: 15px;
+//     margin: 7px 12px;
+//     input {
+//       opacity: 0;
+//       width: 0;
+//       height: 0;
+
+//       &:checked + .slider {
+//         background-color: green;
+//       }
+//       &:focus + .slider {
+//         box-shadow: 0 0 1px green;
+//       }
+//       &:checked + .slider:before {
+//         -webkit-transform: translateX(26px);
+//         -ms-transform: translateX(26px);
+//         transform: translateX(13px);
+//       }
+//     }
+//   }
+//   .slider {
+//     position: absolute;
+//     cursor: pointer;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: #ccc;
+//     -webkit-transition: 0.4s;
+//     transition: 0.4s;
+//     &::before {
+//       position: absolute;
+//       content: "";
+//       height: 10px;
+//       width: 10px;
+//       left: 3px;
+//       bottom: 3px;
+//       background-color: white;
+//       transition: 0.4s;
+//       border-radius: 50px;
+//     }
+//     &.round {
+//       border-radius: 34px;
+//       & :before {
+//         border-radius: 50%;
+//       }
+//     }
+//   }
+// }
+
+// .inner-text {
+// border: 1px solid #ccc;
+// border-radius: 3px;
+// font-size: 12px;
+// margin-top: 10px;
+// background-color: #fafafa;
+// padding: 6px 8px;
+// }
+// .input-radio {
+// display: flex;
+// font-size: 12px;
+// padding: 2px 10px;
+// &:hover{
+// fill:green;
+// &:focus{
+// fill:green;
+
+// }
 // }

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  ismenuOpen: any;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  menuOpen() {
+    this.ismenuOpen = !this.ismenuOpen;
+    console.log(this.ismenuOpen)
   }
 
 }

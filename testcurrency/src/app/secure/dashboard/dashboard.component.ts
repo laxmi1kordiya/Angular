@@ -6,7 +6,7 @@ import { FormControl, FormGroup,FormBuilder } from '@angular/forms';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  color: string = '#2889e9'
+  color: string = 'black'
   arrayColors: any = {
     color1: '#2883e9',
     color2: '#e920e9',
@@ -15,6 +15,18 @@ export class DashboardComponent implements OnInit {
     color5: 'rgba(45,208,45,1)'
   };
   selectedColor: string = 'color1';
+  
+  bgcolor: string = '#fff'
+  arrayColors1: any = {
+    color1: '#2883e9',
+    color2: '#e920e9',
+    color3: 'rgb(255,245,0)',
+    color4: 'rgb(236,64,64)',
+    color5: 'rgba(45,208,45,1)'
+  };
+  selectedColor1: string = 'color1';
+  
+  
   public sideform: FormGroup;
   constructor(private fb : FormBuilder) {
     this.sideform = this.fb.group({

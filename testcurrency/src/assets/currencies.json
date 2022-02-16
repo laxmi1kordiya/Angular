@@ -1,0 +1,1520 @@
+{
+    "EUR": {
+        "country": "Mayotte",
+        "currency": "EUR",
+        "countryCode": "YT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 246,
+        "itemName": "Mayotte",
+        "currency_name": "Euro"
+    },
+    "AED": {
+        "country": "United Arab Emirates",
+        "currency": "AED",
+        "countryCode": "AE",
+        "symbol_native": "د.إ.‏",
+        "symbol": "AED",
+        "id": 1,
+        "itemName": "United Arab Emirates",
+        "currency_name": "United Arab Emirates Dirham"
+    },
+    "AFN": {
+        "country": "Afghanistan",
+        "currency": "AFN",
+        "countryCode": "AF",
+        "symbol_native": "؋",
+        "symbol": "Af",
+        "id": 2,
+        "itemName": "Afghanistan",
+        "currency_name": "Afghan Afghani"
+    },
+    "XCD": {
+        "country": "Saint Vincent and the Grenadines",
+        "currency": "XCD",
+        "countryCode": "VC",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 236,
+        "itemName": "Saint Vincent and the Grenadines"
+    },
+    "ALL": {
+        "country": "Albania",
+        "currency": "ALL",
+        "countryCode": "AL",
+        "symbol_native": "Lek",
+        "symbol": "ALL",
+        "id": 5,
+        "itemName": "Albania",
+        "currency_name": "Albanian Lek"
+    },
+    "AMD": {
+        "country": "Armenia",
+        "currency": "AMD",
+        "countryCode": "AM",
+        "symbol_native": "դր.",
+        "symbol": "AMD",
+        "id": 6,
+        "itemName": "Armenia",
+        "currency_name": "Armenian Dram"
+    },
+    "AOA": {
+        "country": "Angola",
+        "currency": "AOA",
+        "countryCode": "AO",
+        "symbol_native": "Kz",
+        "symbol": "Kz",
+        "id": 7,
+        "itemName": "Angola"
+    },
+    "USD": {
+        "country": "Rest Of the World",
+        "currency": "USD",
+        "countryCode": "ROW",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "Rest Of the World",
+        "currency_name": "US Dollar"
+    },
+    "ARS": {
+        "country": "Argentina",
+        "currency": "ARS",
+        "countryCode": "AR",
+        "symbol_native": "$",
+        "symbol": "AR$",
+        "id": 9,
+        "itemName": "Argentina",
+        "currency_name": "Argentine Peso"
+    },
+    "AUD": {
+        "country": "Tuvalu",
+        "currency": "AUD",
+        "countryCode": "TV",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 226,
+        "itemName": "Tuvalu",
+        "currency_name": "Australian Dollar"
+    },
+    "AWG": {
+        "country": "Aruba",
+        "currency": "AWG",
+        "countryCode": "AW",
+        "symbol_native": "ƒ",
+        "symbol": "Afl.",
+        "id": 13,
+        "itemName": "Aruba"
+    },
+    "AZN": {
+        "country": "Azerbaijan",
+        "currency": "AZN",
+        "countryCode": "AZ",
+        "symbol_native": "ман.",
+        "symbol": "man.",
+        "id": 15,
+        "itemName": "Azerbaijan",
+        "currency_name": "Azerbaijani Manat"
+    },
+    "BAM": {
+        "country": "Bosnia and Herzegovina",
+        "currency": "BAM",
+        "countryCode": "BA",
+        "symbol_native": "KM",
+        "symbol": "KM",
+        "id": 16,
+        "itemName": "Bosnia and Herzegovina",
+        "currency_name": "Bosnia-Herzegovina Convertible Mark"
+    },
+    "BBD": {
+        "country": "Barbados",
+        "currency": "BBD",
+        "countryCode": "BB",
+        "symbol_native": "$",
+        "symbol": "Bds.",
+        "id": 17,
+        "itemName": "Barbados"
+    },
+    "BDT": {
+        "country": "Bangladesh",
+        "currency": "BDT",
+        "countryCode": "BD",
+        "symbol_native": "৳",
+        "symbol": "Tk",
+        "id": 18,
+        "itemName": "Bangladesh",
+        "currency_name": "Bangladeshi Taka"
+    },
+    "XOF": {
+        "country": "Togo",
+        "currency": "XOF",
+        "countryCode": "TG",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 216,
+        "itemName": "Togo",
+        "currency_name": "CFA Franc BCEAO"
+    },
+    "BGN": {
+        "country": "Bulgaria",
+        "currency": "BGN",
+        "countryCode": "BG",
+        "symbol_native": "лв.",
+        "symbol": "BGN",
+        "id": 21,
+        "itemName": "Bulgaria",
+        "currency_name": "Bulgarian Lev"
+    },
+    "BHD": {
+        "country": "Bahrain",
+        "currency": "BHD",
+        "countryCode": "BH",
+        "symbol_native": "د.ب.‏",
+        "symbol": "BD",
+        "id": 22,
+        "itemName": "Bahrain",
+        "currency_name": "Bahraini Dinar"
+    },
+    "BIF": {
+        "country": "Burundi",
+        "currency": "BIF",
+        "countryCode": "BI",
+        "symbol_native": "FBu",
+        "symbol": "FBu",
+        "id": 23,
+        "itemName": "Burundi",
+        "currency_name": "Burundian Franc"
+    },
+    "BMD": {
+        "country": "Bermuda",
+        "currency": "BMD",
+        "countryCode": "BM",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 26,
+        "itemName": "Bermuda"
+    },
+    "BND": {
+        "country": "Brunei",
+        "currency": "BND",
+        "countryCode": "BN",
+        "symbol_native": "$",
+        "symbol": "BN$",
+        "id": 27,
+        "itemName": "Brunei",
+        "currency_name": "Brunei Dollar"
+    },
+    "BOB": {
+        "country": "Bolivia",
+        "currency": "BOB",
+        "countryCode": "BO",
+        "symbol_native": "Bs",
+        "symbol": "Bs",
+        "id": 28,
+        "itemName": "Bolivia",
+        "currency_name": "Bolivian Boliviano"
+    },
+    "BRL": {
+        "country": "Brazil",
+        "currency": "BRL",
+        "countryCode": "BR",
+        "symbol_native": "R$",
+        "symbol": "R$",
+        "id": 30,
+        "itemName": "Brazil",
+        "currency_name": "Brazilian Real"
+    },
+    "BSD": {
+        "country": "Bahamas",
+        "currency": "BSD",
+        "countryCode": "BS",
+        "symbol_native": "$",
+        "symbol": "B$",
+        "id": 31,
+        "itemName": "Bahamas"
+    },
+    "BTN": {
+        "country": "Bhutan",
+        "currency": "BTN",
+        "countryCode": "BT",
+        "symbol_native": "Nu.",
+        "symbol": "Nu.",
+        "id": 32,
+        "itemName": "Bhutan"
+    },
+    "NOK": {
+        "country": "Svalbard and Jan Mayen",
+        "currency": "NOK",
+        "countryCode": "SJ",
+        "symbol_native": "kr",
+        "symbol": "Nkr",
+        "id": 200,
+        "itemName": "Svalbard and Jan Mayen",
+        "currency_name": "Norwegian Krone"
+    },
+    "BWP": {
+        "country": "Botswana",
+        "currency": "BWP",
+        "countryCode": "BW",
+        "symbol_native": "P",
+        "symbol": "BWP",
+        "id": 34,
+        "itemName": "Botswana",
+        "currency_name": "Botswanan Pula"
+    },
+    "BYN": {
+        "country": "Belarus",
+        "currency": "BYN",
+        "countryCode": "BY",
+        "symbol_native": "руб.",
+        "symbol": "Br",
+        "id": 35,
+        "itemName": "Belarus",
+        "currency_name": "Belarusian Ruble"
+    },
+    "BZD": {
+        "country": "Belize",
+        "currency": "BZD",
+        "countryCode": "BZ",
+        "symbol_native": "$",
+        "symbol": "BZ$",
+        "id": 36,
+        "itemName": "Belize",
+        "currency_name": "Belize Dollar"
+    },
+    "CAD": {
+        "country": "Canada",
+        "currency": "CAD",
+        "countryCode": "CA",
+        "symbol_native": "$",
+        "symbol": "CA$",
+        "id": 37,
+        "itemName": "Canada",
+        "currency_name": "Canadian Dollar"
+    },
+    "CDF": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "CDF",
+        "countryCode": "CD",
+        "symbol_native": "FrCD",
+        "symbol": "CDF",
+        "id": 39,
+        "itemName": "Democratic Republic of the Congo",
+        "currency_name": "Congolese Franc"
+    },
+    "XAF": {
+        "country": "Chad",
+        "currency": "XAF",
+        "countryCode": "TD",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 214,
+        "itemName": "Chad",
+        "currency_name": "CFA Franc BEAC"
+    },
+    "CHF": {
+        "country": "Liechtenstein",
+        "currency": "CHF",
+        "countryCode": "LI",
+        "symbol_native": "CHF",
+        "symbol": "CHF",
+        "id": 128,
+        "itemName": "Liechtenstein",
+        "currency_name": "Swiss Franc"
+    },
+    "NZD": {
+        "country": "Tokelau",
+        "currency": "NZD",
+        "countryCode": "TK",
+        "symbol_native": "$",
+        "symbol": "NZ$",
+        "id": 219,
+        "itemName": "Tokelau",
+        "currency_name": "New Zealand Dollar"
+    },
+    "CLP": {
+        "country": "Chile",
+        "currency": "CLP",
+        "countryCode": "CL",
+        "symbol_native": "$",
+        "symbol": "CL$",
+        "id": 45,
+        "itemName": "Chile",
+        "currency_name": "Chilean Peso"
+    },
+    "CNY": {
+        "country": "China",
+        "currency": "CNY",
+        "countryCode": "CN",
+        "symbol_native": "CN¥",
+        "symbol": "CN¥",
+        "id": 47,
+        "itemName": "China",
+        "currency_name": "Chinese Yuan"
+    },
+    "COP": {
+        "country": "Colombia",
+        "currency": "COP",
+        "countryCode": "CO",
+        "symbol_native": "$",
+        "symbol": "CO$",
+        "id": 48,
+        "itemName": "Colombia",
+        "currency_name": "Colombian Peso"
+    },
+    "CRC": {
+        "country": "Costa Rica",
+        "currency": "CRC",
+        "countryCode": "CR",
+        "symbol_native": "₡",
+        "symbol": "₡",
+        "id": 49,
+        "itemName": "Costa Rica",
+        "currency_name": "Costa Rican Colón"
+    },
+    "CUP": {
+        "country": "Cuba",
+        "currency": "CUP",
+        "countryCode": "CU",
+        "symbol_native": "₱",
+        "symbol": "₱",
+        "id": 50,
+        "itemName": "Cuba"
+    },
+    "CVE": {
+        "country": "Cape Verde",
+        "currency": "CVE",
+        "countryCode": "CV",
+        "symbol_native": "CV$",
+        "symbol": "CV$",
+        "id": 51,
+        "itemName": "Cape Verde",
+        "currency_name": "Cape Verdean Escudo"
+    },
+    "ANG": {
+        "country": "Sint Maarten",
+        "currency": "ANG",
+        "countryCode": "SX",
+        "symbol_native": "ƒ",
+        "symbol": "NAƒ",
+        "id": 210,
+        "itemName": "Sint Maarten"
+    },
+    "CZK": {
+        "country": "Czech Republic",
+        "currency": "CZK",
+        "countryCode": "CZ",
+        "symbol_native": "Kč",
+        "symbol": "Kč",
+        "id": 55,
+        "itemName": "Czech Republic",
+        "currency_name": "Czech Republic Koruna"
+    },
+    "DJF": {
+        "country": "Djibouti",
+        "currency": "DJF",
+        "countryCode": "DJ",
+        "symbol_native": "Fdj",
+        "symbol": "Fdj",
+        "id": 57,
+        "itemName": "Djibouti",
+        "currency_name": "Djiboutian Franc"
+    },
+    "DKK": {
+        "country": "Greenland",
+        "currency": "DKK",
+        "countryCode": "GL",
+        "symbol_native": "kr",
+        "symbol": "Dkr",
+        "id": 83,
+        "itemName": "Greenland",
+        "currency_name": "Danish Krone"
+    },
+    "DOP": {
+        "country": "Dominican Republic",
+        "currency": "DOP",
+        "countryCode": "DO",
+        "symbol_native": "RD$",
+        "symbol": "RD$",
+        "id": 60,
+        "itemName": "Dominican Republic",
+        "currency_name": "Dominican Peso"
+    },
+    "DZD": {
+        "country": "Algeria",
+        "currency": "DZD",
+        "countryCode": "DZ",
+        "symbol_native": "د.ج.‏",
+        "symbol": "DA",
+        "id": 61,
+        "itemName": "Algeria",
+        "currency_name": "Algerian Dinar"
+    },
+    "EGP": {
+        "country": "Egypt",
+        "currency": "EGP",
+        "countryCode": "EG",
+        "symbol_native": "ج.م.‏",
+        "symbol": "EGP",
+        "id": 64,
+        "itemName": "Egypt",
+        "currency_name": "Egyptian Pound"
+    },
+    "MRU": {
+        "country": "Mauritania",
+        "currency": "MRU",
+        "countryCode": "MR",
+        "symbol_native": "أوقية",
+        "symbol": "UM",
+        "id": 150,
+        "itemName": "Mauritania"
+    },
+    "ERN": {
+        "country": "Eritrea",
+        "currency": "ERN",
+        "countryCode": "ER",
+        "symbol_native": "Nfk",
+        "symbol": "Nfk",
+        "id": 66,
+        "itemName": "Eritrea",
+        "currency_name": "Eritrean Nakfa"
+    },
+    "ETB": {
+        "country": "Ethiopia",
+        "currency": "ETB",
+        "countryCode": "ET",
+        "symbol_native": "Br",
+        "symbol": "Br",
+        "id": 68,
+        "itemName": "Ethiopia",
+        "currency_name": "Ethiopian Birr"
+    },
+    "FJD": {
+        "country": "Fiji",
+        "currency": "FJD",
+        "countryCode": "FJ",
+        "symbol_native": "$",
+        "symbol": "FJ$",
+        "id": 70,
+        "itemName": "Fiji"
+    },
+    "FKP": {
+        "country": "Falkland Islands",
+        "currency": "FKP",
+        "countryCode": "FK",
+        "symbol_native": "£",
+        "symbol": "FK£",
+        "id": 71,
+        "itemName": "Falkland Islands"
+    },
+    "GBP": {
+        "country": "Jersey",
+        "currency": "GBP",
+        "countryCode": "JE",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 110,
+        "itemName": "Jersey",
+        "currency_name": "British Pound Sterling"
+    },
+    "GEL": {
+        "country": "Georgia",
+        "currency": "GEL",
+        "countryCode": "GE",
+        "symbol_native": "GEL",
+        "symbol": "GEL",
+        "id": 78,
+        "itemName": "Georgia",
+        "currency_name": "Georgian Lari"
+    },
+    "GHS": {
+        "country": "Ghana",
+        "currency": "GHS",
+        "countryCode": "GH",
+        "symbol_native": "GH₵",
+        "symbol": "GH₵",
+        "id": 81,
+        "itemName": "Ghana",
+        "currency_name": "Ghanaian Cedi"
+    },
+    "GIP": {
+        "country": "Gibraltar",
+        "currency": "GIP",
+        "countryCode": "GI",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 82,
+        "itemName": "Gibraltar"
+    },
+    "GMD": {
+        "country": "Gambia",
+        "currency": "GMD",
+        "countryCode": "GM",
+        "symbol_native": "D",
+        "symbol": "D",
+        "id": 84,
+        "itemName": "Gambia"
+    },
+    "GNF": {
+        "country": "Guinea",
+        "currency": "GNF",
+        "countryCode": "GN",
+        "symbol_native": "FG",
+        "symbol": "FG",
+        "id": 85,
+        "itemName": "Guinea",
+        "currency_name": "Guinean Franc"
+    },
+    "GTQ": {
+        "country": "Guatemala",
+        "currency": "GTQ",
+        "countryCode": "GT",
+        "symbol_native": "Q",
+        "symbol": "GTQ",
+        "id": 90,
+        "itemName": "Guatemala",
+        "currency_name": "Guatemalan Quetzal"
+    },
+    "GYD": {
+        "country": "Guyana",
+        "currency": "GYD",
+        "countryCode": "GY",
+        "symbol_native": "$",
+        "symbol": "GY$",
+        "id": 93,
+        "itemName": "Guyana"
+    },
+    "HKD": {
+        "country": "Hong Kong",
+        "currency": "HKD",
+        "countryCode": "HK",
+        "symbol_native": "$",
+        "symbol": "HK$",
+        "id": 94,
+        "itemName": "Hong Kong",
+        "currency_name": "Hong Kong Dollar"
+    },
+    "HNL": {
+        "country": "Honduras",
+        "currency": "HNL",
+        "countryCode": "HN",
+        "symbol_native": "L",
+        "symbol": "HNL",
+        "id": 96,
+        "itemName": "Honduras",
+        "currency_name": "Honduran Lempira"
+    },
+    "HRK": {
+        "country": "Croatia",
+        "currency": "HRK",
+        "countryCode": "HR",
+        "symbol_native": "kn",
+        "symbol": "kn",
+        "id": 97,
+        "itemName": "Croatia",
+        "currency_name": "Croatian Kuna"
+    },
+    "HTG": {
+        "country": "Haiti",
+        "currency": "HTG",
+        "countryCode": "HT",
+        "symbol_native": "G",
+        "symbol": "G",
+        "id": 98,
+        "itemName": "Haiti"
+    },
+    "HUF": {
+        "country": "Hungary",
+        "currency": "HUF",
+        "countryCode": "HU",
+        "symbol_native": "Ft",
+        "symbol": "Ft",
+        "id": 99,
+        "itemName": "Hungary",
+        "currency_name": "Hungarian Forint"
+    },
+    "IDR": {
+        "country": "Indonesia",
+        "currency": "IDR",
+        "countryCode": "ID",
+        "symbol_native": "Rp",
+        "symbol": "Rp",
+        "id": 100,
+        "itemName": "Indonesia",
+        "currency_name": "Indonesian Rupiah"
+    },
+    "ILS": {
+        "country": "Palestine",
+        "currency": "ILS",
+        "countryCode": "PS",
+        "symbol_native": "₪",
+        "symbol": "₪",
+        "id": 182,
+        "itemName": "Palestine",
+        "currency_name": "Israeli New Sheqel"
+    },
+    "INR": {
+        "country": "India",
+        "currency": "INR",
+        "countryCode": "IN",
+        "symbol_native": "₹",
+        "symbol": "Rs",
+        "id": 104,
+        "itemName": "India",
+        "currency_name": "Indian Rupee"
+    },
+    "IQD": {
+        "country": "Iraq",
+        "currency": "IQD",
+        "countryCode": "IQ",
+        "symbol_native": "د.ع.‏",
+        "symbol": "IQD",
+        "id": 106,
+        "itemName": "Iraq",
+        "currency_name": "Iraqi Dinar"
+    },
+    "IRR": {
+        "country": "Iran",
+        "currency": "IRR",
+        "countryCode": "IR",
+        "symbol_native": "﷼",
+        "symbol": "IRR",
+        "id": 107,
+        "itemName": "Iran",
+        "currency_name": "Iranian Rial"
+    },
+    "ISK": {
+        "country": "Iceland",
+        "currency": "ISK",
+        "countryCode": "IS",
+        "symbol_native": "kr",
+        "symbol": "Ikr",
+        "id": 108,
+        "itemName": "Iceland",
+        "currency_name": "Icelandic Króna"
+    },
+    "JMD": {
+        "country": "Jamaica",
+        "currency": "JMD",
+        "countryCode": "JM",
+        "symbol_native": "$",
+        "symbol": "J$",
+        "id": 111,
+        "itemName": "Jamaica",
+        "currency_name": "Jamaican Dollar"
+    },
+    "JOD": {
+        "country": "Jordan",
+        "currency": "JOD",
+        "countryCode": "JO",
+        "symbol_native": "د.أ.‏",
+        "symbol": "JD",
+        "id": 112,
+        "itemName": "Jordan",
+        "currency_name": "Jordanian Dinar"
+    },
+    "JPY": {
+        "country": "Japan",
+        "currency": "JPY",
+        "countryCode": "JP",
+        "symbol_native": "￥",
+        "symbol": "¥",
+        "id": 113,
+        "itemName": "Japan",
+        "currency_name": "Japanese Yen"
+    },
+    "KES": {
+        "country": "Kenya",
+        "currency": "KES",
+        "countryCode": "KE",
+        "symbol_native": "Ksh",
+        "symbol": "Ksh",
+        "id": 114,
+        "itemName": "Kenya",
+        "currency_name": "Kenyan Shilling"
+    },
+    "KGS": {
+        "country": "Kyrgyzstan",
+        "currency": "KGS",
+        "countryCode": "KG",
+        "symbol_native": "Лв",
+        "symbol": "Soms",
+        "id": 115,
+        "itemName": "Kyrgyzstan"
+    },
+    "KHR": {
+        "country": "Cambodia",
+        "currency": "KHR",
+        "countryCode": "KH",
+        "symbol_native": "៛",
+        "symbol": "KHR",
+        "id": 116,
+        "itemName": "Cambodia",
+        "currency_name": "Cambodian Riel"
+    },
+    "KMF": {
+        "country": "Comoros",
+        "currency": "KMF",
+        "countryCode": "KM",
+        "symbol_native": "FC",
+        "symbol": "CF",
+        "id": 118,
+        "itemName": "Comoros",
+        "currency_name": "Comorian Franc"
+    },
+    "KPW": {
+        "country": "North Korea",
+        "currency": "KPW",
+        "countryCode": "KP",
+        "symbol_native": "₩",
+        "symbol": "₩",
+        "id": 120,
+        "itemName": "North Korea"
+    },
+    "KRW": {
+        "country": "South Korea",
+        "currency": "KRW",
+        "countryCode": "KR",
+        "symbol_native": "₩",
+        "symbol": "₩",
+        "id": 121,
+        "itemName": "South Korea",
+        "currency_name": "South Korean Won"
+    },
+    "KWD": {
+        "country": "Kuwait",
+        "currency": "KWD",
+        "countryCode": "KW",
+        "symbol_native": "د.ك.‏",
+        "symbol": "KD",
+        "id": 122,
+        "itemName": "Kuwait",
+        "currency_name": "Kuwaiti Dinar"
+    },
+    "KYD": {
+        "country": "Cayman Islands",
+        "currency": "KYD",
+        "countryCode": "KY",
+        "symbol_native": "$",
+        "symbol": "CI$",
+        "id": 123,
+        "itemName": "Cayman Islands"
+    },
+    "KZT": {
+        "country": "Kazakhstan",
+        "currency": "KZT",
+        "countryCode": "KZ",
+        "symbol_native": "тңг.",
+        "symbol": "KZT",
+        "id": 124,
+        "itemName": "Kazakhstan",
+        "currency_name": "Kazakhstani Tenge"
+    },
+    "LAK": {
+        "country": "Laos",
+        "currency": "LAK",
+        "countryCode": "LA",
+        "symbol_native": "₭",
+        "symbol": "₭",
+        "id": 125,
+        "itemName": "Laos"
+    },
+    "LBP": {
+        "country": "Lebanon",
+        "currency": "LBP",
+        "countryCode": "LB",
+        "symbol_native": "ل.ل.‏",
+        "symbol": "LB£",
+        "id": 126,
+        "itemName": "Lebanon",
+        "currency_name": "Lebanese Pound"
+    },
+    "LKR": {
+        "country": "Sri Lanka",
+        "currency": "LKR",
+        "countryCode": "LK",
+        "symbol_native": "රු",
+        "symbol": "SLRs",
+        "id": 129,
+        "itemName": "Sri Lanka",
+        "currency_name": "Sri Lankan Rupee"
+    },
+    "LRD": {
+        "country": "Liberia",
+        "currency": "LRD",
+        "countryCode": "LR",
+        "symbol_native": "$",
+        "symbol": "L$",
+        "id": 130,
+        "itemName": "Liberia"
+    },
+    "LSL": {
+        "country": "Lesotho",
+        "currency": "LSL",
+        "countryCode": "LS",
+        "symbol_native": "M",
+        "symbol": "M",
+        "id": 131,
+        "itemName": "Lesotho"
+    },
+    "LYD": {
+        "country": "Libya",
+        "currency": "LYD",
+        "countryCode": "LY",
+        "symbol_native": "د.ل.‏",
+        "symbol": "LD",
+        "id": 135,
+        "itemName": "Libya",
+        "currency_name": "Libyan Dinar"
+    },
+    "MAD": {
+        "country": "Morocco",
+        "currency": "MAD",
+        "countryCode": "MA",
+        "symbol_native": "د.م.‏",
+        "symbol": "MAD",
+        "id": 136,
+        "itemName": "Morocco",
+        "currency_name": "Moroccan Dirham"
+    },
+    "MDL": {
+        "country": "Moldova",
+        "currency": "MDL",
+        "countryCode": "MD",
+        "symbol_native": "MDL",
+        "symbol": "MDL",
+        "id": 138,
+        "itemName": "Moldova",
+        "currency_name": "Moldovan Leu"
+    },
+    "MGA": {
+        "country": "Madagascar",
+        "currency": "MGA",
+        "countryCode": "MG",
+        "symbol_native": "MGA",
+        "symbol": "MGA",
+        "id": 141,
+        "itemName": "Madagascar",
+        "currency_name": "Malagasy Ariary"
+    },
+    "MKD": {
+        "country": "North Macedonia",
+        "currency": "MKD",
+        "countryCode": "MK",
+        "symbol_native": "MKD",
+        "symbol": "MKD",
+        "id": 143,
+        "itemName": "North Macedonia",
+        "currency_name": "Macedonian Denar"
+    },
+    "MMK": {
+        "country": "Myanmar [Burma]",
+        "currency": "MMK",
+        "countryCode": "MM",
+        "symbol_native": "K",
+        "symbol": "MMK",
+        "id": 145,
+        "itemName": "Myanmar [Burma]",
+        "currency_name": "Myanma Kyat"
+    },
+    "MNT": {
+        "country": "Mongolia",
+        "currency": "MNT",
+        "countryCode": "MN",
+        "symbol_native": "₮",
+        "symbol": "₮",
+        "id": 146,
+        "itemName": "Mongolia"
+    },
+    "MOP": {
+        "country": "Macao",
+        "currency": "MOP",
+        "countryCode": "MO",
+        "symbol_native": "MOP$",
+        "symbol": "MOP$",
+        "id": 147,
+        "itemName": "Macao",
+        "currency_name": "Macanese Pataca"
+    },
+    "MUR": {
+        "country": "Mauritius",
+        "currency": "MUR",
+        "countryCode": "MU",
+        "symbol_native": "MURs",
+        "symbol": "MURs",
+        "id": 153,
+        "itemName": "Mauritius",
+        "currency_name": "Mauritian Rupee"
+    },
+    "MVR": {
+        "country": "Maldives",
+        "currency": "MVR",
+        "countryCode": "MV",
+        "symbol_native": "Rf",
+        "symbol": "Rf",
+        "id": 154,
+        "itemName": "Maldives"
+    },
+    "MWK": {
+        "country": "Malawi",
+        "currency": "MWK",
+        "countryCode": "MW",
+        "symbol_native": "MK",
+        "symbol": "MK",
+        "id": 155,
+        "itemName": "Malawi"
+    },
+    "MXN": {
+        "country": "Mexico",
+        "currency": "MXN",
+        "countryCode": "MX",
+        "symbol_native": "$",
+        "symbol": "MX$",
+        "id": 156,
+        "itemName": "Mexico",
+        "currency_name": "Mexican Peso"
+    },
+    "MYR": {
+        "country": "Malaysia",
+        "currency": "MYR",
+        "countryCode": "MY",
+        "symbol_native": "RM",
+        "symbol": "RM",
+        "id": 157,
+        "itemName": "Malaysia",
+        "currency_name": "Malaysian Ringgit"
+    },
+    "MZN": {
+        "country": "Mozambique",
+        "currency": "MZN",
+        "countryCode": "MZ",
+        "symbol_native": "MTn",
+        "symbol": "MTn",
+        "id": 158,
+        "itemName": "Mozambique",
+        "currency_name": "Mozambican Metical"
+    },
+    "NAD": {
+        "country": "Namibia",
+        "currency": "NAD",
+        "countryCode": "NA",
+        "symbol_native": "N$",
+        "symbol": "N$",
+        "id": 159,
+        "itemName": "Namibia",
+        "currency_name": "Namibian Dollar"
+    },
+    "XPF": {
+        "country": "Wallis and Futuna",
+        "currency": "XPF",
+        "countryCode": "WF",
+        "symbol_native": "₣",
+        "symbol": "₣",
+        "id": 242,
+        "itemName": "Wallis and Futuna"
+    },
+    "NGN": {
+        "country": "Nigeria",
+        "currency": "NGN",
+        "countryCode": "NG",
+        "symbol_native": "₦",
+        "symbol": "₦",
+        "id": 163,
+        "itemName": "Nigeria",
+        "currency_name": "Nigerian Naira"
+    },
+    "NIO": {
+        "country": "Nicaragua",
+        "currency": "NIO",
+        "countryCode": "NI",
+        "symbol_native": "C$",
+        "symbol": "C$",
+        "id": 164,
+        "itemName": "Nicaragua",
+        "currency_name": "Nicaraguan Córdoba"
+    },
+    "NPR": {
+        "country": "Nepal",
+        "currency": "NPR",
+        "countryCode": "NP",
+        "symbol_native": "नेरू",
+        "symbol": "NPRs",
+        "id": 167,
+        "itemName": "Nepal",
+        "currency_name": "Nepalese Rupee"
+    },
+    "OMR": {
+        "country": "Oman",
+        "currency": "OMR",
+        "countryCode": "OM",
+        "symbol_native": "ر.ع.‏",
+        "symbol": "OMR",
+        "id": 171,
+        "itemName": "Oman",
+        "currency_name": "Omani Rial"
+    },
+    "PAB": {
+        "country": "Panama",
+        "currency": "PAB",
+        "countryCode": "PA",
+        "symbol_native": "B/.",
+        "symbol": "B/.",
+        "id": 172,
+        "itemName": "Panama",
+        "currency_name": "Panamanian Balboa"
+    },
+    "PEN": {
+        "country": "Peru",
+        "currency": "PEN",
+        "countryCode": "PE",
+        "symbol_native": "S/.",
+        "symbol": "S/.",
+        "id": 173,
+        "itemName": "Peru",
+        "currency_name": "Peruvian Nuevo Sol"
+    },
+    "PGK": {
+        "country": "Papua New Guinea",
+        "currency": "PGK",
+        "countryCode": "PG",
+        "symbol_native": "K",
+        "symbol": "Kina",
+        "id": 175,
+        "itemName": "Papua New Guinea"
+    },
+    "PHP": {
+        "country": "Philippines",
+        "currency": "PHP",
+        "countryCode": "PH",
+        "symbol_native": "₱",
+        "symbol": "₱",
+        "id": 176,
+        "itemName": "Philippines",
+        "currency_name": "Philippine Peso"
+    },
+    "PKR": {
+        "country": "Pakistan",
+        "currency": "PKR",
+        "countryCode": "PK",
+        "symbol_native": "₨",
+        "symbol": "PKRs",
+        "id": 177,
+        "itemName": "Pakistan",
+        "currency_name": "Pakistani Rupee"
+    },
+    "PLN": {
+        "country": "Poland",
+        "currency": "PLN",
+        "countryCode": "PL",
+        "symbol_native": "zł",
+        "symbol": "zł",
+        "id": 178,
+        "itemName": "Poland",
+        "currency_name": "Polish Zloty"
+    },
+    "PYG": {
+        "country": "Paraguay",
+        "currency": "PYG",
+        "countryCode": "PY",
+        "symbol_native": "₲",
+        "symbol": "₲",
+        "id": 185,
+        "itemName": "Paraguay",
+        "currency_name": "Paraguayan Guarani"
+    },
+    "QAR": {
+        "country": "Qatar",
+        "currency": "QAR",
+        "countryCode": "QA",
+        "symbol_native": "ر.ق.‏",
+        "symbol": "QR",
+        "id": 186,
+        "itemName": "Qatar",
+        "currency_name": "Qatari Rial"
+    },
+    "RON": {
+        "country": "Romania",
+        "currency": "RON",
+        "countryCode": "RO",
+        "symbol_native": "RON",
+        "symbol": "RON",
+        "id": 188,
+        "itemName": "Romania",
+        "currency_name": "Romanian Leu"
+    },
+    "RSD": {
+        "country": "Serbia",
+        "currency": "RSD",
+        "countryCode": "RS",
+        "symbol_native": "дин.",
+        "symbol": "din.",
+        "id": 189,
+        "itemName": "Serbia",
+        "currency_name": "Serbian Dinar"
+    },
+    "RUB": {
+        "country": "Russia",
+        "currency": "RUB",
+        "countryCode": "RU",
+        "symbol_native": "₽.",
+        "symbol": "RUB",
+        "id": 190,
+        "itemName": "Russia",
+        "currency_name": "Russian Ruble"
+    },
+    "RWF": {
+        "country": "Rwanda",
+        "currency": "RWF",
+        "countryCode": "RW",
+        "symbol_native": "FR",
+        "symbol": "RWF",
+        "id": 191,
+        "itemName": "Rwanda",
+        "currency_name": "Rwandan Franc"
+    },
+    "SAR": {
+        "country": "Saudi Arabia",
+        "currency": "SAR",
+        "countryCode": "SA",
+        "symbol_native": "ر.س.‏",
+        "symbol": "SR",
+        "id": 192,
+        "itemName": "Saudi Arabia",
+        "currency_name": "Saudi Riyal"
+    },
+    "SBD": {
+        "country": "Solomon Islands",
+        "currency": "SBD",
+        "countryCode": "SB",
+        "symbol_native": "$",
+        "symbol": "Si$",
+        "id": 193,
+        "itemName": "Solomon Islands"
+    },
+    "SCR": {
+        "country": "Seychelles",
+        "currency": "SCR",
+        "countryCode": "SC",
+        "symbol_native": "SR",
+        "symbol": "SR",
+        "id": 194,
+        "itemName": "Seychelles"
+    },
+    "SDG": {
+        "country": "Sudan",
+        "currency": "SDG",
+        "countryCode": "SD",
+        "symbol_native": "SDG",
+        "symbol": "SDG",
+        "id": 195,
+        "itemName": "Sudan",
+        "currency_name": "Sudanese Pound"
+    },
+    "SEK": {
+        "country": "Sweden",
+        "currency": "SEK",
+        "countryCode": "SE",
+        "symbol_native": "kr",
+        "symbol": "Skr",
+        "id": 196,
+        "itemName": "Sweden",
+        "currency_name": "Swedish Krona"
+    },
+    "SGD": {
+        "country": "Singapore",
+        "currency": "SGD",
+        "countryCode": "SG",
+        "symbol_native": "$",
+        "symbol": "S$",
+        "id": 197,
+        "itemName": "Singapore",
+        "currency_name": "Singapore Dollar"
+    },
+    "SHP": {
+        "country": "Saint Helena",
+        "currency": "SHP",
+        "countryCode": "SH",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 198,
+        "itemName": "Saint Helena"
+    },
+    "SLL": {
+        "country": "Sierra Leone",
+        "currency": "SLL",
+        "countryCode": "SL",
+        "symbol_native": "Le",
+        "symbol": "Le",
+        "id": 202,
+        "itemName": "Sierra Leone"
+    },
+    "SOS": {
+        "country": "Somalia",
+        "currency": "SOS",
+        "countryCode": "SO",
+        "symbol_native": "Ssh",
+        "symbol": "Ssh",
+        "id": 205,
+        "itemName": "Somalia",
+        "currency_name": "Somali Shilling"
+    },
+    "SRD": {
+        "country": "Suriname",
+        "currency": "SRD",
+        "countryCode": "SR",
+        "symbol_native": "$",
+        "symbol": "SR$",
+        "id": 206,
+        "itemName": "Suriname"
+    },
+    "SSP": {
+        "country": "South Sudan",
+        "currency": "SSP",
+        "countryCode": "SS",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 207,
+        "itemName": "South Sudan"
+    },
+    "STN": {
+        "country": "São Tomé and Príncipe",
+        "currency": "STN",
+        "countryCode": "ST",
+        "symbol_native": "Db",
+        "symbol": "Db",
+        "id": 208,
+        "itemName": "São Tomé and Príncipe"
+    },
+    "SVC": {
+        "country": "El Salvador",
+        "currency": "SVC",
+        "countryCode": "SV",
+        "symbol_native": "₡",
+        "symbol": "₡",
+        "id": 209,
+        "itemName": "El Salvador"
+    },
+    "SYP": {
+        "country": "Syria",
+        "currency": "SYP",
+        "countryCode": "SY",
+        "symbol_native": "ل.س.‏",
+        "symbol": "SY£",
+        "id": 211,
+        "itemName": "Syria",
+        "currency_name": "Syrian Pound"
+    },
+    "SZL": {
+        "country": "Swaziland",
+        "currency": "SZL",
+        "countryCode": "SZ",
+        "symbol_native": "E",
+        "symbol": "E",
+        "id": 212,
+        "itemName": "Swaziland"
+    },
+    "THB": {
+        "country": "Thailand",
+        "currency": "THB",
+        "countryCode": "TH",
+        "symbol_native": "฿",
+        "symbol": "฿",
+        "id": 217,
+        "itemName": "Thailand",
+        "currency_name": "Thai Baht"
+    },
+    "TJS": {
+        "country": "Tajikistan",
+        "currency": "TJS",
+        "countryCode": "TJ",
+        "symbol_native": "ЅM",
+        "symbol": "ЅM",
+        "id": 218,
+        "itemName": "Tajikistan"
+    },
+    "TMT": {
+        "country": "Turkmenistan",
+        "currency": "TMT",
+        "countryCode": "TM",
+        "symbol_native": "T",
+        "symbol": "T",
+        "id": 221,
+        "itemName": "Turkmenistan"
+    },
+    "TND": {
+        "country": "Tunisia",
+        "currency": "TND",
+        "countryCode": "TN",
+        "symbol_native": "د.ت.‏",
+        "symbol": "DT",
+        "id": 222,
+        "itemName": "Tunisia",
+        "currency_name": "Tunisian Dinar"
+    },
+    "TOP": {
+        "country": "Tonga",
+        "currency": "TOP",
+        "countryCode": "TO",
+        "symbol_native": "T$",
+        "symbol": "T$",
+        "id": 223,
+        "itemName": "Tonga",
+        "currency_name": "Tongan Paʻanga"
+    },
+    "TRY": {
+        "country": "Turkey",
+        "currency": "TRY",
+        "countryCode": "TR",
+        "symbol_native": "TL",
+        "symbol": "TL",
+        "id": 224,
+        "itemName": "Turkey",
+        "currency_name": "Turkish Lira"
+    },
+    "TTD": {
+        "country": "Trinidad and Tobago",
+        "currency": "TTD",
+        "countryCode": "TT",
+        "symbol_native": "$",
+        "symbol": "TT$",
+        "id": 225,
+        "itemName": "Trinidad and Tobago",
+        "currency_name": "Trinidad and Tobago Dollar"
+    },
+    "TWD": {
+        "country": "Taiwan",
+        "currency": "TWD",
+        "countryCode": "TW",
+        "symbol_native": "NT$",
+        "symbol": "NT$",
+        "id": 227,
+        "itemName": "Taiwan",
+        "currency_name": "New Taiwan Dollar"
+    },
+    "TZS": {
+        "country": "Tanzania",
+        "currency": "TZS",
+        "countryCode": "TZ",
+        "symbol_native": "TSh",
+        "symbol": "TSh",
+        "id": 228,
+        "itemName": "Tanzania",
+        "currency_name": "Tanzanian Shilling"
+    },
+    "UAH": {
+        "country": "Ukraine",
+        "currency": "UAH",
+        "countryCode": "UA",
+        "symbol_native": "₴",
+        "symbol": "₴",
+        "id": 229,
+        "itemName": "Ukraine",
+        "currency_name": "Ukrainian Hryvnia"
+    },
+    "UGX": {
+        "country": "Uganda",
+        "currency": "UGX",
+        "countryCode": "UG",
+        "symbol_native": "USh",
+        "symbol": "USh",
+        "id": 230,
+        "itemName": "Uganda",
+        "currency_name": "Ugandan Shilling"
+    },
+    "UYU": {
+        "country": "Uruguay",
+        "currency": "UYU",
+        "countryCode": "UY",
+        "symbol_native": "$",
+        "symbol": "$U",
+        "id": 233,
+        "itemName": "Uruguay",
+        "currency_name": "Uruguayan Peso"
+    },
+    "UZS": {
+        "country": "Uzbekistan",
+        "currency": "UZS",
+        "countryCode": "UZ",
+        "symbol_native": "UZS",
+        "symbol": "UZS",
+        "id": 234,
+        "itemName": "Uzbekistan",
+        "currency_name": "Uzbekistan Som"
+    },
+    "VES": {
+        "country": "Venezuela",
+        "currency": "VES",
+        "countryCode": "VE",
+        "symbol_native": "Bs",
+        "symbol": "Bs",
+        "id": 237,
+        "itemName": "Venezuela"
+    },
+    "VND": {
+        "country": "Vietnam",
+        "currency": "VND",
+        "countryCode": "VN",
+        "symbol_native": "₫",
+        "symbol": "₫",
+        "id": 240,
+        "itemName": "Vietnam",
+        "currency_name": "Vietnamese Dong"
+    },
+    "VUV": {
+        "country": "Vanuatu",
+        "currency": "VUV",
+        "countryCode": "VU",
+        "symbol_native": "VT",
+        "symbol": "VT",
+        "id": 241,
+        "itemName": "Vanuatu"
+    },
+    "WST": {
+        "country": "Samoa",
+        "currency": "WST",
+        "countryCode": "WS",
+        "symbol_native": "ST",
+        "symbol": "tālā",
+        "id": 243,
+        "itemName": "Samoa"
+    },
+    "YER": {
+        "country": "Yemen",
+        "currency": "YER",
+        "countryCode": "YE",
+        "symbol_native": "ر.ي.‏",
+        "symbol": "YR",
+        "id": 245,
+        "itemName": "Yemen",
+        "currency_name": "Yemeni Rial"
+    },
+    "ZAR": {
+        "country": "South Africa",
+        "currency": "ZAR",
+        "countryCode": "ZA",
+        "symbol_native": "R",
+        "symbol": "R",
+        "id": 247,
+        "itemName": "South Africa",
+        "currency_name": "South African Rand"
+    },
+    "ZMW": {
+        "country": "Zambia",
+        "currency": "ZMW",
+        "countryCode": "ZM",
+        "symbol_native": "ZK",
+        "symbol": "ZK",
+        "id": 248,
+        "itemName": "Zambia"
+    },
+    "ZWL": {
+        "country": "Zimbabwe",
+        "currency": "ZWL",
+        "countryCode": "ZW",
+        "symbol_native": "ZWL$",
+        "symbol": "ZWL$",
+        "id": 249,
+        "itemName": "Zimbabwe",
+        "currency_name": "Zimbabwean Dollar"
+    }
+}

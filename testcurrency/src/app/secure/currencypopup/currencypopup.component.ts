@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { CountryService } from 'src/app/service/country.service';
-import {  IDropdownSettings } from 'ng-multiselect-dropdown';
-import { keyframes } from '@angular/animations';
+import { IDropdownSettings } from 'ng-multiselect-dropdown';
 
 @Component({
-  selector: 'app-dropdown-cofig',
-  templateUrl: './dropdown-cofig.component.html',
-  styleUrls: ['./dropdown-cofig.component.scss']
+  selector: 'app-currencypopup',
+  templateUrl: './currencypopup.component.html',
+  styleUrls: ['./currencypopup.component.scss']
 })
-export class DropdownCofigComponent implements OnInit {
+export class CurrencypopupComponent implements OnInit {
   public currencyJson: any = [];
   public currencySelect: any = [];
   public countrySelect: any =[];
@@ -17,7 +16,7 @@ export class DropdownCofigComponent implements OnInit {
   public symbol_nativeSelect :any=[];
   public itemlist:any=[];
   public dropdownSettings: IDropdownSettings ={};
-  Form:FormGroup;
+  countryForm:FormGroup;
 
   dropdownList:any = [];
   selectedItems:any = [];
@@ -28,7 +27,7 @@ export class DropdownCofigComponent implements OnInit {
 
 
   constructor(private fb:FormBuilder , private countryService: CountryService) {
-   this.Form =this.fb.group({
+   this.countryForm =this.fb.group({
     country:[''],
     currency:[''],
     symbol_native:['']
@@ -39,12 +38,17 @@ export class DropdownCofigComponent implements OnInit {
   ngOnInit(): void {
     this.currencySelect =[];
   
-    this.selectedItems = [];
+    this.selectedItems = [
+      {currency :'EUR'},
+      {currency :'AED'},
+
+    ];
     
     console.log(this.selectedItems)
     this.dropdownSettings={
       singleSelection: false,
-      idField: 'item_id',
+      idField: 'country',
+      
       textField: 'currency',
       selectAllText: 'Select All',
       unSelectAllText: 'UnSelect All',
@@ -67,6 +71,7 @@ generateSelect(){
     this.currencySelect =[];
     this.countrySelect =[];
     this.symbol_nativeSelect =[];
+    // this.selectedItems =[];
     let i = 1;
     Object.keys(this.currencyJson).forEach(key => {
 
@@ -83,10 +88,14 @@ generateSelect(){
   }
 
 selectCurrency(event: any) {
+   
+  
     
-    // Object.keys(this.currencyJson).forEach(key => {
+    // Object.keys(this.currencySelect).forEach(key => {
     //   if (key == event.target.value) {
-    //     this.currencyJson["country"].setValue(this.currencyJson[key]["country"]);
+
+    
+        // this.selectedItems['currency'].setValue(this.currencySelect);
     //     // this.selectedItems["symbol_native"].setValue(this.currencyJson[key]["symbol_native"])
     //     // this.selectedItems["currency"].setValue(this.currencyJson[key]["currency"])
     //     // this.Form.controls["currency"].setValue(this.currencyJson[key]["currency"])
@@ -107,36 +116,6 @@ selectCurrency(event: any) {
         "symbol_native":item.symbol_native
       })
   })
+  console.log(this.selectedItems)
+  }
 }
-
-  // currencyChanged() {
-  //   if(this.selectedItems['country'].value){
-  //     this.exchangeErr = true;
-  //   }else{
-  //     this.exchangeErr = false;
-  //   }
-    
-  
-    
-  // }
-
-  onItemSelect(){
-    this.countrySelect=[];
-  }
-  onSelectAll(){
-    console.log("test")
-
-  }
-
-
-  }
-
-
-
-
-
-
-function selectCurrency(arg0: { Object: ObjectConstructor; "": any; }): any {
-  throw new Error('Function not implemented.');
-}
-

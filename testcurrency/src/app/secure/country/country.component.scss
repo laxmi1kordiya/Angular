@@ -4,22 +4,134 @@
 @import "~@swimlane/ngx-datatable/themes/bootstrap.scss";
 @import "~@swimlane/ngx-datatable/assets/icons.css";
 
+$brand-color: #3e82b0;
+$brand-hover-color: #276996;
 .container {
     position: absolute;
     margin-left: 250px;
     top: 0;
     z-index: 12;
+    .btn{
+      padding: 11px 15px;
+      color: #3e82b0;
+      border: 1.5px solid #3e82b0;
+      background-color: #fff;
+      border-radius: 4px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      &:hover{
+        background-color: $brand-color;
+        color: #fff;
+      }
+    }
     .table-responsive {
-        width: 600px;
+        width: 1000px;
         height: auto;
         margin-top: 20px;
         text-align: center;
+       
 
-        .material {
-        
-            &.new-styled {
-                color: blue;
+        ngx-datatable {
+            margin: 0px 0px;
+            border: 1px solid #ececec;
+            box-shadow: none !important;
+            background: rgba(241, 243, 247, 0.05) !important;
+            min-width: 900px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          
+            datatable-body {
+              margin-bottom: -8px;
+          
+              datatable-body-cell {
+                display: flex;
+                align-items: center;
+              }
             }
-        }
+          
+            &.ngx-datatable {
+              margin-bottom: 10px;
+              margin-top: 10px;
+              &.fixed-header {
+                .datatable-header {
+                  .datatable-header-inner {
+                    .datatable-header-cell {
+                      display: flex;
+                      align-items: center;
+                      border-bottom: 1px solid #ececec;
+                      font-weight: 400;
+                      background-color: #f5f5f5;
+                      color: $brand-color;
+          
+                      &:last-child {
+                        justify-content: center;
+                      }
+                      &:first-child {
+                        justify-content: flex-start;
+          
+                        .datatable-header-cell-template-wrap {
+                          text-align: left;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &.material {
+                box-shadow: none;
+          
+                .datatable-body {
+                  .datatable-body-row {
+                    .datatable-body-cell {
+                      display: flex;
+                      align-items: center;
+                      padding: 10px 20px 10px 20px;
+                      border-bottom: 1px solid #ececec;
+                      font-weight: 100;
+                      color: #565656;
+                      display: flex;
+                      align-items: inherit;
+                      justify-content: flex-start;
+                      text-align: left;
+          
+                      
+          
+                      &:last-child {
+                        justify-content: center;
+                        align-items: center;
+                      }
+          
+                      .secondary-btn {
+                        display: flex;
+          
+                        button {
+                          margin: 0px;
+                          margin-right: 10px;
+          
+                          &:last-child {
+                            margin-right: 0px;
+                          }
+                          &:first-child {
+                            justify-content: flex-start;
+                          }
+                          &:hover {
+                            color: $brand-hover-color;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .datatable-header {
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                }
+              }
+            }
+          
+            .datatable-footer {
+              background: #f5f5f5;
+            }
+          }
     }
 }

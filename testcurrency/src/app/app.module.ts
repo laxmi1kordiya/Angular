@@ -19,6 +19,27 @@ import { OtherComponent } from './secure/other/other.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NgxDatatableModule }from '@swimlane/ngx-datatable';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCheckboxModule} from "@angular/material/checkbox";
+import { MatButtonModule} from '@angular/material/button';
+import { MatInputModule} from '@angular/material/input';
+import { MatCardModule} from '@angular/material/card';
+import { MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PopupComponent } from './secure/popup/popup.component';
+import{ NoopAnimationsModule} from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import {MatSelectModule} from '@angular/material/select';
+import { CountryService } from './service/country.service';
+import { HttpClientModule } from '@angular/common/http';
+// import { SettingComponent } from './secure/setting/setting.component';
+import { HelpComponent } from './secure/help/help.component';
+import { LogoutComponent } from './secure/logout/logout.component';
+import { CurrencypopupComponent } from './secure/currencypopup/currencypopup.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
+
 
 
 @NgModule({
@@ -36,7 +57,13 @@ import { ColorPickerModule } from 'ngx-color-picker';
     DashboardComponent,
     DropdownCofigComponent,
     GeneralComponent,
-    OtherComponent
+    OtherComponent,
+    PopupComponent,
+    // SettingComponent,
+    HelpComponent,
+    LogoutComponent,
+    CurrencypopupComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -45,9 +72,29 @@ import { ColorPickerModule } from 'ngx-color-picker';
     FormsModule,
     NgxDatatableModule,
     ColorPickerModule,
+    MatSliderModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonToggleModule,
+    MatDialogModule,
+    NoopAnimationsModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    HttpClientModule,
+    NgMultiSelectDropDownModule.forRoot()
+  
+   
     
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [CountryService],
+  bootstrap: [AppComponent],
+  entryComponents:[PopupComponent,CurrencypopupComponent],
+
+  
+
 })
 export class AppModule { }

@@ -1,5 +1,68 @@
-<app-sidebar></app-sidebar>
-<div class="container">
+<form class="form-container" [formGroup]="Form">
+  <div class="input-field select-cn-country">
+    <div class="title">Currency</div>
+    <div>
+      <ng-multiselect-dropdown formControlName="currency" (onSelect)="selectCurrency($event)"(Change)="currencyChanged()"
+        [placeholder]="'custom placeholder'" [settings]="dropdownSettings" [data]="currencySelect"
+        [(ngModel)]="selectedItems">
+      </ng-multiselect-dropdown>
+    </div>
+  </div>
+  <div class="title">Symbols </div>
+  <div class="input-group">
+    <div *ngFor="let country of selectedItems">
+      {{country.currency}}
+      {{country.country}}
+      {{country.symbol_native}}
+    </div>
+  
+  </div>
+</form>
 
-    <p>dropdown-cofig works!</p>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div formControlName="currency" (change)="currencyChanged();">
+        {{countryForm.controls['currency'].value}}
+
+      </div>
+      <div class="box" formControlName="symbol_native" (change)="currencyChanged();">
+
+        {{countryForm.controls['symbol_native'].value}}
+
+      </div> -->
+<!-- </div> -->
+<!-- <ng-multiselect-dropdown [placeholder]="'custom placeholder'" [settings]="dropdownSettings" [data]="currencySelect"
+  [(ngModel)]="selectedItems">
+</ng-multiselect-dropdown> -->
+<!-- <div class="input-field select-cn-currency">
+  <div class="title">symbols </div>
+  <div class="input-group">
+      <div formControlName="country" (change)="currencyChanged();">
+          {{countryForm.controls['country'].value}}
+
+      </div>
+      <div formControlName="currency" (change)="currencyChanged();">
+          {{countryForm.controls['currency'].value}}
+
+      </div>
+      <div class="box" formControlName="symbol_native" (change)="currencyChanged();">
+
+          {{countryForm.controls['symbol_native'].value}}
+
+      </div>
+  </div>
+</div> -->

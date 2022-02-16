@@ -1,32 +1,4 @@
 <app-sidebar></app-sidebar>
 <div class="container">
-
-    <p>currency works!</p>
-    <form action="">
-        <div class="form-group">
-            <label>Pick or enter color</label>
-            <input class="form-control color-box" [(colorPicker)]="color" cpWidth='100px' cpHeight="230px"
-                [style.background]="color" />
-        </div>
-    
-        <div class="form-group">
-            <label>Greyscale color mode</label>
-            <input class="form-control" [(colorPicker)]="color" [cpColorMode]="'grayscale'" [style.background]="color" />
-    
-        </div>
-        <!-- <div class="form-group">
-            <label>Color Output format</label>
-            <input class="form-control" [value]="color" [style.background]="color" [cpOutputFormat]="'rgba'"
-                [(colorPicker)]="color" />
-        </div> -->
-    </form>
-    
-    <!-- <div class="colorPaletteContainer">
-        <h3>Pick a Color:</h3>
-        <span [style.background]="arrayColors[selectedColor]" [cpToggle]="true" [cpDialogDisplay]="'inline'"
-            [cpCancelButton]="true" [(colorPicker)]="arrayColors[selectedColor]"></span>
-        <div [style.background]="arrayColors['color1']" (click)="selectedColor='color1'"></div>
-        <div [style.background]="arrayColors['color2']" (click)="selectedColor='color2'"></div>
-    
-    </div> -->
+ <button mat-raised-button class="btn" (click)="gopop()"> Add Currency</button>
 </div>

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container1">
     <header>
         <div class="header">
             <a routerLink="/" href="/"></a>
@@ -21,7 +21,7 @@
                     <label>To install Currency Converter & Switcher through shopify</label>
                     <div class="input1">
                         <input type="text" formControlName='url' placeholder="your shop url">
-                        <button class="btn" type="submit" (click)="goTo()">submit</button>
+                        <button class="btn" type="submit"[disabled]="loginform.invalid" (click)="goTo()">submit</button>
                     </div>
                     <div style="color: red;" *ngIf="url && url.invalid "> Shop URL is required</div>
                 </div>

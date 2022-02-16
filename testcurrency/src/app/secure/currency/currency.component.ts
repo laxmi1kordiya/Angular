@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog,MatDialogRef} from "@angular/material/dialog";
+import { CurrencypopupComponent } from '../currencypopup/currencypopup.component';
 
 @Component({
   selector: 'app-currency',
@@ -6,20 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./currency.component.scss']
 })
 export class CurrencyComponent implements OnInit {
+dialogRef:MatDialogRef<any> | undefined
+  
 
-  color: string = '#2889e9'
-  arrayColors: any = {
-    color1: '#2883e9',
-    color2: '#e920e9',
-    color3: 'rgb(255,245,0)',
-    color4: 'rgb(236,64,64)',
-    color5: 'rgba(45,208,45,1)'
-  };
-  selectedColor: string = 'color1';
-
-  constructor() { }
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit(): void {
   }
-
+  gopop(){
+    this.dialogRef=this.dialog.open(CurrencypopupComponent,{
+      height:'70%',
+      width:'50%'
+    })
+  
+  }
 }

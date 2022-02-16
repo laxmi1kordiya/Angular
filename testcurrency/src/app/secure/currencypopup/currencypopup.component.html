@@ -1,0 +1,24 @@
+<form class="form-container" [formGroup]="countryForm">
+    <div class="input-field select-cn-country">
+    <div class="title">Currency</div>
+    <div>
+      <ng-multiselect-dropdown formControlName="currency" 
+      (onSelect)="selectCurrency($event)"
+      (Change)="currencyChanged()"
+      [placeholder]="'custom placeholder'"
+      [settings]="dropdownSettings"
+      [data]="currencySelect"
+      [(ngModel)]="selectedItems">
+      </ng-multiselect-dropdown>
+    </div>
+  </div>
+  <div class="title">Symbols </div>
+  <div class="input-group">
+    <div *ngFor="let country of selectedItems">
+      {{country.currency}}
+      {{country.country}}
+      {{country.symbol_native}}
+    </div>
+  
+  </div>
+  </form>

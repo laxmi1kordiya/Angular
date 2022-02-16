@@ -1,7 +1,27 @@
+$brand-color: #3e82b0;
+$brand-hover-color: #276996;
+
+
+
 .container{
     position: absolute;
     margin-left: 250px;
     top: 0;
     z-index: 12;
+
+    .btn {
+        padding: 11px 15px;
+        color: #3e82b0;
+        border: 1.5px solid #3e82b0;
+        background-color: #fff;
+        border-radius: 4px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        &:hover {
+          background-color: $brand-color;
+          color: #fff;
+        }
+      }
     
     }

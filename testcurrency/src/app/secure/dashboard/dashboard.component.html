@@ -4,8 +4,8 @@
         <div class="dashboard">
             <div class="block1">
                 <i class="fas fa-info-circle"></i>
-                <p>please disable other third party currency conversion app or any theme currency conversion facility to
-                    use this app smoothly.</p>
+                please disable other third party currency conversion app or any theme currency conversion facility to
+                use this app smoothly.
             </div>
             <div class="block2 max-width">
                 <form [formGroup]="sideform">
@@ -13,13 +13,14 @@
                     <div class="switch-btn">
                         <label class="text">User allowed to select currency</label>
                         <label class="switch">
-                            <input type="checkbox" formControlName='showDropdown'>
+                            <input type="checkbox" id="showDropdown" formControlName='showDropdown'>
                             <span class="slider round"></span>
+                            <!-- <label for="showDropdown">Toggle</label> -->
                         </label>
                     </div>
-                    <div class="inner-text">If enabled then a dropdown will be added</div>
+                    <!-- <div class="inner-text">If enabled then a dropdown will be added</div> -->
 
-                    <div *ngIf="showDropdown?.value " class="inner-text">If enabled then a dropdown will be
+                    <div *ngIf="showDropdown?.value" class="inner-text">If enabled then a dropdown will be
                         added
                         on
                         your website and user can select currency.</div>
@@ -27,7 +28,7 @@
                 </form>
 
             </div>
-            <div class="block2">
+            <div class="block2" *ngIf="showDropdown?.value">
                 <form [formGroup]="sideform">
                     <h4 class="heading">Converter Box Display</h4>
                     <div class="switch-btn">
@@ -45,20 +46,16 @@
                         </label>
 
                     </div>
-                    <div class="hint danger" *ngIf="!showOnDesktop?.value && !showOnMobile?.value">If both
                         <div class="hint danger" *ngIf="!showOnDesktop?.value && !showOnMobile?.value">If both
                             of
                             these are disable then user can not see the dropdown.</div>
-                    </div>
-                    {{showOnDesktop?.value}}
-                    {{showOnMobile?.value}}
 
 
 
                 </form>
 
             </div>
-            <div class="block2">
+            <div class="block2"  *ngIf="showDropdown?.value  && showOnMobile?.value">
                 <h4 class="heading">Converter location in store front</h4>
 
                 <form [formGroup]="sideform">
@@ -71,47 +68,50 @@
                         <input class="btn" type="radio" formControlName="side" value="top Left"><span>top Left</span>
                     </div>
                     <div class="button" *ngIf="side?.value == 'Bottom Left'">
-                        <div class="box">Bottom
-                            <!-- <input type="text"class="px">20px -->
-                            <span>20px</span>
-
-                        </div>
-                        <div class="box">left
-                            <span>20px</span>
-
+                        <div class="output">
+                            <div class="clm">bottom
+                                <div class="box">20px</div>
+                            </div>
+                            <div class="clm">left
+                                <div class="box">20px</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="button" *ngIf="side?.value == 'Bottom right'">
-                        <div class="box">Bottom
-                            <!-- <input type="text" class="px">20px -->
-                            <span>20px</span>
-                        </div>
-                        <div class="box">right
-                            <span>20px</span>
 
+
+                    <div class="button" *ngIf="side?.value == 'Bottom right'">
+                        <div class="output">
+                            <div class="clm">bottom
+                                <div class="box">20px</div>
+                            </div>
+                            <div class="clm">right
+                                <div class="box">20px</div>
+                            </div>
                         </div>
                     </div>
                     <div class="button" *ngIf="side?.value == 'top right'">
-                        <div class="box">top
-                            <span>20px</span>
-                        </div>
-                        <div class="box">right
-                            <span>20px</span>
-
+                        <div class="output">
+                            <div class="clm">top
+                                <div class="box">20px</div>
+                            </div>
+                            <div class="clm">right
+                                <div class="box">20px</div>
+                            </div>
                         </div>
                     </div>
                     <div class="button" *ngIf="side?.value == 'top Left'">
-                        <div class="box">top
-                            <span>20px</span>
-                        </div>
-                        <div class="box">Left
-                            <span>20px</span>
-
+                        <div class="output">
+                            <div class="clm">top
+                                <div class="box">20px</div>
+                            </div>
+                            <div class="clm">left
+                                <div class="box">20px</div>
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="block2">
+            <div class="block2"  *ngIf="showDropdown?.value  && showOnMobile?.value">
                 <form [formGroup]="sideform">
                     <h4 class="heading">How Country flag</h4>
                     <div class="switch-btn">
@@ -123,36 +123,62 @@
                     </div>
                 </form>
             </div>
-            <div class="block2">
-                <form action="">
-                    <div class="form-group">
-                        <label>Pick or enter color</label>
-                        <input class="form-control color-box" [(colorPicker)]="color" cpWidth='230px' cpHeight="100px"
-                            [style.background]="color" />
+            <div class="block2"  *ngIf="showDropdown?.value  && showOnMobile?.value">
+                <form action="" [formGroup]="sideform">
+                    <h4 class="heading">Configure currency selector theme</h4>
+                    <div class="color-section">
+                        <div class="form-group c-box ">
+                            <label>Text Color</label>
+                            <input class="form-control color-box" [(colorPicker)]="color" cpWidth='230px'
+                                cpHeight="100px" [style.background]="color" />
+                        </div>
+                        <div class="form-group c-box">
+                            <label> Background Color</label>
+                            <input class="form-control color-box" [(colorPicker)]="bgcolor" cpWidth='230px'
+                                cpHeight="100px" [style.background]="bgcolor" />
+                        </div>
+                        <div class="form-group c-box">
+                            <label>Hover Background Color</label>
+                            <input class="form-control color-box" [(colorPicker)]="bgcolor" cpWidth='230px'
+                                cpHeight="100px" [style.background]="bgcolor" />
+                        </div>
+                        <div class="form-group c-box">
+                            <label>Hover font Color</label>
+                            <input class="form-control color-box" [(colorPicker)]="color" cpWidth='230px'
+                                cpHeight="100px" [style.background]="color" />
+                        </div>
+
                     </div>
-                
-                    <!-- <div class="form-group">
-                        <label>Greyscale color mode</label>
-                        <input class="form-control" [(colorPicker)]="color" [cpColorMode]="'grayscale'" [style.background]="color" />
-                
-                    </div> -->
-                    <!-- <div class="form-group">
-                        <label>Color Output format</label>
-                        <input class="form-control" [value]="color" [style.background]="color" [cpOutputFormat]="'rgba'"
-                            [(colorPicker)]="color" />
-                    </div> -->
+                    <div class="output">
+                        <div class="clm">Text Size
+                            <div class="box">14</div>
+                        </div>
+                        <div class="clm">Map Hight
+                            <div class="box">21</div>
+                        </div>
+                        <div class="clm">Map Width
+                            <div class="box">35</div>
+                        </div>
+                    </div>
+                    <div class="switch-btn">
+                        <label class="text">Show full currency name</label>
+                        <label class="switch">
+                            <input type="checkbox" formControlName='showAllCountries'>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="switch-btn">
+                        <label class="text">Show all countries</label>
+                        <label class="switch">
+                            <input type="checkbox" formControlName='showAllCountries'>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </form>
-                
-                <!-- <div class="colorPaletteContainer">
-                    <h3>Pick a Color:</h3>
-                    <span [style.background]="arrayColors[selectedColor]" [cpToggle]="true" [cpDialogDisplay]="'inline'"
-                        [cpCancelButton]="true" [(colorPicker)]="arrayColors[selectedColor]"></span>
-                    <div [style.background]="arrayColors['color1']" (click)="selectedColor='color1'"></div>
-                    <div [style.background]="arrayColors['color2']" (click)="selectedColor='color2'"></div>
-                
-                </div> -->
             </div>
 
+
         </div>
+
     </div>
 </div>

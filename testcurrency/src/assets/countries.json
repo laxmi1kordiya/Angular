@@ -1,0 +1,2324 @@
+{
+    "AD": {
+        "country": "Andorra",
+        "currency": "EUR",
+        "countryCode": "AD",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 0,
+        "itemName": "Andorra"
+    },
+    "AE": {
+        "country": "United Arab Emirates",
+        "currency": "AED",
+        "countryCode": "AE",
+        "symbol_native": "د.إ.‏",
+        "symbol": "AED",
+        "id": 1,
+        "itemName": "United Arab Emirates"
+    },
+    "AF": {
+        "country": "Afghanistan",
+        "currency": "AFN",
+        "countryCode": "AF",
+        "symbol_native": "؋",
+        "symbol": "Af",
+        "id": 2,
+        "itemName": "Afghanistan"
+    },
+    "AG": {
+        "country": "Antigua and Barbuda",
+        "currency": "XCD",
+        "countryCode": "AG",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 3,
+        "itemName": "Antigua and Barbuda"
+    },
+    "AI": {
+        "country": "Anguilla",
+        "currency": "XCD",
+        "countryCode": "AI",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 4,
+        "itemName": "Anguilla"
+    },
+    "AL": {
+        "country": "Albania",
+        "currency": "ALL",
+        "countryCode": "AL",
+        "symbol_native": "Lek",
+        "symbol": "ALL",
+        "id": 5,
+        "itemName": "Albania"
+    },
+    "AM": {
+        "country": "Armenia",
+        "currency": "AMD",
+        "countryCode": "AM",
+        "symbol_native": "դր.",
+        "symbol": "AMD",
+        "id": 6,
+        "itemName": "Armenia"
+    },
+    "AO": {
+        "country": "Angola",
+        "currency": "AOA",
+        "countryCode": "AO",
+        "symbol_native": "Kz",
+        "symbol": "Kz",
+        "id": 7,
+        "itemName": "Angola"
+    },
+    "AQ": {
+        "country": "Antarctica",
+        "currency": "USD",
+        "countryCode": "AQ",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 8,
+        "itemName": "Antarctica"
+    },
+    "AR": {
+        "country": "Argentina",
+        "currency": "ARS",
+        "countryCode": "AR",
+        "symbol_native": "$",
+        "symbol": "AR$",
+        "id": 9,
+        "itemName": "Argentina"
+    },
+    "AS": {
+        "country": "American Samoa",
+        "currency": "USD",
+        "countryCode": "AS",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 10,
+        "itemName": "American Samoa"
+    },
+    "AT": {
+        "country": "Austria",
+        "currency": "EUR",
+        "countryCode": "AT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 11,
+        "itemName": "Austria"
+    },
+    "AU": {
+        "country": "Australia",
+        "currency": "AUD",
+        "countryCode": "AU",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 12,
+        "itemName": "Australia"
+    },
+    "AW": {
+        "country": "Aruba",
+        "currency": "AWG",
+        "countryCode": "AW",
+        "symbol_native": "ƒ",
+        "symbol": "Afl.",
+        "id": 13,
+        "itemName": "Aruba"
+    },
+    "AX": {
+        "country": "Åland",
+        "currency": "EUR",
+        "countryCode": "AX",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 14,
+        "itemName": "Åland"
+    },
+    "AZ": {
+        "country": "Azerbaijan",
+        "currency": "AZN",
+        "countryCode": "AZ",
+        "symbol_native": "ман.",
+        "symbol": "man.",
+        "id": 15,
+        "itemName": "Azerbaijan"
+    },
+    "BA": {
+        "country": "Bosnia and Herzegovina",
+        "currency": "BAM",
+        "countryCode": "BA",
+        "symbol_native": "KM",
+        "symbol": "KM",
+        "id": 16,
+        "itemName": "Bosnia and Herzegovina"
+    },
+    "BB": {
+        "country": "Barbados",
+        "currency": "BBD",
+        "countryCode": "BB",
+        "symbol_native": "$",
+        "symbol": "Bds.",
+        "id": 17,
+        "itemName": "Barbados"
+    },
+    "BD": {
+        "country": "Bangladesh",
+        "currency": "BDT",
+        "countryCode": "BD",
+        "symbol_native": "৳",
+        "symbol": "Tk",
+        "id": 18,
+        "itemName": "Bangladesh"
+    },
+    "BE": {
+        "country": "Belgium",
+        "currency": "EUR",
+        "countryCode": "BE",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 19,
+        "itemName": "Belgium"
+    },
+    "BF": {
+        "country": "Burkina Faso",
+        "currency": "XOF",
+        "countryCode": "BF",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 20,
+        "itemName": "Burkina Faso"
+    },
+    "BG": {
+        "country": "Bulgaria",
+        "currency": "BGN",
+        "countryCode": "BG",
+        "symbol_native": "лв.",
+        "symbol": "BGN",
+        "id": 21,
+        "itemName": "Bulgaria"
+    },
+    "BH": {
+        "country": "Bahrain",
+        "currency": "BHD",
+        "countryCode": "BH",
+        "symbol_native": "د.ب.‏",
+        "symbol": "BD",
+        "id": 22,
+        "itemName": "Bahrain"
+    },
+    "BI": {
+        "country": "Burundi",
+        "currency": "BIF",
+        "countryCode": "BI",
+        "symbol_native": "FBu",
+        "symbol": "FBu",
+        "id": 23,
+        "itemName": "Burundi"
+    },
+    "BJ": {
+        "country": "Benin",
+        "currency": "XOF",
+        "countryCode": "BJ",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 24,
+        "itemName": "Benin"
+    },
+    "BL": {
+        "country": "Saint Barthélemy",
+        "currency": "EUR",
+        "countryCode": "BL",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 25,
+        "itemName": "Saint Barthélemy"
+    },
+    "BM": {
+        "country": "Bermuda",
+        "currency": "BMD",
+        "countryCode": "BM",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 26,
+        "itemName": "Bermuda"
+    },
+    "BN": {
+        "country": "Brunei",
+        "currency": "BND",
+        "countryCode": "BN",
+        "symbol_native": "$",
+        "symbol": "BN$",
+        "id": 27,
+        "itemName": "Brunei"
+    },
+    "BO": {
+        "country": "Bolivia",
+        "currency": "BOB",
+        "countryCode": "BO",
+        "symbol_native": "Bs",
+        "symbol": "Bs",
+        "id": 28,
+        "itemName": "Bolivia"
+    },
+    "BQ": {
+        "country": "Bonaire",
+        "currency": "USD",
+        "countryCode": "BQ",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 29,
+        "itemName": "Bonaire"
+    },
+    "BR": {
+        "country": "Brazil",
+        "currency": "BRL",
+        "countryCode": "BR",
+        "symbol_native": "R$",
+        "symbol": "R$",
+        "id": 30,
+        "itemName": "Brazil"
+    },
+    "BS": {
+        "country": "Bahamas",
+        "currency": "BSD",
+        "countryCode": "BS",
+        "symbol_native": "$",
+        "symbol": "B$",
+        "id": 31,
+        "itemName": "Bahamas"
+    },
+    "BT": {
+        "country": "Bhutan",
+        "currency": "BTN",
+        "countryCode": "BT",
+        "symbol_native": "Nu.",
+        "symbol": "Nu.",
+        "id": 32,
+        "itemName": "Bhutan"
+    },
+    "BV": {
+        "country": "Bouvet Island",
+        "currency": "NOK",
+        "countryCode": "BV",
+        "symbol_native": "kr",
+        "symbol": "Nkr",
+        "id": 33,
+        "itemName": "Bouvet Island"
+    },
+    "BW": {
+        "country": "Botswana",
+        "currency": "BWP",
+        "countryCode": "BW",
+        "symbol_native": "P",
+        "symbol": "BWP",
+        "id": 34,
+        "itemName": "Botswana"
+    },
+    "BY": {
+        "country": "Belarus",
+        "currency": "BYN",
+        "countryCode": "BY",
+        "symbol_native": "руб.",
+        "symbol": "Br",
+        "id": 35,
+        "itemName": "Belarus"
+    },
+    "BZ": {
+        "country": "Belize",
+        "currency": "BZD",
+        "countryCode": "BZ",
+        "symbol_native": "$",
+        "symbol": "BZ$",
+        "id": 36,
+        "itemName": "Belize"
+    },
+    "CA": {
+        "country": "Canada",
+        "currency": "CAD",
+        "countryCode": "CA",
+        "symbol_native": "$",
+        "symbol": "CA$",
+        "id": 37,
+        "itemName": "Canada"
+    },
+    "CC": {
+        "country": "Cocos [Keeling] Islands",
+        "currency": "AUD",
+        "countryCode": "CC",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 38,
+        "itemName": "Cocos [Keeling] Islands"
+    },
+    "CD": {
+        "country": "Democratic Republic of the Congo",
+        "currency": "CDF",
+        "countryCode": "CD",
+        "symbol_native": "FrCD",
+        "symbol": "CDF",
+        "id": 39,
+        "itemName": "Democratic Republic of the Congo"
+    },
+    "CF": {
+        "country": "Central African Republic",
+        "currency": "XAF",
+        "countryCode": "CF",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 40,
+        "itemName": "Central African Republic"
+    },
+    "CG": {
+        "country": "Republic of the Congo",
+        "currency": "XAF",
+        "countryCode": "CG",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 41,
+        "itemName": "Republic of the Congo"
+    },
+    "CH": {
+        "country": "Switzerland",
+        "currency": "CHF",
+        "countryCode": "CH",
+        "symbol_native": "CHF",
+        "symbol": "CHF",
+        "id": 42,
+        "itemName": "Switzerland"
+    },
+    "CI": {
+        "country": "Ivory Coast",
+        "currency": "XOF",
+        "countryCode": "CI",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 43,
+        "itemName": "Ivory Coast"
+    },
+    "CK": {
+        "country": "Cook Islands",
+        "currency": "NZD",
+        "countryCode": "CK",
+        "symbol_native": "$",
+        "symbol": "NZ$",
+        "id": 44,
+        "itemName": "Cook Islands"
+    },
+    "CL": {
+        "country": "Chile",
+        "currency": "CLP",
+        "countryCode": "CL",
+        "symbol_native": "$",
+        "symbol": "CL$",
+        "id": 45,
+        "itemName": "Chile"
+    },
+    "CM": {
+        "country": "Cameroon",
+        "currency": "XAF",
+        "countryCode": "CM",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 46,
+        "itemName": "Cameroon"
+    },
+    "CN": {
+        "country": "China",
+        "currency": "CNY",
+        "countryCode": "CN",
+        "symbol_native": "CN¥",
+        "symbol": "CN¥",
+        "id": 47,
+        "itemName": "China"
+    },
+    "CO": {
+        "country": "Colombia",
+        "currency": "COP",
+        "countryCode": "CO",
+        "symbol_native": "$",
+        "symbol": "CO$",
+        "id": 48,
+        "itemName": "Colombia"
+    },
+    "CR": {
+        "country": "Costa Rica",
+        "currency": "CRC",
+        "countryCode": "CR",
+        "symbol_native": "₡",
+        "symbol": "₡",
+        "id": 49,
+        "itemName": "Costa Rica"
+    },
+    "CU": {
+        "country": "Cuba",
+        "currency": "CUP",
+        "countryCode": "CU",
+        "symbol_native": "₱",
+        "symbol": "₱",
+        "id": 50,
+        "itemName": "Cuba"
+    },
+    "CV": {
+        "country": "Cape Verde",
+        "currency": "CVE",
+        "countryCode": "CV",
+        "symbol_native": "CV$",
+        "symbol": "CV$",
+        "id": 51,
+        "itemName": "Cape Verde"
+    },
+    "CW": {
+        "country": "Curacao",
+        "currency": "ANG",
+        "countryCode": "CW",
+        "symbol_native": "ƒ",
+        "symbol": "NAƒ",
+        "id": 52,
+        "itemName": "Curacao"
+    },
+    "CX": {
+        "country": "Christmas Island",
+        "currency": "AUD",
+        "countryCode": "CX",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 53,
+        "itemName": "Christmas Island"
+    },
+    "CY": {
+        "country": "Cyprus",
+        "currency": "EUR",
+        "countryCode": "CY",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 54,
+        "itemName": "Cyprus"
+    },
+    "CZ": {
+        "country": "Czech Republic",
+        "currency": "CZK",
+        "countryCode": "CZ",
+        "symbol_native": "Kč",
+        "symbol": "Kč",
+        "id": 55,
+        "itemName": "Czech Republic"
+    },
+    "DE": {
+        "country": "Germany",
+        "currency": "EUR",
+        "countryCode": "DE",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 56,
+        "itemName": "Germany"
+    },
+    "DJ": {
+        "country": "Djibouti",
+        "currency": "DJF",
+        "countryCode": "DJ",
+        "symbol_native": "Fdj",
+        "symbol": "Fdj",
+        "id": 57,
+        "itemName": "Djibouti"
+    },
+    "DK": {
+        "country": "Denmark",
+        "currency": "DKK",
+        "countryCode": "DK",
+        "symbol_native": "kr",
+        "symbol": "Dkr",
+        "id": 58,
+        "itemName": "Denmark"
+    },
+    "DM": {
+        "country": "Dominica",
+        "currency": "XCD",
+        "countryCode": "DM",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 59,
+        "itemName": "Dominica"
+    },
+    "DO": {
+        "country": "Dominican Republic",
+        "currency": "DOP",
+        "countryCode": "DO",
+        "symbol_native": "RD$",
+        "symbol": "RD$",
+        "id": 60,
+        "itemName": "Dominican Republic"
+    },
+    "DZ": {
+        "country": "Algeria",
+        "currency": "DZD",
+        "countryCode": "DZ",
+        "symbol_native": "د.ج.‏",
+        "symbol": "DA",
+        "id": 61,
+        "itemName": "Algeria"
+    },
+    "EC": {
+        "country": "Ecuador",
+        "currency": "USD",
+        "countryCode": "EC",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 62,
+        "itemName": "Ecuador"
+    },
+    "EE": {
+        "country": "Estonia",
+        "currency": "EUR",
+        "countryCode": "EE",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 63,
+        "itemName": "Estonia"
+    },
+    "EG": {
+        "country": "Egypt",
+        "currency": "EGP",
+        "countryCode": "EG",
+        "symbol_native": "ج.م.‏",
+        "symbol": "EGP",
+        "id": 64,
+        "itemName": "Egypt"
+    },
+    "EH": {
+        "country": "Western Sahara",
+        "currency": "MRU",
+        "countryCode": "EH",
+        "symbol_native": "أوقية",
+        "symbol": "UM",
+        "id": 65,
+        "itemName": "Western Sahara"
+    },
+    "ER": {
+        "country": "Eritrea",
+        "currency": "ERN",
+        "countryCode": "ER",
+        "symbol_native": "Nfk",
+        "symbol": "Nfk",
+        "id": 66,
+        "itemName": "Eritrea"
+    },
+    "ES": {
+        "country": "Spain",
+        "currency": "EUR",
+        "countryCode": "ES",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 67,
+        "itemName": "Spain"
+    },
+    "ET": {
+        "country": "Ethiopia",
+        "currency": "ETB",
+        "countryCode": "ET",
+        "symbol_native": "Br",
+        "symbol": "Br",
+        "id": 68,
+        "itemName": "Ethiopia"
+    },
+    "FI": {
+        "country": "Finland",
+        "currency": "EUR",
+        "countryCode": "FI",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 69,
+        "itemName": "Finland"
+    },
+    "FJ": {
+        "country": "Fiji",
+        "currency": "FJD",
+        "countryCode": "FJ",
+        "symbol_native": "$",
+        "symbol": "FJ$",
+        "id": 70,
+        "itemName": "Fiji"
+    },
+    "FK": {
+        "country": "Falkland Islands",
+        "currency": "FKP",
+        "countryCode": "FK",
+        "symbol_native": "£",
+        "symbol": "FK£",
+        "id": 71,
+        "itemName": "Falkland Islands"
+    },
+    "FM": {
+        "country": "Micronesia",
+        "currency": "USD",
+        "countryCode": "FM",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 72,
+        "itemName": "Micronesia"
+    },
+    "FO": {
+        "country": "Faroe Islands",
+        "currency": "DKK",
+        "countryCode": "FO",
+        "symbol_native": "kr",
+        "symbol": "Dkr",
+        "id": 73,
+        "itemName": "Faroe Islands"
+    },
+    "FR": {
+        "country": "France",
+        "currency": "EUR",
+        "countryCode": "FR",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 74,
+        "itemName": "France"
+    },
+    "GA": {
+        "country": "Gabon",
+        "currency": "XAF",
+        "countryCode": "GA",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 75,
+        "itemName": "Gabon"
+    },
+    "GB": {
+        "country": "United Kingdom",
+        "currency": "GBP",
+        "countryCode": "GB",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 76,
+        "itemName": "United Kingdom"
+    },
+    "GD": {
+        "country": "Grenada",
+        "currency": "XCD",
+        "countryCode": "GD",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 77,
+        "itemName": "Grenada"
+    },
+    "GE": {
+        "country": "Georgia",
+        "currency": "GEL",
+        "countryCode": "GE",
+        "symbol_native": "GEL",
+        "symbol": "GEL",
+        "id": 78,
+        "itemName": "Georgia"
+    },
+    "GF": {
+        "country": "French Guiana",
+        "currency": "EUR",
+        "countryCode": "GF",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 79,
+        "itemName": "French Guiana"
+    },
+    "GG": {
+        "country": "Guernsey",
+        "currency": "GBP",
+        "countryCode": "GG",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 80,
+        "itemName": "Guernsey"
+    },
+    "GH": {
+        "country": "Ghana",
+        "currency": "GHS",
+        "countryCode": "GH",
+        "symbol_native": "GH₵",
+        "symbol": "GH₵",
+        "id": 81,
+        "itemName": "Ghana"
+    },
+    "GI": {
+        "country": "Gibraltar",
+        "currency": "GIP",
+        "countryCode": "GI",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 82,
+        "itemName": "Gibraltar"
+    },
+    "GL": {
+        "country": "Greenland",
+        "currency": "DKK",
+        "countryCode": "GL",
+        "symbol_native": "kr",
+        "symbol": "Dkr",
+        "id": 83,
+        "itemName": "Greenland"
+    },
+    "GM": {
+        "country": "Gambia",
+        "currency": "GMD",
+        "countryCode": "GM",
+        "symbol_native": "D",
+        "symbol": "D",
+        "id": 84,
+        "itemName": "Gambia"
+    },
+    "GN": {
+        "country": "Guinea",
+        "currency": "GNF",
+        "countryCode": "GN",
+        "symbol_native": "FG",
+        "symbol": "FG",
+        "id": 85,
+        "itemName": "Guinea"
+    },
+    "GP": {
+        "country": "Guadeloupe",
+        "currency": "EUR",
+        "countryCode": "GP",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 86,
+        "itemName": "Guadeloupe"
+    },
+    "GQ": {
+        "country": "Equatorial Guinea",
+        "currency": "XAF",
+        "countryCode": "GQ",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 87,
+        "itemName": "Equatorial Guinea"
+    },
+    "GR": {
+        "country": "Greece",
+        "currency": "EUR",
+        "countryCode": "GR",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 88,
+        "itemName": "Greece"
+    },
+    "GS": {
+        "country": "South Georgia and the South Sandwich Islands",
+        "currency": "GBP",
+        "countryCode": "GS",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 89,
+        "itemName": "South Georgia and the South Sandwich Islands"
+    },
+    "GT": {
+        "country": "Guatemala",
+        "currency": "GTQ",
+        "countryCode": "GT",
+        "symbol_native": "Q",
+        "symbol": "GTQ",
+        "id": 90,
+        "itemName": "Guatemala"
+    },
+    "GU": {
+        "country": "Guam",
+        "currency": "USD",
+        "countryCode": "GU",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 91,
+        "itemName": "Guam"
+    },
+    "GW": {
+        "country": "Guinea-Bissau",
+        "currency": "XOF",
+        "countryCode": "GW",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 92,
+        "itemName": "Guinea-Bissau"
+    },
+    "GY": {
+        "country": "Guyana",
+        "currency": "GYD",
+        "countryCode": "GY",
+        "symbol_native": "$",
+        "symbol": "GY$",
+        "id": 93,
+        "itemName": "Guyana"
+    },
+    "HK": {
+        "country": "Hong Kong",
+        "currency": "HKD",
+        "countryCode": "HK",
+        "symbol_native": "$",
+        "symbol": "HK$",
+        "id": 94,
+        "itemName": "Hong Kong"
+    },
+    "HM": {
+        "country": "Heard Island and McDonald Islands",
+        "currency": "AUD",
+        "countryCode": "HM",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 95,
+        "itemName": "Heard Island and McDonald Islands"
+    },
+    "HN": {
+        "country": "Honduras",
+        "currency": "HNL",
+        "countryCode": "HN",
+        "symbol_native": "L",
+        "symbol": "HNL",
+        "id": 96,
+        "itemName": "Honduras"
+    },
+    "HR": {
+        "country": "Croatia",
+        "currency": "HRK",
+        "countryCode": "HR",
+        "symbol_native": "kn",
+        "symbol": "kn",
+        "id": 97,
+        "itemName": "Croatia"
+    },
+    "HT": {
+        "country": "Haiti",
+        "currency": "HTG",
+        "countryCode": "HT",
+        "symbol_native": "G",
+        "symbol": "G",
+        "id": 98,
+        "itemName": "Haiti"
+    },
+    "HU": {
+        "country": "Hungary",
+        "currency": "HUF",
+        "countryCode": "HU",
+        "symbol_native": "Ft",
+        "symbol": "Ft",
+        "id": 99,
+        "itemName": "Hungary"
+    },
+    "ID": {
+        "country": "Indonesia",
+        "currency": "IDR",
+        "countryCode": "ID",
+        "symbol_native": "Rp",
+        "symbol": "Rp",
+        "id": 100,
+        "itemName": "Indonesia"
+    },
+    "IE": {
+        "country": "Ireland",
+        "currency": "EUR",
+        "countryCode": "IE",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 101,
+        "itemName": "Ireland"
+    },
+    "IL": {
+        "country": "Israel",
+        "currency": "ILS",
+        "countryCode": "IL",
+        "symbol_native": "₪",
+        "symbol": "₪",
+        "id": 102,
+        "itemName": "Israel"
+    },
+    "IM": {
+        "country": "Isle of Man",
+        "currency": "GBP",
+        "countryCode": "IM",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 103,
+        "itemName": "Isle of Man"
+    },
+    "IN": {
+        "country": "India",
+        "currency": "INR",
+        "countryCode": "IN",
+        "symbol_native": "₹",
+        "symbol": "Rs",
+        "id": 104,
+        "itemName": "India"
+    },
+    "IO": {
+        "country": "British Indian Ocean Territory",
+        "currency": "USD",
+        "countryCode": "IO",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 105,
+        "itemName": "British Indian Ocean Territory"
+    },
+    "IQ": {
+        "country": "Iraq",
+        "currency": "IQD",
+        "countryCode": "IQ",
+        "symbol_native": "د.ع.‏",
+        "symbol": "IQD",
+        "id": 106,
+        "itemName": "Iraq"
+    },
+    "IR": {
+        "country": "Iran",
+        "currency": "IRR",
+        "countryCode": "IR",
+        "symbol_native": "﷼",
+        "symbol": "IRR",
+        "id": 107,
+        "itemName": "Iran"
+    },
+    "IS": {
+        "country": "Iceland",
+        "currency": "ISK",
+        "countryCode": "IS",
+        "symbol_native": "kr",
+        "symbol": "Ikr",
+        "id": 108,
+        "itemName": "Iceland"
+    },
+    "IT": {
+        "country": "Italy",
+        "currency": "EUR",
+        "countryCode": "IT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 109,
+        "itemName": "Italy"
+    },
+    "JE": {
+        "country": "Jersey",
+        "currency": "GBP",
+        "countryCode": "JE",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 110,
+        "itemName": "Jersey"
+    },
+    "JM": {
+        "country": "Jamaica",
+        "currency": "JMD",
+        "countryCode": "JM",
+        "symbol_native": "$",
+        "symbol": "J$",
+        "id": 111,
+        "itemName": "Jamaica"
+    },
+    "JO": {
+        "country": "Jordan",
+        "currency": "JOD",
+        "countryCode": "JO",
+        "symbol_native": "د.أ.‏",
+        "symbol": "JD",
+        "id": 112,
+        "itemName": "Jordan"
+    },
+    "JP": {
+        "country": "Japan",
+        "currency": "JPY",
+        "countryCode": "JP",
+        "symbol_native": "￥",
+        "symbol": "¥",
+        "id": 113,
+        "itemName": "Japan"
+    },
+    "KE": {
+        "country": "Kenya",
+        "currency": "KES",
+        "countryCode": "KE",
+        "symbol_native": "Ksh",
+        "symbol": "Ksh",
+        "id": 114,
+        "itemName": "Kenya"
+    },
+    "KG": {
+        "country": "Kyrgyzstan",
+        "currency": "KGS",
+        "countryCode": "KG",
+        "symbol_native": "Лв",
+        "symbol": "Soms",
+        "id": 115,
+        "itemName": "Kyrgyzstan"
+    },
+    "KH": {
+        "country": "Cambodia",
+        "currency": "KHR",
+        "countryCode": "KH",
+        "symbol_native": "៛",
+        "symbol": "KHR",
+        "id": 116,
+        "itemName": "Cambodia"
+    },
+    "KI": {
+        "country": "Kiribati",
+        "currency": "AUD",
+        "countryCode": "KI",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 117,
+        "itemName": "Kiribati"
+    },
+    "KM": {
+        "country": "Comoros",
+        "currency": "KMF",
+        "countryCode": "KM",
+        "symbol_native": "FC",
+        "symbol": "CF",
+        "id": 118,
+        "itemName": "Comoros"
+    },
+    "KN": {
+        "country": "Saint Kitts and Nevis",
+        "currency": "XCD",
+        "countryCode": "KN",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 119,
+        "itemName": "Saint Kitts and Nevis"
+    },
+    "KP": {
+        "country": "North Korea",
+        "currency": "KPW",
+        "countryCode": "KP",
+        "symbol_native": "₩",
+        "symbol": "₩",
+        "id": 120,
+        "itemName": "North Korea"
+    },
+    "KR": {
+        "country": "South Korea",
+        "currency": "KRW",
+        "countryCode": "KR",
+        "symbol_native": "₩",
+        "symbol": "₩",
+        "id": 121,
+        "itemName": "South Korea"
+    },
+    "KW": {
+        "country": "Kuwait",
+        "currency": "KWD",
+        "countryCode": "KW",
+        "symbol_native": "د.ك.‏",
+        "symbol": "KD",
+        "id": 122,
+        "itemName": "Kuwait"
+    },
+    "KY": {
+        "country": "Cayman Islands",
+        "currency": "KYD",
+        "countryCode": "KY",
+        "symbol_native": "$",
+        "symbol": "CI$",
+        "id": 123,
+        "itemName": "Cayman Islands"
+    },
+    "KZ": {
+        "country": "Kazakhstan",
+        "currency": "KZT",
+        "countryCode": "KZ",
+        "symbol_native": "тңг.",
+        "symbol": "KZT",
+        "id": 124,
+        "itemName": "Kazakhstan"
+    },
+    "LA": {
+        "country": "Laos",
+        "currency": "LAK",
+        "countryCode": "LA",
+        "symbol_native": "₭",
+        "symbol": "₭",
+        "id": 125,
+        "itemName": "Laos"
+    },
+    "LB": {
+        "country": "Lebanon",
+        "currency": "LBP",
+        "countryCode": "LB",
+        "symbol_native": "ل.ل.‏",
+        "symbol": "LB£",
+        "id": 126,
+        "itemName": "Lebanon"
+    },
+    "LC": {
+        "country": "Saint Lucia",
+        "currency": "XCD",
+        "countryCode": "LC",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 127,
+        "itemName": "Saint Lucia"
+    },
+    "LI": {
+        "country": "Liechtenstein",
+        "currency": "CHF",
+        "countryCode": "LI",
+        "symbol_native": "CHF",
+        "symbol": "CHF",
+        "id": 128,
+        "itemName": "Liechtenstein"
+    },
+    "LK": {
+        "country": "Sri Lanka",
+        "currency": "LKR",
+        "countryCode": "LK",
+        "symbol_native": "රු",
+        "symbol": "SLRs",
+        "id": 129,
+        "itemName": "Sri Lanka"
+    },
+    "LR": {
+        "country": "Liberia",
+        "currency": "LRD",
+        "countryCode": "LR",
+        "symbol_native": "$",
+        "symbol": "L$",
+        "id": 130,
+        "itemName": "Liberia"
+    },
+    "LS": {
+        "country": "Lesotho",
+        "currency": "LSL",
+        "countryCode": "LS",
+        "symbol_native": "M",
+        "symbol": "M",
+        "id": 131,
+        "itemName": "Lesotho"
+    },
+    "LT": {
+        "country": "Lithuania",
+        "currency": "EUR",
+        "countryCode": "LT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 132,
+        "itemName": "Lithuania"
+    },
+    "LU": {
+        "country": "Luxembourg",
+        "currency": "EUR",
+        "countryCode": "LU",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 133,
+        "itemName": "Luxembourg"
+    },
+    "LV": {
+        "country": "Latvia",
+        "currency": "EUR",
+        "countryCode": "LV",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 134,
+        "itemName": "Latvia"
+    },
+    "LY": {
+        "country": "Libya",
+        "currency": "LYD",
+        "countryCode": "LY",
+        "symbol_native": "د.ل.‏",
+        "symbol": "LD",
+        "id": 135,
+        "itemName": "Libya"
+    },
+    "MA": {
+        "country": "Morocco",
+        "currency": "MAD",
+        "countryCode": "MA",
+        "symbol_native": "د.م.‏",
+        "symbol": "MAD",
+        "id": 136,
+        "itemName": "Morocco"
+    },
+    "MC": {
+        "country": "Monaco",
+        "currency": "EUR",
+        "countryCode": "MC",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 137,
+        "itemName": "Monaco"
+    },
+    "MD": {
+        "country": "Moldova",
+        "currency": "MDL",
+        "countryCode": "MD",
+        "symbol_native": "MDL",
+        "symbol": "MDL",
+        "id": 138,
+        "itemName": "Moldova"
+    },
+    "ME": {
+        "country": "Montenegro",
+        "currency": "EUR",
+        "countryCode": "ME",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 139,
+        "itemName": "Montenegro"
+    },
+    "MF": {
+        "country": "Saint Martin",
+        "currency": "EUR",
+        "countryCode": "MF",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 140,
+        "itemName": "Saint Martin"
+    },
+    "MG": {
+        "country": "Madagascar",
+        "currency": "MGA",
+        "countryCode": "MG",
+        "symbol_native": "MGA",
+        "symbol": "MGA",
+        "id": 141,
+        "itemName": "Madagascar"
+    },
+    "MH": {
+        "country": "Marshall Islands",
+        "currency": "USD",
+        "countryCode": "MH",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 142,
+        "itemName": "Marshall Islands"
+    },
+    "MK": {
+        "country": "North Macedonia",
+        "currency": "MKD",
+        "countryCode": "MK",
+        "symbol_native": "MKD",
+        "symbol": "MKD",
+        "id": 143,
+        "itemName": "North Macedonia"
+    },
+    "ML": {
+        "country": "Mali",
+        "currency": "XOF",
+        "countryCode": "ML",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 144,
+        "itemName": "Mali"
+    },
+    "MM": {
+        "country": "Myanmar [Burma]",
+        "currency": "MMK",
+        "countryCode": "MM",
+        "symbol_native": "K",
+        "symbol": "MMK",
+        "id": 145,
+        "itemName": "Myanmar [Burma]"
+    },
+    "MN": {
+        "country": "Mongolia",
+        "currency": "MNT",
+        "countryCode": "MN",
+        "symbol_native": "₮",
+        "symbol": "₮",
+        "id": 146,
+        "itemName": "Mongolia"
+    },
+    "MO": {
+        "country": "Macao",
+        "currency": "MOP",
+        "countryCode": "MO",
+        "symbol_native": "MOP$",
+        "symbol": "MOP$",
+        "id": 147,
+        "itemName": "Macao"
+    },
+    "MP": {
+        "country": "Northern Mariana Islands",
+        "currency": "USD",
+        "countryCode": "MP",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 148,
+        "itemName": "Northern Mariana Islands"
+    },
+    "MQ": {
+        "country": "Martinique",
+        "currency": "EUR",
+        "countryCode": "MQ",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 149,
+        "itemName": "Martinique"
+    },
+    "MR": {
+        "country": "Mauritania",
+        "currency": "MRU",
+        "countryCode": "MR",
+        "symbol_native": "أوقية",
+        "symbol": "UM",
+        "id": 150,
+        "itemName": "Mauritania"
+    },
+    "MS": {
+        "country": "Montserrat",
+        "currency": "XCD",
+        "countryCode": "MS",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 151,
+        "itemName": "Montserrat"
+    },
+    "MT": {
+        "country": "Malta",
+        "currency": "EUR",
+        "countryCode": "MT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 152,
+        "itemName": "Malta"
+    },
+    "MU": {
+        "country": "Mauritius",
+        "currency": "MUR",
+        "countryCode": "MU",
+        "symbol_native": "MURs",
+        "symbol": "MURs",
+        "id": 153,
+        "itemName": "Mauritius"
+    },
+    "MV": {
+        "country": "Maldives",
+        "currency": "MVR",
+        "countryCode": "MV",
+        "symbol_native": "Rf",
+        "symbol": "Rf",
+        "id": 154,
+        "itemName": "Maldives"
+    },
+    "MW": {
+        "country": "Malawi",
+        "currency": "MWK",
+        "countryCode": "MW",
+        "symbol_native": "MK",
+        "symbol": "MK",
+        "id": 155,
+        "itemName": "Malawi"
+    },
+    "MX": {
+        "country": "Mexico",
+        "currency": "MXN",
+        "countryCode": "MX",
+        "symbol_native": "$",
+        "symbol": "MX$",
+        "id": 156,
+        "itemName": "Mexico"
+    },
+    "MY": {
+        "country": "Malaysia",
+        "currency": "MYR",
+        "countryCode": "MY",
+        "symbol_native": "RM",
+        "symbol": "RM",
+        "id": 157,
+        "itemName": "Malaysia"
+    },
+    "MZ": {
+        "country": "Mozambique",
+        "currency": "MZN",
+        "countryCode": "MZ",
+        "symbol_native": "MTn",
+        "symbol": "MTn",
+        "id": 158,
+        "itemName": "Mozambique"
+    },
+    "NA": {
+        "country": "Namibia",
+        "currency": "NAD",
+        "countryCode": "NA",
+        "symbol_native": "N$",
+        "symbol": "N$",
+        "id": 159,
+        "itemName": "Namibia"
+    },
+    "NC": {
+        "country": "New Caledonia",
+        "currency": "XPF",
+        "countryCode": "NC",
+        "symbol_native": "₣",
+        "symbol": "₣",
+        "id": 160,
+        "itemName": "New Caledonia"
+    },
+    "NE": {
+        "country": "Niger",
+        "currency": "XOF",
+        "countryCode": "NE",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 161,
+        "itemName": "Niger"
+    },
+    "NF": {
+        "country": "Norfolk Island",
+        "currency": "AUD",
+        "countryCode": "NF",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 162,
+        "itemName": "Norfolk Island"
+    },
+    "NG": {
+        "country": "Nigeria",
+        "currency": "NGN",
+        "countryCode": "NG",
+        "symbol_native": "₦",
+        "symbol": "₦",
+        "id": 163,
+        "itemName": "Nigeria"
+    },
+    "NI": {
+        "country": "Nicaragua",
+        "currency": "NIO",
+        "countryCode": "NI",
+        "symbol_native": "C$",
+        "symbol": "C$",
+        "id": 164,
+        "itemName": "Nicaragua"
+    },
+    "NL": {
+        "country": "Netherlands",
+        "currency": "EUR",
+        "countryCode": "NL",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 165,
+        "itemName": "Netherlands"
+    },
+    "NO": {
+        "country": "Norway",
+        "currency": "NOK",
+        "countryCode": "NO",
+        "symbol_native": "kr",
+        "symbol": "Nkr",
+        "id": 166,
+        "itemName": "Norway"
+    },
+    "NP": {
+        "country": "Nepal",
+        "currency": "NPR",
+        "countryCode": "NP",
+        "symbol_native": "नेरू",
+        "symbol": "NPRs",
+        "id": 167,
+        "itemName": "Nepal"
+    },
+    "NR": {
+        "country": "Nauru",
+        "currency": "AUD",
+        "countryCode": "NR",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 168,
+        "itemName": "Nauru"
+    },
+    "NU": {
+        "country": "Niue",
+        "currency": "NZD",
+        "countryCode": "NU",
+        "symbol_native": "$",
+        "symbol": "NZ$",
+        "id": 169,
+        "itemName": "Niue"
+    },
+    "NZ": {
+        "country": "New Zealand",
+        "currency": "NZD",
+        "countryCode": "NZ",
+        "symbol_native": "$",
+        "symbol": "NZ$",
+        "id": 170,
+        "itemName": "New Zealand"
+    },
+    "OM": {
+        "country": "Oman",
+        "currency": "OMR",
+        "countryCode": "OM",
+        "symbol_native": "ر.ع.‏",
+        "symbol": "OMR",
+        "id": 171,
+        "itemName": "Oman"
+    },
+    "PA": {
+        "country": "Panama",
+        "currency": "PAB",
+        "countryCode": "PA",
+        "symbol_native": "B/.",
+        "symbol": "B/.",
+        "id": 172,
+        "itemName": "Panama"
+    },
+    "PE": {
+        "country": "Peru",
+        "currency": "PEN",
+        "countryCode": "PE",
+        "symbol_native": "S/.",
+        "symbol": "S/.",
+        "id": 173,
+        "itemName": "Peru"
+    },
+    "PF": {
+        "country": "French Polynesia",
+        "currency": "XPF",
+        "countryCode": "PF",
+        "symbol_native": "₣",
+        "symbol": "₣",
+        "id": 174,
+        "itemName": "French Polynesia"
+    },
+    "PG": {
+        "country": "Papua New Guinea",
+        "currency": "PGK",
+        "countryCode": "PG",
+        "symbol_native": "K",
+        "symbol": "Kina",
+        "id": 175,
+        "itemName": "Papua New Guinea"
+    },
+    "PH": {
+        "country": "Philippines",
+        "currency": "PHP",
+        "countryCode": "PH",
+        "symbol_native": "₱",
+        "symbol": "₱",
+        "id": 176,
+        "itemName": "Philippines"
+    },
+    "PK": {
+        "country": "Pakistan",
+        "currency": "PKR",
+        "countryCode": "PK",
+        "symbol_native": "₨",
+        "symbol": "PKRs",
+        "id": 177,
+        "itemName": "Pakistan"
+    },
+    "PL": {
+        "country": "Poland",
+        "currency": "PLN",
+        "countryCode": "PL",
+        "symbol_native": "zł",
+        "symbol": "zł",
+        "id": 178,
+        "itemName": "Poland"
+    },
+    "PM": {
+        "country": "Saint Pierre and Miquelon",
+        "currency": "EUR",
+        "countryCode": "PM",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 179,
+        "itemName": "Saint Pierre and Miquelon"
+    },
+    "PN": {
+        "country": "Pitcairn Islands",
+        "currency": "NZD",
+        "countryCode": "PN",
+        "symbol_native": "$",
+        "symbol": "NZ$",
+        "id": 180,
+        "itemName": "Pitcairn Islands"
+    },
+    "PR": {
+        "country": "Puerto Rico",
+        "currency": "USD",
+        "countryCode": "PR",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 181,
+        "itemName": "Puerto Rico"
+    },
+    "PS": {
+        "country": "Palestine",
+        "currency": "ILS",
+        "countryCode": "PS",
+        "symbol_native": "₪",
+        "symbol": "₪",
+        "id": 182,
+        "itemName": "Palestine"
+    },
+    "PT": {
+        "country": "Portugal",
+        "currency": "EUR",
+        "countryCode": "PT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 183,
+        "itemName": "Portugal"
+    },
+    "PW": {
+        "country": "Palau",
+        "currency": "USD",
+        "countryCode": "PW",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 184,
+        "itemName": "Palau"
+    },
+    "PY": {
+        "country": "Paraguay",
+        "currency": "PYG",
+        "countryCode": "PY",
+        "symbol_native": "₲",
+        "symbol": "₲",
+        "id": 185,
+        "itemName": "Paraguay"
+    },
+    "QA": {
+        "country": "Qatar",
+        "currency": "QAR",
+        "countryCode": "QA",
+        "symbol_native": "ر.ق.‏",
+        "symbol": "QR",
+        "id": 186,
+        "itemName": "Qatar"
+    },
+    "RE": {
+        "country": "Réunion",
+        "currency": "EUR",
+        "countryCode": "RE",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 187,
+        "itemName": "Réunion"
+    },
+    "RO": {
+        "country": "Romania",
+        "currency": "RON",
+        "countryCode": "RO",
+        "symbol_native": "RON",
+        "symbol": "RON",
+        "id": 188,
+        "itemName": "Romania"
+    },
+    "RS": {
+        "country": "Serbia",
+        "currency": "RSD",
+        "countryCode": "RS",
+        "symbol_native": "дин.",
+        "symbol": "din.",
+        "id": 189,
+        "itemName": "Serbia"
+    },
+    "RU": {
+        "country": "Russia",
+        "currency": "RUB",
+        "countryCode": "RU",
+        "symbol_native": "₽.",
+        "symbol": "RUB",
+        "id": 190,
+        "itemName": "Russia"
+    },
+    "RW": {
+        "country": "Rwanda",
+        "currency": "RWF",
+        "countryCode": "RW",
+        "symbol_native": "FR",
+        "symbol": "RWF",
+        "id": 191,
+        "itemName": "Rwanda"
+    },
+    "SA": {
+        "country": "Saudi Arabia",
+        "currency": "SAR",
+        "countryCode": "SA",
+        "symbol_native": "ر.س.‏",
+        "symbol": "SR",
+        "id": 192,
+        "itemName": "Saudi Arabia"
+    },
+    "SB": {
+        "country": "Solomon Islands",
+        "currency": "SBD",
+        "countryCode": "SB",
+        "symbol_native": "$",
+        "symbol": "Si$",
+        "id": 193,
+        "itemName": "Solomon Islands"
+    },
+    "SC": {
+        "country": "Seychelles",
+        "currency": "SCR",
+        "countryCode": "SC",
+        "symbol_native": "SR",
+        "symbol": "SR",
+        "id": 194,
+        "itemName": "Seychelles"
+    },
+    "SD": {
+        "country": "Sudan",
+        "currency": "SDG",
+        "countryCode": "SD",
+        "symbol_native": "SDG",
+        "symbol": "SDG",
+        "id": 195,
+        "itemName": "Sudan"
+    },
+    "SE": {
+        "country": "Sweden",
+        "currency": "SEK",
+        "countryCode": "SE",
+        "symbol_native": "kr",
+        "symbol": "Skr",
+        "id": 196,
+        "itemName": "Sweden"
+    },
+    "SG": {
+        "country": "Singapore",
+        "currency": "SGD",
+        "countryCode": "SG",
+        "symbol_native": "$",
+        "symbol": "S$",
+        "id": 197,
+        "itemName": "Singapore"
+    },
+    "SH": {
+        "country": "Saint Helena",
+        "currency": "SHP",
+        "countryCode": "SH",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 198,
+        "itemName": "Saint Helena"
+    },
+    "SI": {
+        "country": "Slovenia",
+        "currency": "EUR",
+        "countryCode": "SI",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 199,
+        "itemName": "Slovenia"
+    },
+    "SJ": {
+        "country": "Svalbard and Jan Mayen",
+        "currency": "NOK",
+        "countryCode": "SJ",
+        "symbol_native": "kr",
+        "symbol": "Nkr",
+        "id": 200,
+        "itemName": "Svalbard and Jan Mayen"
+    },
+    "SK": {
+        "country": "Slovakia",
+        "currency": "EUR",
+        "countryCode": "SK",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 201,
+        "itemName": "Slovakia"
+    },
+    "SL": {
+        "country": "Sierra Leone",
+        "currency": "SLL",
+        "countryCode": "SL",
+        "symbol_native": "Le",
+        "symbol": "Le",
+        "id": 202,
+        "itemName": "Sierra Leone"
+    },
+    "SM": {
+        "country": "San Marino",
+        "currency": "EUR",
+        "countryCode": "SM",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 203,
+        "itemName": "San Marino"
+    },
+    "SN": {
+        "country": "Senegal",
+        "currency": "XOF",
+        "countryCode": "SN",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 204,
+        "itemName": "Senegal"
+    },
+    "SO": {
+        "country": "Somalia",
+        "currency": "SOS",
+        "countryCode": "SO",
+        "symbol_native": "Ssh",
+        "symbol": "Ssh",
+        "id": 205,
+        "itemName": "Somalia"
+    },
+    "SR": {
+        "country": "Suriname",
+        "currency": "SRD",
+        "countryCode": "SR",
+        "symbol_native": "$",
+        "symbol": "SR$",
+        "id": 206,
+        "itemName": "Suriname"
+    },
+    "SS": {
+        "country": "South Sudan",
+        "currency": "SSP",
+        "countryCode": "SS",
+        "symbol_native": "£",
+        "symbol": "£",
+        "id": 207,
+        "itemName": "South Sudan"
+    },
+    "ST": {
+        "country": "São Tomé and Príncipe",
+        "currency": "STN",
+        "countryCode": "ST",
+        "symbol_native": "Db",
+        "symbol": "Db",
+        "id": 208,
+        "itemName": "São Tomé and Príncipe"
+    },
+    "SV": {
+        "country": "El Salvador",
+        "currency": "SVC",
+        "countryCode": "SV",
+        "symbol_native": "₡",
+        "symbol": "₡",
+        "id": 209,
+        "itemName": "El Salvador"
+    },
+    "SX": {
+        "country": "Sint Maarten",
+        "currency": "ANG",
+        "countryCode": "SX",
+        "symbol_native": "ƒ",
+        "symbol": "NAƒ",
+        "id": 210,
+        "itemName": "Sint Maarten"
+    },
+    "SY": {
+        "country": "Syria",
+        "currency": "SYP",
+        "countryCode": "SY",
+        "symbol_native": "ل.س.‏",
+        "symbol": "SY£",
+        "id": 211,
+        "itemName": "Syria"
+    },
+    "SZ": {
+        "country": "Swaziland",
+        "currency": "SZL",
+        "countryCode": "SZ",
+        "symbol_native": "E",
+        "symbol": "E",
+        "id": 212,
+        "itemName": "Swaziland"
+    },
+    "TC": {
+        "country": "Turks and Caicos Islands",
+        "currency": "USD",
+        "countryCode": "TC",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 213,
+        "itemName": "Turks and Caicos Islands"
+    },
+    "TD": {
+        "country": "Chad",
+        "currency": "XAF",
+        "countryCode": "TD",
+        "symbol_native": "FCFA",
+        "symbol": "FCFA",
+        "id": 214,
+        "itemName": "Chad"
+    },
+    "TF": {
+        "country": "French Southern Territories",
+        "currency": "EUR",
+        "countryCode": "TF",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 215,
+        "itemName": "French Southern Territories"
+    },
+    "TG": {
+        "country": "Togo",
+        "currency": "XOF",
+        "countryCode": "TG",
+        "symbol_native": "CFA",
+        "symbol": "CFA",
+        "id": 216,
+        "itemName": "Togo"
+    },
+    "TH": {
+        "country": "Thailand",
+        "currency": "THB",
+        "countryCode": "TH",
+        "symbol_native": "฿",
+        "symbol": "฿",
+        "id": 217,
+        "itemName": "Thailand"
+    },
+    "TJ": {
+        "country": "Tajikistan",
+        "currency": "TJS",
+        "countryCode": "TJ",
+        "symbol_native": "ЅM",
+        "symbol": "ЅM",
+        "id": 218,
+        "itemName": "Tajikistan"
+    },
+    "TK": {
+        "country": "Tokelau",
+        "currency": "NZD",
+        "countryCode": "TK",
+        "symbol_native": "$",
+        "symbol": "NZ$",
+        "id": 219,
+        "itemName": "Tokelau"
+    },
+    "TL": {
+        "country": "East Timor",
+        "currency": "USD",
+        "countryCode": "TL",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 220,
+        "itemName": "East Timor"
+    },
+    "TM": {
+        "country": "Turkmenistan",
+        "currency": "TMT",
+        "countryCode": "TM",
+        "symbol_native": "T",
+        "symbol": "T",
+        "id": 221,
+        "itemName": "Turkmenistan"
+    },
+    "TN": {
+        "country": "Tunisia",
+        "currency": "TND",
+        "countryCode": "TN",
+        "symbol_native": "د.ت.‏",
+        "symbol": "DT",
+        "id": 222,
+        "itemName": "Tunisia"
+    },
+    "TO": {
+        "country": "Tonga",
+        "currency": "TOP",
+        "countryCode": "TO",
+        "symbol_native": "T$",
+        "symbol": "T$",
+        "id": 223,
+        "itemName": "Tonga"
+    },
+    "TR": {
+        "country": "Turkey",
+        "currency": "TRY",
+        "countryCode": "TR",
+        "symbol_native": "TL",
+        "symbol": "TL",
+        "id": 224,
+        "itemName": "Turkey"
+    },
+    "TT": {
+        "country": "Trinidad and Tobago",
+        "currency": "TTD",
+        "countryCode": "TT",
+        "symbol_native": "$",
+        "symbol": "TT$",
+        "id": 225,
+        "itemName": "Trinidad and Tobago"
+    },
+    "TV": {
+        "country": "Tuvalu",
+        "currency": "AUD",
+        "countryCode": "TV",
+        "symbol_native": "$",
+        "symbol": "AU$",
+        "id": 226,
+        "itemName": "Tuvalu"
+    },
+    "TW": {
+        "country": "Taiwan",
+        "currency": "TWD",
+        "countryCode": "TW",
+        "symbol_native": "NT$",
+        "symbol": "NT$",
+        "id": 227,
+        "itemName": "Taiwan"
+    },
+    "TZ": {
+        "country": "Tanzania",
+        "currency": "TZS",
+        "countryCode": "TZ",
+        "symbol_native": "TSh",
+        "symbol": "TSh",
+        "id": 228,
+        "itemName": "Tanzania"
+    },
+    "UA": {
+        "country": "Ukraine",
+        "currency": "UAH",
+        "countryCode": "UA",
+        "symbol_native": "₴",
+        "symbol": "₴",
+        "id": 229,
+        "itemName": "Ukraine"
+    },
+    "UG": {
+        "country": "Uganda",
+        "currency": "UGX",
+        "countryCode": "UG",
+        "symbol_native": "USh",
+        "symbol": "USh",
+        "id": 230,
+        "itemName": "Uganda"
+    },
+    "UM": {
+        "country": "U.S. Minor Outlying Islands",
+        "currency": "USD",
+        "countryCode": "UM",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 231,
+        "itemName": "U.S. Minor Outlying Islands"
+    },
+    "US": {
+        "country": "United States",
+        "currency": "USD",
+        "countryCode": "US",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 232,
+        "itemName": "United States"
+    },
+    "UY": {
+        "country": "Uruguay",
+        "currency": "UYU",
+        "countryCode": "UY",
+        "symbol_native": "$",
+        "symbol": "$U",
+        "id": 233,
+        "itemName": "Uruguay"
+    },
+    "UZ": {
+        "country": "Uzbekistan",
+        "currency": "UZS",
+        "countryCode": "UZ",
+        "symbol_native": "UZS",
+        "symbol": "UZS",
+        "id": 234,
+        "itemName": "Uzbekistan"
+    },
+    "VA": {
+        "country": "Vatican City",
+        "currency": "EUR",
+        "countryCode": "VA",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 235,
+        "itemName": "Vatican City"
+    },
+    "VC": {
+        "country": "Saint Vincent and the Grenadines",
+        "currency": "XCD",
+        "countryCode": "VC",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 236,
+        "itemName": "Saint Vincent and the Grenadines"
+    },
+    "VE": {
+        "country": "Venezuela",
+        "currency": "VES",
+        "countryCode": "VE",
+        "symbol_native": "Bs",
+        "symbol": "Bs",
+        "id": 237,
+        "itemName": "Venezuela"
+    },
+    "VG": {
+        "country": "British Virgin Islands",
+        "currency": "USD",
+        "countryCode": "VG",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 238,
+        "itemName": "British Virgin Islands"
+    },
+    "VI": {
+        "country": "U.S. Virgin Islands",
+        "currency": "USD",
+        "countryCode": "VI",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 239,
+        "itemName": "U.S. Virgin Islands"
+    },
+    "VN": {
+        "country": "Vietnam",
+        "currency": "VND",
+        "countryCode": "VN",
+        "symbol_native": "₫",
+        "symbol": "₫",
+        "id": 240,
+        "itemName": "Vietnam"
+    },
+    "VU": {
+        "country": "Vanuatu",
+        "currency": "VUV",
+        "countryCode": "VU",
+        "symbol_native": "VT",
+        "symbol": "VT",
+        "id": 241,
+        "itemName": "Vanuatu"
+    },
+    "WF": {
+        "country": "Wallis and Futuna",
+        "currency": "XPF",
+        "countryCode": "WF",
+        "symbol_native": "₣",
+        "symbol": "₣",
+        "id": 242,
+        "itemName": "Wallis and Futuna"
+    },
+    "WS": {
+        "country": "Samoa",
+        "currency": "WST",
+        "countryCode": "WS",
+        "symbol_native": "ST",
+        "symbol": "tālā",
+        "id": 243,
+        "itemName": "Samoa"
+    },
+    "XK": {
+        "country": "Kosovo",
+        "currency": "EUR",
+        "countryCode": "XK",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 244,
+        "itemName": "Kosovo"
+    },
+    "YE": {
+        "country": "Yemen",
+        "currency": "YER",
+        "countryCode": "YE",
+        "symbol_native": "ر.ي.‏",
+        "symbol": "YR",
+        "id": 245,
+        "itemName": "Yemen"
+    },
+    "YT": {
+        "country": "Mayotte",
+        "currency": "EUR",
+        "countryCode": "YT",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 246,
+        "itemName": "Mayotte"
+    },
+    "ZA": {
+        "country": "South Africa",
+        "currency": "ZAR",
+        "countryCode": "ZA",
+        "symbol_native": "R",
+        "symbol": "R",
+        "id": 247,
+        "itemName": "South Africa"
+    },
+    "ZM": {
+        "country": "Zambia",
+        "currency": "ZMW",
+        "countryCode": "ZM",
+        "symbol_native": "ZK",
+        "symbol": "ZK",
+        "id": 248,
+        "itemName": "Zambia"
+    },
+    "ZW": {
+        "country": "Zimbabwe",
+        "currency": "ZWL",
+        "countryCode": "ZW",
+        "symbol_native": "ZWL$",
+        "symbol": "ZWL$",
+        "id": 249,
+        "itemName": "Zimbabwe"
+    },
+    "ROW": {
+        "country": "Rest Of the World",
+        "currency": "ACS",
+        "countryCode": "ROW",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "Rest Of the World"
+    },
+    "CAF": {
+        "country": "Africa",
+        "currency": "ZAR",
+        "countryCode": "CAF",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "Africa"
+    },
+    "CAN": {
+        "country": "Antarctica",
+        "currency": "USD",
+        "countryCode": "CAN",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "Antarctica"
+    },
+    "CAS": {
+        "country": "Asia",
+        "currency": "USD",
+        "countryCode": "CAS",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "Asia"
+    },
+    "CEU": {
+        "country": "Europe",
+        "currency": "EUR",
+        "countryCode": "CEU",
+        "symbol_native": "€",
+        "symbol": "€",
+        "id": 250,
+        "itemName": "Europe"
+    },
+    "CNA": {
+        "country": "North america",
+        "currency": "USD",
+        "countryCode": "CNA",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "North america"
+    },
+    "COC": {
+        "country": "Oceania",
+        "currency": "USD",
+        "countryCode": "COC",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "Oceania"
+    },
+    "CSA": {
+        "country": "South america",
+        "currency": "ACS",
+        "countryCode": "USD",
+        "symbol_native": "$",
+        "symbol": "$",
+        "id": 250,
+        "itemName": "South america"
+    }
+}

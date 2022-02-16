@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-notification.component.scss']
 })
 export class CartNotificationComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit(): void {
+   
+  }
   }
 
-}
+

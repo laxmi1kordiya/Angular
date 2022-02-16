@@ -1,6 +1,17 @@
-<app-sidebar></app-sidebar>
+<!-- <app-sidebar></app-sidebar>
 <div class="container">
 
-    <p>cart-notification works!</p>
-</div>
+    
+    <form [formGroup]="myForm">
+        <ng-multiselect-dropdown
+            name="city"
+            [placeholder]="'Select City'"
+            [data]="cities"
+            formControlName="city"
+            [disabled]="disabled"
+            [settings]="dropdownSettings"
+            (onSelect)="onItemSelect($event)">
+        </ng-multiselect-dropdown>
+   </form>
+</div> -->
 

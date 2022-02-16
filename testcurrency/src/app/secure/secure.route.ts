@@ -8,7 +8,11 @@ import { DropdownCofigComponent } from './dropdown-cofig/dropdown-cofig.componen
 import { GeneralComponent } from './general/general.component';
 import { OtherComponent } from './other/other.component';
 import { RouterModule, Routes }from '@angular/router'
-
+import { PopupComponent}from './popup/popup.component';
+// import {SettingComponent }from './setting/setting.component';
+import {HelpComponent }from './help/help.component';
+import { LogoutComponent } from './logout/logout.component';
+import { CurrencypopupComponent } from './currencypopup/currencypopup.component';
 export const SECURE_ROUTES :Routes=[
     {
         path:'dashboard',component:DashboardComponent
@@ -27,7 +31,23 @@ export const SECURE_ROUTES :Routes=[
     },
     {
         path:'other',component:OtherComponent 
-    }
+    },
+    {
+        path:'popup',component:PopupComponent
+    },
+    // {
+    //     path:'setting',component:SettingComponent
+    // },
+    {
+        path:'help',component:HelpComponent
+    },
+    {
+        path:'logout',component:LogoutComponent 
+    },
+    {
+        path:'currencypopup',component:CurrencypopupComponent 
+    },
+   
     
 ];
 @NgModule({
