@@ -1,15 +1,29 @@
-<app-sidebar></app-sidebar>
+<!-- <app-sidebar></app-sidebar> -->
 <div class="container">
-
+    <!-- <app-loading *ngif="dataLoding"></app-loading> -->
+   
     <button mat-raised-button class="btn" (click)="gopop()"> Add Country</button>
-    <!-- <mat-button-toggle class="btn" >Add Country</mat-button-toggle> -->
+    <div class="hint">
+        Custom rules added here by countries will be reflect to user when they come from that specific country.
+    </div>
+    
     <div class="table-responsive">
         <ngx-datatable class="material new-styled   " [rows]="countries" [headerHeight]="50" [footerHeight]="50"
             [externalPaging]="false" [rowHeight]="'auto'" [columnMode]="'force'" [limit]="page.limit"
             [offset]="page.offset" [count]="page.count">
             <ngx-datatable-column name="Country"></ngx-datatable-column>
-            <ngx-datatable-column name="Name"></ngx-datatable-column>
             <ngx-datatable-column name="Currency"></ngx-datatable-column>
+            <ngx-datatable-column>
+                <ng-template ngx-datatable-cell-template let>
+                    <span class="t-button">
+                <button class="editbutton">Edit</button>
+                <button class="deletebutton">delete</button>
+            </span>
+            </ng-template>
+            </ngx-datatable-column>
+
+            
+            
         </ngx-datatable>
     </div>
 </div>

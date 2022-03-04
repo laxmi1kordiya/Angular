@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 1024px;
+  height: 73px;
+  background-color: #f3f2f1;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.navbar nav {
+  float: left;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 14px;
+  margin: 2px 8px;
+}
+/*# sourceMappingURL=header.component.css.map */

@@ -1,0 +1,169 @@
+$brand-color: #3e82b0;
+$brand-hover-color: #276996;
+
+.container {
+    width: calc(100% - 32px);
+    height: auto;
+    margin-top: 151px;
+    border-radius: 5px;
+    background: #fff;
+    .tabs {
+        display: flex;
+        border-bottom: 1px solid #ececec;
+        align-items: center;
+        .tab {
+            cursor: pointer;
+            padding: 15px 20px;
+            font-weight: 400;
+            color: #b7b7b7;
+            &.active {
+                border-bottom: 1px solid $brand-color;
+                margin-bottom: -1px;
+                color: $brand-color;
+            }
+            .count {
+                border-radius: 4px;
+                padding: 2px 5px;
+                margin-left: 5px;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+        
+    }
+    .tab-content {
+        min-height: calc(100vh - 86px);
+        padding: 10px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 28px;
+        padding: 13px 2px;
+    }
+    .notification {
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 2px 15px 0 #0b107520;
+        margin: 20px 0px;
+        padding: 20px;
+        text-align: left;
+        .field-list {
+            width: 100%;
+            display: flex;
+            margin: 20px 0;
+            .plan-name {
+                font-weight: 300;
+                margin-left: 10px;
+                color: #000;
+            }
+        }
+    }
+    .step-content {
+        padding: 20px;
+
+        .step-title {
+            margin-bottom: 15px;
+            h3 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-weight: 500;
+                a {
+                    color: blue;
+                    font-size: 14px;
+                    vertical-align: baseline;
+                    margin-left: 8px;
+                    // color: #ababab;
+                }
+            }
+        }
+        .step-text {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            .field-title {
+                color: #333;
+                font-size: 16px;
+                letter-spacing: 0.5px;
+                line-height: 22px;
+            }
+
+            .field-value {
+                input {
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    padding: 6px 12px;
+                    border-radius: 3px;
+                    color: #333;
+                    background: #f8f8f8;
+                    font-family: monospace;
+                }
+            }
+        }
+        .step-status {
+            margin-top: 20px;
+
+            span {
+                border: 1px solid;
+                border-radius: 34px;
+                background: #15b115;
+                color: #fff;
+                padding: 6px 29px;
+                font-size: 20px;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+    .note{
+        padding: 15px;
+        background: #dbf3fc;
+        border-radius: 8px;
+        box-shadow: 0px 0px 6px -2px #919191 inset;
+        p{
+          font-size: 14px;
+          line-height: 0.90;
+        }
+        h6{
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+      }
+      .input-group{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 2px 1px #f3f3f3 inset;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 15px 15px;
+        background: #fff
+      }
+      label{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        // width: 100%;
+        font-weight: 500;
+        .sub{
+          font-size: 14px;
+          word-spacing: 1px;
+          letter-spacing: 0.6px;
+          color: #3e3e3e;
+          line-height: 1.5;
+        }
+      }
+      input{
+        width: calc(100% - 126px);
+            border: 1px solid #bfbfbf;
+            border-radius: 3px;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0px 0px 2px 1px #f3f3f3 inset;
+            border-color: #f8f8f8;
+            max-width: 550px;
+      }
+}

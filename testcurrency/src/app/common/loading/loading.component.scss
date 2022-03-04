@@ -1,0 +1,36 @@
+.loading {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        height: 70px;
+        width: 70px;
+        fill: rgb(221, 221, 221);
+
+        path {
+            &:nth-child(1) {
+                fill: #b1b1b1;
+            }
+
+            &:nth-child(2) {
+                fill: #e8e8e8;
+            }
+
+            &:nth-child(3) {
+                fill: #d2d2d2;
+            }
+        }
+    }
+
+    &.center {
+        top: 0px;
+        left: 0px;
+        background: rgb(121 121 121 / 0.2);
+        position: absolute;
+        z-index: 1;
+    }
+}

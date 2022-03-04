@@ -1,8 +1,17 @@
+.container {
+    width: calc(100% - 48px);
+    height: auto;
+    margin-top: 149px;
+    border-radius: 7px;
+    box-shadow: 0 0 4px -1px #e8e4e4;
 
-    .container{
-    position: absolute;
-    margin-left: 250px;
-    top: 0;
-    z-index: 12;
-    
+    .section-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 12px 20px;
     }
+    .input-field{
+        width: 96%;
+        margin: 2px 22px;
+    }
+}

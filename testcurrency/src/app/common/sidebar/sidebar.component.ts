@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -8,13 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   ismenuOpen: any;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
   menuOpen() {
     this.ismenuOpen = !this.ismenuOpen;
     console.log(this.ismenuOpen)
+  }
+  logout(){
+    this.router.navigate(['/install'])
   }
 
 }

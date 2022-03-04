@@ -1,9 +1,127 @@
-<ng-multiselect-dropdown
-  [placeholder]="'custom placeholder'"
-  [settings]="dropdownSettings"
-  [data]="dropdownList"
-  [(ngModel)]="selectedItems"
-  (onSelect)="onItemSelect($event)"
-  (onSelectAll)="onSelectAll($event)"
->
-</ng-multiselect-dropdown>
+<!-- <app-sidebar></app-sidebar> -->
+<!-- <app-header></app-header> -->
+<div class="container">
+  <form [formGroup]="generalForm">
+
+    <div class="title">Enable Rounding</div>
+    <div class="switch-btn">
+      <label>Enable price rounding</label>
+      <label class="switch">
+        <input type="checkbox" formControlName='priceRounding'>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div *ngIf="generalForm['controls']['priceRounding'].value" formGroupName="priceRoundingObj">
+      <label> Rounding Value for currency like INR, KPW, JPY, Who not valued decimals</label>
+      <select>
+        <option *ngFor="let crn of baseHundred" [value]=crn>{{crn}}
+        </option>
+      </select>
+    </div>
+    <div *ngIf="generalForm['controls']['priceRounding'].value" formGroupName="priceRoundingObj">
+      <label> Rounding value for currency like USD, EUR, Who valued fractional/Decimals</label>
+      <select>
+        <option *ngFor="let crn of baseHundredGeneral" [value]=crn>{{crn}}
+        </option>
+      </select>
+    </div>
+
+
+    <div class="title">Money Format</div>
+    <div class="switch-btn">
+      <label>Enable Money Format </label>
+      <label class="switch">
+        <input type="checkbox" formControlName='moneyFormat'>
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div *ngIf="generalForm['controls']['moneyFormat'].value && generalForm['controls']['moneyFormatObj'].value"
+      formGroupName="moneyFormatObj" class="strict-money-format  select-cr-money-format-settings">
+      <div class="radio form-group input-field input">
+        <label>Money Format</label>
+        <div class="radio-btn">
+          <p>
+            <input type="radio" formControlName="moneyFormat" id="moneyFormatSmart" value="smart">
+            <label for="moneyFormatSmart">Smart</label>
+          </p>
+          <p>
+            <input type="radio" formControlName="moneyFormat" id="moneyFormatStrict" value="strict">
+            <label for="moneyFormatStrict">Strict</label>
+          </p>
+        </div>
+      </div>
+      <div *ngIf="generalForm['controls']['moneyFormatObj']['controls'].moneyFormat.value == 'strict'">
+
+        <div class="input input-field">
+          <label>Custom Money Format </label>
+          <div class="money-format">
+            <div class="input-group">
+              <select class="attach" formControlName="leftAttach"
+                (change)="makePreview(generalForm['controls']['moneyFormatObj']['controls'].leftAttach.value,
+              generalForm['controls']['moneyFormatObj']['controls'].leftSpace.value,
+              generalForm['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+              generalForm['controls']['moneyFormatObj']['controls'].rightSpace.value,generalForm['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+                <option *ngFor="let crn of attachOptions" [value]=crn>{{crn}}
+                </option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select class="space" formControlName="leftSpace"
+                (change)="makePreview(generalForm['controls']['moneyFormatObj']['controls'].leftAttach.value,
+              generalForm['controls']['moneyFormatObj']['controls'].leftSpace.value,
+              generalForm['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+              generalForm['controls']['moneyFormatObj']['controls'].rightSpace.value,generalForm['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+
+                <option *ngFor="let crn of spaceOptions" [value]=crn>{{crn}}
+                </option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select formControlName="moneyFormatOption"
+                (change)="makePreview(generalForm['controls']['moneyFormatObj']['controls'].leftAttach.value,
+              generalForm['controls']['moneyFormatObj']['controls'].leftSpace.value,
+              generalForm['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+              generalForm['controls']['moneyFormatObj']['controls'].rightSpace.value,generalForm['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+                <option *ngFor="let crn of shopifyMoneyFormatOption" [value]=crn>
+                  {{crn}}
+                </option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select class="space" formControlName="rightSpace"
+                (change)="makePreview(generalForm['controls']['moneyFormatObj']['controls'].leftAttach.value,
+              generalForm['controls']['moneyFormatObj']['controls'].leftSpace.value,
+              generalForm['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+              generalForm['controls']['moneyFormatObj']['controls'].rightSpace.value,generalForm['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+                <option *ngFor="let crn of spaceOptions" [value]=crn>{{crn}}
+                </option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select class="attach" formControlName="rightAttach"
+                (change)="makePreview(generalForm['controls']['moneyFormatObj']['controls'].leftAttach.value,
+              generalForm['controls']['moneyFormatObj']['controls'].leftSpace.value,
+              generalForm['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+              generalForm['controls']['moneyFormatObj']['controls'].rightSpace.value,generalForm['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+                <option *ngFor="let crn of attachOptions" [value]=crn>{{crn}}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="input-field form-group input">
+          <label>Preview</label>
+          <div class="input-group">
+            <pre class="preview-text">{{previewMoneyFormat}}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-input grp  select-cr-submit">
+        <div class="btn1">Save</div>
+      </div>
+
+    </div>
+  </form>
+</div>

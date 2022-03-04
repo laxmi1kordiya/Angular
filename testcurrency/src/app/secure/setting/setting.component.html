@@ -1,155 +1,113 @@
-<!-- <div class="container">
-    <p>setting works!</p>
-    <form class="form-container" [formGroup]="countryForm">
-        <div class="input-field select-cn-country">
-            <div class="title">Country</div>
-            <div class="input-group">
-                <select formControlName="countryCode" (change)="selectCurrency($event)">
-                   <optgroup label="Continents">
-                        <ng-container *ngFor="let crn of countrySelect; let i = index">
-                            <option *ngIf="(crn.countryCode.length > 2 && crn.countryCode != 'ROW')"
-                                [value]=crn.countryCode>
-                                {{crn.country}}
-                            </option>
-                        </ng-container>
-                    </optgroup>
-    
-                    <optgroup label="Countries">
-                        <option value="">------ Select Country -----</option>
-                        <ng-container *ngFor="let crn of countrySelect; let i = index">
-                            <option *ngIf="crn.countryCode.length == 2" [value]=crn.countryCode>
-                                {{crn.country}}
-                            </option>
-                        </ng-container>
-                    </optgroup>
-                </select>
-                <div *ngIf="(countryForm.get('countryCode').dirty || countryForm.get('countryCode').touched) && countryForm.get('countryCode').errors"
-                    class="invalid">
-                    <div *ngIf="countryForm.controls['countryCode'].errors['required']">Country Name is required
+<div class="container">
+    <!-- <div class="tab-container" [ngClass]="{'is-loading':loading.saveDecimal || loading.saveSymbol}"> -->
+    <div class="tabs">
+        <div class="tab" *ngFor="let tab of tabs.list; let i = index" (click)="changeTab(tab.tab)"
+            [ngClass]="tabs.activeTab == tab.tab? 'active' : ''"> {{tab.label}}
+        </div>
+    </div>
+    <div class="content-settings">
+        <div class="tab-content" *ngIf="tabs.activeTab === 'details'">
+            <div class="settings">
+                <div class="form">
+                    <h2>My Profile</h2>
+                    <div class="notification subscription-wrapper">
+                        <div class="field-list">
+                            <label>Organisation Name :</label>
+                            <div class="plan-name">{{storeData.storeName}}</div>
+                        </div>
+                        <div class="field-list">
+                            <label>Shop URL:</label>
+                            <div class="plan-name">{{storeData.shopUrl}}</div>
+                        </div>
+                        <div class="field-list">
+                            <label>Email ID :</label>
+                            <div class="plan-name">{{storeData.email}}</div>
+                        </div>
+                        <div class="field-list">
+                            <label>Phone Number :</label>
+                            <div class="plan-name">{{storeData.phone}}</div>
+                        </div>
+                        <div class="field-list">
+                            <label>Country :</label>
+                            <div class="plan-name">{{storeData.country_name}}</div>
+                        </div>
+                        <div class="field-list">
+                            <label>Currency :</label>
+                            <div class="plan-name">{{storeData.currency}}</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="input-field select-cn-currency">
-            <div class="title">Currency </div>
-            <div class="input-group">
-                <select formControlName="currency" (change)="currencyChanged();">
-                    <option *ngIf="countryForm.controls['countryCode'].value == 'ROW'" value='ACS'>ACS (Auto
-                        Currency
-                        Switch) </option>
-                    {{countryForm.controls['countryCode'].value}}
-                    <option *ngFor="let crn of currencySelect" [value]=crn.currency>{{crn.currency}} </option>
-                </select>
-                <div *ngIf="(countryForm.get('currency').dirty || countryForm.get('currency').touched) && countryForm.get('currency').errors"
-                    class="invalid">
-                    <div *ngIf="countryForm.controls['currency'].errors['required']">Currency is required</div>
+    </div>
+    <div class="tab-content" *ngIf="tabs.activeTab === 'priceSetting'">
+        <div class="step-content">
+            <div class="step">
+                <div class="step-title">
+                    <h3>1. Open settings <a href="{{storeSettings}}" target="_blank">settings/generalSettings</a></h3>
+                    <h3>2. Goto store currency and click on change formatting</h3>
+                    <h3>3. Change fields value as shown in image</h3>
                 </div>
+                <div *ngIf="showHint" class="currency-hint">
+                    <span>Replace "$" with your currency sign.</span>
+                    <span>Replace "USD" with your currency code.</span>
+                </div>
+                <div class="step-text">
+                    <span class="field-title">HTML with currency</span>
+                    <span class="field-value">
+                        <input type="text" [value]=texts[3] readonly>
+                    </span>
+                </div>
+                <div class="step-text">
+                    <span class="field-title">HTML without currency</span>
+                    <span class="field-value">
+                        <input type="text" [value]=texts[2] readonly>
+                    </span>
+                </div>
+                <div class="step-status">
+                    <span *ngIf="integrated" class="badge badge-success">Integrated</span>
+                    <!-- <span *ngIf="!integrated" class="badge badge-danger">Not Integrated</span> -->
+                </div>
+                <!-- <div class="step-img">
+          <img src="assets/ccStep4.png" alt="">
+        </div> -->
             </div>
         </div>
-        <div class="configuration" formGroupName="configuration">
-            <div class="price-rounding-config">
-                <div class="grp select-cn-exchange-rate">
-                    <div class="radio input-field">
-                        <div class="title">Exchange rate</div>
-                        <div class="radio-btn">
-                            <p>
-                                <input type="radio" formControlName="manualExchange" id="auto" value="auto" checked
-                                    (change)="handleChange($event)">
-                                <label for="auto">Use automatic rates
-                                </label>
-                                <span class="instruction">{{countryForm.controls['currency'].value}} prices will
-                                    fluctuate based on market rates. </span>
-                                <span class="instruction"
-                                    *ngIf="countryForm.controls['currency'].value && countryForm.controls['currency'].value != ''">
-                                    1 {{user.currency }} = {{(wsscc_rates[user.currency]
-                                    /wsscc_rates[countryForm.controls['currency'].value])
-                                    ? (wsscc_rates[user.currency] /
-                                    wsscc_rates[countryForm.controls['currency'].value]).toFixed(4) : ''}}
-                                    {{countryForm.controls['currency'].value}} </span>
-                            </p>
-                            <p>
-                                <input type="radio" formControlName="manualExchange" id="manual" value="manual"
-                                    (change)="handleChange($event)">
-                                <label for="manual">Use a manual rate
-                                </label>
-                                <span class="instruction">{{countryForm.controls['currency'].value}} prices won't
-                                    fluctuate,
-                                    but
-                                    your profit margin will vary based on
-                                    market rates.</span>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- <div *ngIf="manualExchangeFlag" class="input-field manual-exchange">
-                        <div class="title">1 {{user.currency ? user.currency : ''}} =</div>
-                        <div class="input-group">
-                            <input formControlName="manualExchangeRate" type="number">
-                            <span>{{countryForm.controls['currency'].value}}</span>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="grp select-cn-price-rounding">
-                    <div class="radio form-group input-field">
-                        <div class="title">Price Rounding</div>
-                        <div class="togglebtn">
-                            <div class="switch-btn">
-                                <div class="switch">
-                                    <input type="checkbox" formControlName="priceRounding" id="priceRounding"
-                                        (change)="priceRoundingChanged();" />
-                                    <label for="priceRounding">Toggle</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div *ngIf="countryForm.controls.configuration && countryForm.controls.configuration['controls'].priceRounding.value"
-                        formGroupName="priceRoundingObj">
-                        <div class="input input-field">
-                            <label class="title">Rounding Value</label>
-                            <div class="input-group">
-                                <select formControlName="roundingRule">
-                                    <option *ngFor="let crn of baseHundred" [value]=crn>{{crn}}
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="grp radio form-group input-field select-cn-country">
-                    <div class="title">To enable this curruncy in checkout page you have to enable this currency
-                        in your
-                        default shopify payment gateway and also sync same settings .</div>
-                    <div class="togglebtn">
-                        <div class="switch-btn">
-                            <div class="switch">
-                                <input type="checkbox" formControlName="shopifyCurrency" id="shopifyCurrency"
-                                    (change)="checkShopifyCurrency($event)" />
-                                <label for="shopifyCurrency">Toggle</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="error" *ngIf="shopifyCurrencyErr">
-                        <p>To enable this curruncy in checkout you have to follow these steps.</p>
-                    </div>
-                    <div *ngIf="!countryForm.controls.configuration['controls'].shopifyCurrency.value"
-                        class="currency-instruction">
-                        <p>For perfect rounded currency conversion you need three thing</p>
-                        <ol>
-                            <li>Your payment gateway need to be Shopify default payment gateway</li>
-                            <li>From your Shopify admin, go to Settings > Payments > Clik on Manage. <a
-                                    href="https://help.shopify.com/en/manual/payments/shopify-payments/multi-currency/setup#steps-to-enable-selling-in-multiple-currencies">Click
-                                    Here</a></li>
-                            <li>you can enable Shopify rounding or you can set manually rate for to get perfect
-                                rounding
-                                price</li>
-                        </ol>
-                    </div>
-                </div> -->
-<!--     
-            </div>
-        </div>
-    
-    
-    
-    </form>
+    </div>
 
-</div>  -->
+    <div class="tab-content" *ngIf="tabs.activeTab === 'otherSetting'">
+        <div class="note">
+            <h6>Note</h6>
+            <p>In most of cases these settings are not required. So do not change settings here if our app is working
+                normally.</p>
+            <p>In case our app is not working let us know by chat support from bottom right corner we'll let you know,
+                is it
+                required to add settings here or not.</p>
+        </div>
+        <div class="store-currency-symbol">
+            <div class="input-group">
+                <label>Your store currency symbol.
+                    <span class="sub">Enter your currency symbol here only if it contains <b> . (dot)</b> or <b> ,
+                            (comma)</b> or
+                        <b> ' (apostrophe)</b></span>
+                </label>
+                <input type="text" [(ngModel)]="storeCurrencySymbol">
+                <button class="save-btn" (click)="saveSymbol();">Save Symbol</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="overlay" [ngClass]="{active: planError == true}">
+      <div class="popup" *ngIf="planError == true">
+          <h3>Upgrade Plan to countinue</h3>
+          <a class="close" (click)="changeBoolean('planError',false);">&times;</a>
+          <div class="content">
+              You need to Upgrade your plan to continue using our app.
+            </div>
+            <div class="flex align-items-center justify-content-center">
+                <button class="btn" [routerLink]="['/pricing']">
+                    <span>Goto Pricing</span>
+                </button>
+            </div>
+        </div>
+    </div> -->

@@ -1,24 +1,172 @@
-<form class="form-container" [formGroup]="countryForm">
-    <div class="input-field select-cn-country">
+<form class="form-container" [formGroup]="addCurrency">
+  <div class="input-field select-cn-country">
     <div class="title">Currency</div>
     <div>
-      <ng-multiselect-dropdown formControlName="currency" 
-      (onSelect)="selectCurrency($event)"
-      (Change)="currencyChanged()"
-      [placeholder]="'custom placeholder'"
-      [settings]="dropdownSettings"
-      [data]="currencySelect"
-      [(ngModel)]="selectedItems">
+      <ng-multiselect-dropdown [placeholder]="'Select Currencies'" [settings]="currencySelectSettings"
+        [data]="dropdownList" [(ngModel)]="selectedItems" (onSelect)="selectCurrency($event)"
+        (onDeSelect)="selectCurrency($event)" (onSelectAll)="onSelectAll($event)"
+        (onDeSelectAll)="onDeSelectAll($event)" formControlName="currency">
       </ng-multiselect-dropdown>
     </div>
   </div>
   <div class="title">Symbols </div>
-  <div class="input-group">
-    <div *ngFor="let country of selectedItems">
-      {{country.currency}}
-      {{country.country}}
-      {{country.symbol_native}}
+  <div class="input-group1">
+    <div *ngFor="let country of selectedCurrencies">
+      <span>{{country.currency_name}}</span>
+      <span>{{country.currency}}</span>
+      <span class="box">{{country.symbol_native}}</span>
     </div>
-  
+
   </div>
-  </form>
+
+
+  <div class="title">Enable Rounding</div>
+  <div class="switch-btn">
+    <label>Enable price rounding</label>
+    <label class="switch">
+      <input type="checkbox" formControlName='priceRounding'>
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div *ngIf="addCurrency['controls']['priceRounding'].value" formGroupName="priceRoundingObj">
+    <label> Rounding value</label>
+    <select>
+      <option *ngFor="let crn of baseHundred" [value]=crn>{{crn}}
+      </option>
+    </select>
+  </div>
+
+
+  <div class="title">Money Format</div>
+  <div class="switch-btn">
+    <label>Enable Money Format </label>
+    <label class="switch">
+      <input type="checkbox" formControlName='moneyFormat'>
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div *ngIf="addCurrency['controls']['moneyFormat'].value && addCurrency['controls']['moneyFormatObj'].value"
+    formGroupName="moneyFormatObj" class="strict-money-format  select-cr-money-format-settings">
+    <div class="radio form-group input-field input">
+      <label>Money Format</label>
+      <div class="radio-btn">
+        <p>
+          <input type="radio" formControlName="moneyFormat" id="moneyFormatSmart" value="smart">
+          <label for="moneyFormatSmart">Smart</label>
+        </p>
+        <p>
+          <input type="radio" formControlName="moneyFormat" id="moneyFormatStrict" value="strict">
+          <label for="moneyFormatStrict">Strict</label>
+        </p>
+      </div>
+    </div>
+    <div *ngIf="addCurrency['controls']['moneyFormatObj']['controls'].moneyFormat.value == 'strict'">
+
+    <div class="input input-field">
+      <label >Custom Money Format </label>
+      <div class="money-format">
+        <div class="input-group">
+          <select class="attach" formControlName="leftAttach"
+            (change)="makePreview(addCurrency['controls']['moneyFormatObj']['controls'].leftAttach.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].leftSpace.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].rightSpace.value,addCurrency['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+            <option *ngFor="let crn of attachOptions" [value]=crn>{{crn}}
+            </option>
+          </select>
+        </div>
+        <div class="input-group">
+          <select class="space" formControlName="leftSpace"
+            (change)="makePreview(addCurrency['controls']['moneyFormatObj']['controls'].leftAttach.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].leftSpace.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].rightSpace.value,addCurrency['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+            
+            <option *ngFor="let crn of spaceOptions" [value]=crn>{{crn}}
+            </option>
+          </select>
+        </div>
+        <div class="input-group">
+          <select formControlName="moneyFormatOption"
+            (change)="makePreview(addCurrency['controls']['moneyFormatObj']['controls'].leftAttach.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].leftSpace.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].rightSpace.value,addCurrency['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+            <option *ngFor="let crn of shopifyMoneyFormatOption" [value]=crn>
+              {{crn}}
+            </option>
+          </select>
+        </div>
+        <div class="input-group">
+          <select class="space" formControlName="rightSpace"
+            (change)="makePreview(addCurrency['controls']['moneyFormatObj']['controls'].leftAttach.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].leftSpace.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].rightSpace.value,addCurrency['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+            <option *ngFor="let crn of spaceOptions" [value]=crn>{{crn}}
+            </option>
+          </select>
+        </div>
+        <div class="input-group">
+          <select class="attach" formControlName="rightAttach"
+            (change)="makePreview(addCurrency['controls']['moneyFormatObj']['controls'].leftAttach.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].leftSpace.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].moneyFormatOption.value,
+            addCurrency['controls']['moneyFormatObj']['controls'].rightSpace.value,addCurrency['controls']['moneyFormatObj']['controls'].rightAttach.value)">
+            <option *ngFor="let crn of attachOptions" [value]=crn>{{crn}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="input-field form-group input">
+      <label >Preview</label>
+      <div class="input-group">
+        <pre class="preview-text">{{previewMoneyFormat}}</pre>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+  <div class="radio form-group input-field input  select-cr-checkout-currency">
+    <div class="inner-text">To enable this curruncy in checkout page you have to enable this
+      currency in your
+      default shopify payment gateway and also sync same settings .</div>
+    <div class="switch-btn">
+      <label class="switch">
+        <input type="checkbox" formControlName='shopifyCurrency' id="shopifyCurrency"
+          (change)="checkShopifyCurrency()" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <div class="text" *ngIf="shopifyCurrencyErr">
+    <p class="error">To enable this curruncy in checkout you have to follow these steps.</p>
+    <span class="currencies-not-added">
+      <span class="inline-title">Follwing currencies not added in your shopify admin</span>
+      <span class="crn" *ngFor="let c of selectedCurrencies">{{c.currency}}</span>
+    </span>
+  </div>
+  <div *ngIf="!addCurrency['controls']['shopifyCurrency'].value" class="currency-instruction">
+    <p>For perfect rounded currency conversion you need three thing</p>
+    <ol>
+      <li>Your payment gateway need to be Shopify default payment gateway</li>
+      <li>From your Shopify admin, go to Settings > Payments > Clik on Manage. <a
+          href="https://help.shopify.com/en/manual/payments/shopify-payments/multi-currency/setup#steps-to-enable-selling-in-multiple-currencies">Click
+          Here</a></li>
+      <li>you can enable Shopify rounding or you can set manually rate for to get
+        perfect rounding
+        price</li>
+    </ol>
+  </div>
+  
+  <div class="single-input grp  select-cr-submit">
+    <div class="btn1">Save</div>
+  </div>
+
+</div>
+</form>

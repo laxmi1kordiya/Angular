@@ -8,25 +8,25 @@ $brand-color: #3e82b0;
 $brand-hover-color: #276996;
 .container {
     position: absolute;
-    margin-left: 250px;
+    // margin-left: 250px;
     top: 0;
     z-index: 12;
     .btn{
       padding: 11px 15px;
-      color: #3e82b0;
+      color: #fff ;
       border: 1.5px solid #3e82b0;
-      background-color: #fff;
+      background-color:$brand-color;
       border-radius: 4px;
-      margin-top: 20px;
+      margin-top: 181px;
       display: flex;
       justify-content: center;
       &:hover{
-        background-color: $brand-color;
-        color: #fff;
+        background-color: #fff ;
+        color: #3e82b0;
       }
     }
     .table-responsive {
-        width: 1000px;
+        width: 969px;
         height: auto;
         margin-top: 20px;
         text-align: center;

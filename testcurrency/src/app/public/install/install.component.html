@@ -18,12 +18,15 @@
         <div class="hero-form">
             <div class="sinjal-input">
                 <div class="input">
-                    <label>To install Currency Converter & Switcher through shopify</label>
+                    <label>To install {{appName}} through shopify</label>
                     <div class="input1">
-                        <input type="text" formControlName='url' placeholder="your shop url">
-                        <button class="btn" type="submit"[disabled]="loginform.invalid" (click)="goTo()">submit</button>
+                        <input type="text" formControlName='shopurl' placeholder="your shop url">
+                        <button class="btn" (click)="goTo()">Submit</button>
                     </div>
-                    <div style="color: red;" *ngIf="url && url.invalid "> Shop URL is required</div>
+                   <div *ngIf="(loginform.get('shopurl').dirty || loginform.get('shopurl').touched) && loginform.get('shopurl').errors"
+                   class="invalid">
+                <div *ngIf="loginform.controls['shopurl'].errors['required']">Shop URL is required</div>                
+            </div>
                 </div>
             </div>
         </div>

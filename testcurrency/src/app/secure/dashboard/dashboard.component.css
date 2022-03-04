@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Lato:ital@0;1&family=Lobster&family=Open+Sans&family=Roboto+Condensed&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h4,
+p,
+input,
+label,
+span {
+  font-family: "Lato", sans-serif;
+  line-height: 1.3;
+}
+
+.container {
+  position: absolute;
+  margin-left: 203px;
+  top: 0;
+  z-index: 12;
+}
+
+.container .block {
+  width: 600px;
+  height: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 9px 0px #f1f0f0;
+          box-shadow: 0px 0px 9px 0px #f1f0f0;
+  margin: 10px 14px;
+  margin-bottom: 100px;
+}
+
+.container .block .dashboard {
+  margin: 10px 14px;
+  padding: 20px 10px;
+}
+
+.container .block .dashboard .block1 {
+  background-color: #f2f5f7;
+  width: 95%;
+  height: 61px;
+  padding: 7px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 7px 14px;
+  border: 1px solid #3e82b0;
+  font-weight: bold;
+}
+
+.container .block .dashboard .block2 {
+  background-color: #fff;
+  width: 95%;
+  height: auto;
+  padding: 7px 12px;
+  -webkit-box-shadow: 0px 0px 7px -3px #ccc;
+          box-shadow: 0px 0px 7px -3px #ccc;
+  margin: 10px 14px;
+  border-radius: 8px;
+  line-height: 1.3;
+}
+
+.container .block .dashboard .block2 .heading {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.container .block .dashboard .block2 .switch-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .block .dashboard .block2 .switch-btn .text {
+  font-size: 13px;
+  margin: 6px 2px;
+}
+
+.container .block .dashboard .block2 .switch-btn .switch {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 7px 12px;
+}
+
+.container .block .dashboard .block2 .switch-btn .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.container .block .dashboard .block2 .switch-btn .switch input:checked + .slider {
+  background-color: green;
+}
+
+.container .block .dashboard .block2 .switch-btn .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px green;
+          box-shadow: 0 0 1px green;
+}
+
+.container .block .dashboard .block2 .switch-btn .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(13px);
+}
+
+.container .block .dashboard .block2 .switch-btn .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .block .dashboard .block2 .switch-btn .slider::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.container .block .dashboard .block2 .switch-btn .slider.round {
+  border-radius: 34px;
+}
+
+.container .block .dashboard .block2 .switch-btn .slider.round :before {
+  border-radius: 50%;
+}
+
+.container .block .inner-text {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-top: 10px;
+  background-color: #fafafa;
+  padding: 6px 8px;
+}
+
+.container .block .input-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+.container .block .input-radio:hover {
+  fill: green;
+}
+
+.container .block .input-radio:hover:focus {
+  fill: green;
+}
+
+.container .block .input-radio input span {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 14px;
+}
+
+.container .block .input-radio input .btn {
+  color: #3e82b0;
+}
+
+.container .block label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container .block span {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 14px;
+}
+
+.container .block .button .output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .block .button .output .clm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  padding: 5px 14px;
+}
+
+.container .block .button .output .box {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 7px -2px #fdf9f9;
+          box-shadow: 0px 0px 7px -2px #fdf9f9;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .block .color-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .block .color-section .form-group {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .block .color-section .form-group.c-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 57px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 7px -3px #ccc;
+          box-shadow: 0px 0px 7px -3px #ccc;
+  margin: 3px 5px;
+}
+
+.container .block .color-section .form-group label {
+  /* text-align: center; */
+  /* justify-content: center; */
+  padding: 21px 2px;
+  font-size: 12px;
+}
+
+.container .block .color-section .form-group input {
+  margin: 8px;
+}
+
+.container .block .color-section .form-group input.color-box {
+  width: 35px;
+  height: 35px;
+  -webkit-box-shadow: 0px 0px 7px -1px #dbdada;
+          box-shadow: 0px 0px 7px -1px #dbdada;
+  border: none;
+}
+/*# sourceMappingURL=dashboard.component.css.map */

@@ -6,26 +6,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CountryService {
-  getCountries() {
-    throw new Error('Method not implemented.');
-  }
-
-
-  constructor(private httpclient:HttpClient) {
-    // this.getCountryJSON().subscribe(data =>{
-
-    // });
-    // this.getCurrencyJSON().subscribe(data =>{
-
-    // });
+ 
+constructor(private http:HttpClient) {
+   
   }
   
  public getCountryJSON(){
-   return this.httpclient.get('./assets/countries.json');
+   return this.http.get('assets/countries.json');
  }
  public getCurrencyJSON(){
-   return this.httpclient.get('./assets/currencies.json');
+   return this.http.get('./assets/currencies.json');
  }
+ postCountrydata(data: any){
+  console.log(data);
+  return this.http.post('http://localhost:3000/data',data);
+}
 
 
 
@@ -38,3 +33,5 @@ export class CountryService {
   //   return this.httpclient.get('../assest/currencies.json')
   // }
 }
+
+

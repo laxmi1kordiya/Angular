@@ -1,17 +1,38 @@
-<!-- <app-sidebar></app-sidebar>
 <div class="container">
+    <form [formGroup]="cartForm">
 
-    
-    <form [formGroup]="myForm">
-        <ng-multiselect-dropdown
-            name="city"
-            [placeholder]="'Select City'"
-            [data]="cities"
-            formControlName="city"
-            [disabled]="disabled"
-            [settings]="dropdownSettings"
-            (onSelect)="onItemSelect($event)">
-        </ng-multiselect-dropdown>
-   </form>
-</div> -->
+        <h3>Cartpage Notification</h3>
+        <div class="switch-btn">
+            <label >Display Notification in cart page</label>
+            <label class="switch">
+                <input type="checkbox" id="showCartNotification" formControlName="showCartNotification">
+                <span class="slider round"></span>
+
+            </label>
+
+        </div>
+        <div class="single-input">
+            <div >
+                <label>Notification Text</label>
+                <div>
+                    <input class="input" type="text" formControlName="cartNotificationText"
+                        [ngClass]="{'disabled':!cartForm.controls['showCartNotification'].value}">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-input " [ngClass]="{'hide':user.admin}">
+            <div>
+                <label>Notification Selector<span class="inline-hint">Only if you want notification at custom
+                        position.</span></label>
+                <div><input class="input" type="text" formControlName="cartNotificationSelector"></div>
+            </div>
+        </div>
+        <div class="d-flex pt-20 form-group no-border no-padding section-action">
+            <button class="btn1" (click)="setCartNotificationSettings();">
+                <span>Save notification settings</span>
+            </button>
+        </div>
+    </form>
+</div>
 

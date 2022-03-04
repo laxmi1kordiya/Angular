@@ -1,27 +1,41 @@
 $brand-color: #3e82b0;
 $brand-hover-color: #276996;
 
+.container {
+  position: absolute;
+  // margin-left: 250px;
+  top: 0;
+  z-index: 12;
 
-
-.container{
-    position: absolute;
-    margin-left: 250px;
-    top: 0;
-    z-index: 12;
-
-    .btn {
-        padding: 11px 15px;
-        color: #3e82b0;
-        border: 1.5px solid #3e82b0;
-        background-color: #fff;
-        border-radius: 4px;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        &:hover {
-          background-color: $brand-color;
-          color: #fff;
-        }
-      }
-    
+  .btn {
+    padding: 11px 15px;
+    color: #fff;
+    border: 1.5px solid #3e82b0;
+    background-color: $brand-color;
+    border-radius: 4px;
+    margin-top: 168px;
+    display: flex;
+    margin-left: 852px;
+    &:hover {
+      background-color: #fff;
+      color: #3e82b0;
     }
+  }
+
+  .no-data{
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 133px;
+    text-align: center;
+    margin-top: 42px;
+    border-radius: 5px;
+  
+    span{
+      font-size: 15px;
+    }
+    
+  }
+}

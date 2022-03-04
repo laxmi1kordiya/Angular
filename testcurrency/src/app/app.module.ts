@@ -34,11 +34,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { CountryService } from './service/country.service';
 import { HttpClientModule } from '@angular/common/http';
-// import { SettingComponent } from './secure/setting/setting.component';
+import { SettingComponent } from './secure/setting/setting.component';
 import { HelpComponent } from './secure/help/help.component';
 import { LogoutComponent } from './secure/logout/logout.component';
 import { CurrencypopupComponent } from './secure/currencypopup/currencypopup.component';
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { CodemirrorModule } from '@ctrl/ngx-codemirror';
+import { AuthComponent } from './public/auth/auth.component';
+import { LoadingComponent } from './common/loading/loading.component';
 
 
 
@@ -59,10 +62,12 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
     GeneralComponent,
     OtherComponent,
     PopupComponent,
-    // SettingComponent,
+    SettingComponent,
     HelpComponent,
     LogoutComponent,
     CurrencypopupComponent,
+    AuthComponent,
+    LoadingComponent,
     
   ],
   imports: [
@@ -85,7 +90,8 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
     MatFormFieldModule,
     MatSelectModule,
     HttpClientModule,
-    NgMultiSelectDropDownModule.forRoot()
+    NgMultiSelectDropDownModule.forRoot(),
+    CodemirrorModule
   
    
     

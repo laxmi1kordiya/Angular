@@ -15,12 +15,15 @@ interface Country{
   styleUrls: ['./country.component.scss']
 })
 export class CountryComponent implements OnInit {
+// public dataLoding:false;
+
 dialogRef:MatDialogRef<any> | undefined
   constructor(private dialog:MatDialog){}
 
  
 
   ngOnInit(): void {
+    
   }
   public page = {
     count: 10,
@@ -28,11 +31,18 @@ dialogRef:MatDialogRef<any> | undefined
     offset: 0
   }
   countries = [
-    {"country": "US","name": "United State","currency": "GRA"},
-    {"country": "IND","name": "India","currency": "INR"},
-    {"country": "PK","name": "Pakisthan","currency": "PKR"}
+
+    
+    // {"country": "US","currency": "GRA","option":""},
+    // {"country": "IND","currency": "INR","option":""},
+    // {"country": "PK","currency": "PKR","option":""}
   ];
  
+  
+  
+  
+  
+  
   gopop(){
           this.dialogRef= this.dialog.open(PopupComponent,{
           height:'100%',

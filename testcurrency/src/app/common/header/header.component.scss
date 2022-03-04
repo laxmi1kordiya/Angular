@@ -1,21 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.navbar{
+.d-flex-start {
     display: flex;
-    float: left;
-    width: 1024px;
-    height: 73px;
-    background-color: rgb(243, 242, 241);
-    position: relative;
-    left: 0px;
-    top: 0px;
-    nav{
-        float: left;
-        left: 0px;
-        display: flex;
-        padding: 16px 14px;
-        margin: 2px 8px;
+    align-items: center;
+    justify-content: flex-start;
+    div {
+        margin-left: 15px;
+    
+        &:first-child {
+          margin-left: 0px;
+        }
+    
     }
 }
+.d-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.d-flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    div {
+        margin-right: 15px;
+    
+        &:last-child {
+          margin-right: 0px;
+        }
+    
+      }
+}
+.store-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .menu-title {
+        padding: 10px 20px;
+        background: #f8f8f8;
+        border-radius: 3px;
+        min-width: 150px;
+        cursor: pointer;
+    }
+ }
+

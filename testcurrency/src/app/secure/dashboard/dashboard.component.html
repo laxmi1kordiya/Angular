@@ -1,184 +1,215 @@
-<app-sidebar></app-sidebar>
 <div class="container">
     <div class="block">
         <div class="dashboard">
-            <div class="block1">
-                <i class="fas fa-info-circle"></i>
-                please disable other third party currency conversion app or any theme currency conversion facility to
-                use this app smoothly.
-            </div>
+
             <div class="block2 max-width">
                 <form [formGroup]="sideform">
                     <h4 class="heading">Show dropdown to users</h4>
-                    <div class="switch-btn">
-                        <label class="text">User allowed to select currency</label>
-                        <label class="switch">
-                            <input type="checkbox" id="showDropdown" formControlName='showDropdown'>
-                            <span class="slider round"></span>
-                            <!-- <label for="showDropdown">Toggle</label> -->
-                        </label>
+                    <div class="togglebtn">
+                        <div class="switch-btn">
+                            <label class="text">User allowed to select currency</label>
+                            <div class="switch">
+                                <input type="checkbox" id="showDropdown" formControlName='showDropdown'>
+                                <label for="showDropdown">Toggle</label>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="inner-text">If enabled then a dropdown will be added</div> -->
-
                     <div *ngIf="showDropdown?.value" class="inner-text">If enabled then a dropdown will be
                         added
                         on
                         your website and user can select currency.</div>
-                    <!-- {{showDropdown?.value}} -->
                 </form>
-
             </div>
             <div class="block2" *ngIf="showDropdown?.value">
                 <form [formGroup]="sideform">
                     <h4 class="heading">Converter Box Display</h4>
-                    <div class="switch-btn">
-                        <label> Show on desktop</label>
-                        <label class="switch">
-                            <input type="checkbox" formControlName='showOnDesktop'>
-                            <span class="slider round"></span>
-                        </label>
+                    <div class="togglebtn">
+                        <div class="switch-btn">
+                            <label> Show on desktop</label>
+                            <div class="switch">
+                                <input type="checkbox" id="showOnDesktop" formControlName='showOnDesktop'>
+                                <label for="showOnDesktop">Toggle</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="switch-btn">
-                        <label> Show on mobile</label>
-                        <label class="switch">
-                            <input type="checkbox" formControlName='showOnMobile'>
-                            <span class="slider round"></span>
-                        </label>
 
+
+                    <div class="togglebtn">
+                        <div class="switch-btn">
+                            <label> Show on mobile</label>
+                            <div class="switch">
+                                <input type="checkbox" id="showOnMobile" formControlName='showOnMobile'>
+                                <label for="showOnMobile">Toggle</label>
+                            </div>
+                        </div>
                     </div>
-                        <div class="hint danger" *ngIf="!showOnDesktop?.value && !showOnMobile?.value">If both
-                            of
-                            these are disable then user can not see the dropdown.</div>
 
-
-
+                    <div class="hint danger" *ngIf="!showOnDesktop?.value && !showOnMobile?.value">If both
+                        of
+                        these are disable then user can not see the dropdown.</div>
                 </form>
-
             </div>
-            <div class="block2"  *ngIf="showDropdown?.value  && showOnMobile?.value">
+            <div class="block2" *ngIf="showDropdown?.value  && showOnMobile?.value">
                 <h4 class="heading">Converter location in store front</h4>
 
                 <form [formGroup]="sideform">
-                    <div class="input-radio">
-                        <input class="btn" type="radio" formControlName="side" value="Bottom Left"><span> Bottom
-                            Left</span>
-                        <input class="btn" type="radio" formControlName="side" value="Bottom right"><span>Bottom
-                            right</span>
-                        <input class="btn" type="radio" formControlName="side" value="top right"><span>top right</span>
-                        <input class="btn" type="radio" formControlName="side" value="top Left"><span>top Left</span>
-                    </div>
-                    <div class="button" *ngIf="side?.value == 'Bottom Left'">
-                        <div class="output">
-                            <div class="clm">bottom
-                                <div class="box">20px</div>
-                            </div>
-                            <div class="clm">left
-                                <div class="box">20px</div>
-                            </div>
+                    <div class="floating-positions" *ngIf="sideform.controls['type'].value == 'floating'">
+                        <div class="radio-btn d-flex-row location-type">
+                            <p>
+                                <input type="radio" id="bottomLeft" value="bottomLeft" formControlName="side">
+                                <label for="bottomLeft">Bottom Left</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="bottomRight" value="bottomRight" formControlName="side">
+                                <label for="bottomRight">Bottom Right</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="topRight" value="topRight" formControlName="side">
+                                <label for="topRight">Top Right</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="topLeft" value="topLeft" formControlName="side">
+                                <label for="topLeft">Top Left</label>
+                            </p>
                         </div>
                     </div>
 
-
-                    <div class="button" *ngIf="side?.value == 'Bottom right'">
-                        <div class="output">
-                            <div class="clm">bottom
-                                <div class="box">20px</div>
-                            </div>
-                            <div class="clm">right
-                                <div class="box">20px</div>
-                            </div>
+                    <div class="floating-positions-value" *ngIf="sideform.controls['type'].value == 'floating'">
+                        <div class="input"
+                            *ngIf="sideform.controls['side'].value == 'topLeft' || sideform.controls['side'].value == 'topRight' ">
+                            <label>Top</label>
+                            <input type="text" formControlName="floatingTop">
                         </div>
-                    </div>
-                    <div class="button" *ngIf="side?.value == 'top right'">
-                        <div class="output">
-                            <div class="clm">top
-                                <div class="box">20px</div>
-                            </div>
-                            <div class="clm">right
-                                <div class="box">20px</div>
-                            </div>
+                        <div class="input"
+                            *ngIf="sideform.controls['side'].value == 'bottomLeft' || sideform.controls['side'].value == 'bottomRight' ">
+                            <label>Bottom</label>
+                            <input type="text" formControlName="floatingBottom">
                         </div>
-                    </div>
-                    <div class="button" *ngIf="side?.value == 'top Left'">
-                        <div class="output">
-                            <div class="clm">top
-                                <div class="box">20px</div>
-                            </div>
-                            <div class="clm">left
-                                <div class="box">20px</div>
-                            </div>
+                        <div class="input"
+                            *ngIf="sideform.controls['side'].value == 'bottomLeft' || sideform.controls['side'].value == 'topLeft' ">
+                            <label>Left</label>
+                            <input type="text" formControlName="floatingLeft">
+                        </div>
+                        <div class="input"
+                            *ngIf="sideform.controls['side'].value == 'topRight' || sideform.controls['side'].value == 'bottomRight' ">
+                            <label>Right</label>
+                            <input type="text" formControlName="floatingRight">
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="block2"  *ngIf="showDropdown?.value  && showOnMobile?.value">
+            <div class="block2" *ngIf="showDropdown?.value  && showOnMobile?.value">
                 <form [formGroup]="sideform">
                     <h4 class="heading">How Country flag</h4>
-                    <div class="switch-btn">
-                        <label class="text">Country flag</label>
-                        <label class="switch">
-                            <input type="checkbox" formControlName='showAllCountries'>
-                            <span class="slider round"></span>
-                        </label>
+                    <div class="togglebtn">
+                        <div class="switch-btn">
+                            <label> Country flag</label>
+                            <div class="switch">
+                                <input type="checkbox" id="countryflag" formControlName='countryflag'>
+                                <label for="countryflag">Toggle</label>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="block2"  *ngIf="showDropdown?.value  && showOnMobile?.value">
+            <div class="block2" *ngIf="showDropdown?.value  && showOnMobile?.value">
                 <form action="" [formGroup]="sideform">
                     <h4 class="heading">Configure currency selector theme</h4>
                     <div class="color-section">
                         <div class="form-group c-box ">
                             <label>Text Color</label>
-                            <input class="form-control color-box" [(colorPicker)]="color" cpWidth='230px'
-                                cpHeight="100px" [style.background]="color" />
-                        </div>
-                        <div class="form-group c-box">
-                            <label> Background Color</label>
-                            <input class="form-control color-box" [(colorPicker)]="bgcolor" cpWidth='230px'
-                                cpHeight="100px" [style.background]="bgcolor" />
-                        </div>
-                        <div class="form-group c-box">
-                            <label>Hover Background Color</label>
-                            <input class="form-control color-box" [(colorPicker)]="bgcolor" cpWidth='230px'
-                                cpHeight="100px" [style.background]="bgcolor" />
-                        </div>
-                        <div class="form-group c-box">
-                            <label>Hover font Color</label>
-                            <input class="form-control color-box" [(colorPicker)]="color" cpWidth='230px'
-                                cpHeight="100px" [style.background]="color" />
+                            <input (colorPicker)="sideform.controls['textColor'].value"
+                                [style.background]="sideform.controls['textColor'].value"
+                                [style.color]="sideform.controls['textColor'].value" formControlName="textColor"
+                                (colorPickerChange)="changeColor($event,'textColor');" />
                         </div>
 
-                    </div>
-                    <div class="output">
-                        <div class="clm">Text Size
-                            <div class="box">14</div>
+                        <div class="form-group c-box ">
+                            <label>Background Color</label>
+                            <input (colorPicker)="sideform.controls['backgroundColor'].value"
+                                [style.background]="sideform.controls['backgroundColor'].value"
+                                [style.color]="sideform.controls['backgroundColor'].value"
+                                formControlName="backgroundColor"
+                                (colorPickerChange)="changeColor($event,'backgroundColor');" />
                         </div>
-                        <div class="clm">Map Hight
-                            <div class="box">21</div>
+                        <div class="form-group c-box ">
+                            <label>Hover Background Color</label>
+                            <input (colorPicker)="sideform.controls['hoverBackColor'].value"
+                                [style.background]="sideform.controls['hoverBackColor'].value"
+                                [style.color]="sideform.controls['hoverBackColor'].value"
+                                formControlName="hoverBackColor"
+                                (colorPickerChange)="changeColor($event,'hoverBackColor');" />
                         </div>
-                        <div class="clm">Map Width
-                            <div class="box">35</div>
+                        <div class="form-group c-box ">
+                            <label>Hover font Color</label>
+                            <input (colorPicker)="sideform.controls['hoverFontColor'].value"
+                                [style.background]="sideform.controls['hoverFontColor'].value"
+                                [style.color]="sideform.controls['hoverFontColor'].value"
+                                formControlName="hoverFontColor"
+                                (colorPickerChange)="changeColor($event,'hoverFontColor');" />
                         </div>
                     </div>
-                    <div class="switch-btn">
-                        <label class="text">Show full currency name</label>
-                        <label class="switch">
-                            <input type="checkbox" formControlName='showAllCountries'>
-                            <span class="slider round"></span>
-                        </label>
+                    <div class="floating-positions-value">
+                        <div class="input">
+                            <label>Text Size</label>
+                            <input type="number" formControlName="textSize"
+                                (change)="convertToPx('textSize','textSizeInPx')">
+                        </div>
+                        <div class="input">
+                            <label>Map Height</label>
+                            <input type="number" formControlName="mapHeight"
+                                (change)="convertToPx('mapHeight','mapHeightInPx')">
+                        </div>
+                        <div class="input">
+                            <label>Map Width</label>
+                            <input type="number" formControlName="mapWidth"
+                                (change)="convertToPx('mapWidth','mapWidthInPx')">
+                        </div>
                     </div>
-                    <div class="switch-btn">
-                        <label class="text">Show all countries</label>
-                        <label class="switch">
-                            <input type="checkbox" formControlName='showAllCountries'>
-                            <span class="slider round"></span>
-                        </label>
+
+
+                    <div class="togglebtn">
+                        <div class="switch-btn">
+                            <label> Show full currency name</label>
+                            <div class="switch">
+                                <input type="checkbox" id="showAllCurrency" formControlName='showAllCurrency'>
+                                <label for="showAllCurrency">Toggle</label>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="togglebtn">
+                        <div class="switch-btn">
+                            <label>show all countries</label>
+                            <div class="switch">
+                                <input type="checkbox" id="showAllCountries" formControlName='showAllCountries'>
+                                <label for="showAllCountries">Toggle</label>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </div>
-
-
+            <div class="block2">
+                <button class="btn" id="btn" (click)="saveitem()">
+                    <span>Save setting</span>
+                </button>
+            </div>
         </div>
-
     </div>
+</div>
+
+<div class="main-right">
+    <div class="preview-div-container">
+        <div class="preview-div" [ngClass]="sideform.controls['side'].value">
+            <div id="widget-preview" class="widget" #previewElement></div>
+        </div>
+    </div>
+</div>
+<div class="loading" *ngIf="loading.saveSettings">
+    <app-loading></app-loading>
+</div>
+<div class="loading instant-loading" *ngIf="loading.instantLoad">
+    <app-loading></app-loading>
+    <span>Setting up instant loading.</span>
 </div>

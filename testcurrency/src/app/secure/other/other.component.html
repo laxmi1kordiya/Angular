@@ -1,5 +1,18 @@
-<app-sidebar></app-sidebar>
 <div class="container">
-<p>other works!</p>
-<app-header></app-header>
+    <div class="section-title">
+        Custom CSS
+    </div>
+    <div class="general-form form">
+        <div class="input input-field">
+            <div class="input-group">
+                <ngx-codemirror [(ngModel)]="customCss"
+                    [options]="{lineNumbers:true, theme:'material', mode:'css',matchBrackets: true,lint: true}">
+
+                </ngx-codemirror>
+            </div>
+        </div>
+    </div>
+    <div class="section-action">
+        <div class="long-btn" (click)="saveCustomCss()">Save custom css</div>
+    </div> 
 </div>
