@@ -10,12 +10,21 @@ import { Users } from '../users';
 })
 export class ServiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _restService:RestService) {
 
+   }
+   lstcomments:Users[] | undefined;
   
   
   ngOnInit(): void {
-   
+    this._restService.getcomments()
+    .subscribe
+    (
+      data=>
+     {
+      this.lstcomments =data;
+     }
+    );
   }
 
 }

@@ -1,11 +1,11 @@
 export class Users
 {
-    id :string | undefined;
-    firstname :string | undefined;
-    lastname :string | undefined ;
-    email :string | undefined;
-    mobile :string | undefined;
-    salary :string | undefined;
+    userId: number | undefined;
+    id: string | undefined;
+    title: string | undefined;
+    body: string | undefined;
+    // mobile: string | undefined;
+    // salary:string | undefined
 }
 //    constructor(){
 

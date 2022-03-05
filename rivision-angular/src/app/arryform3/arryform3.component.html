@@ -1,0 +1,35 @@
+<form [formGroup]="productform" (ngSubmit)="loginuser()">
+    <div class="container">
+        <div class="form">
+            <h1>Arry form</h1>
+            <label>product:</label>
+            <input type="text" formControlName="product">
+        </div>
+        <div>
+            <label>product name:</label>
+            <input type="text" formControlName="name">
+            <label>product id:</label>
+            <input type="number" formControlName="id">
+            <label>product price:</label>
+            <input type="number" formControlName="price">
+
+        </div>
+        <div formArrayName="skills">
+            <div *ngFor = "let skill of skills.controls;  index as i">
+                <div [formGroupName]="i">
+                    <label>product name:</label>
+                    <input type="text" formControlName="name1">
+                    <label>product id:</label>
+                    <input type="number" formControlName="id1">
+                    <label>product price:</label>
+                    <input type="number" formControlName="price1">
+                    <button (click)="deleteskill(i)">delete</button>
+                    <button (click)="addskill()">add</button>
+
+                </div>
+            </div>
+            <button type="submit">submit</button>
+            <div>{{diagnostic }}</div>
+        </div>
+    </div>
+</form>

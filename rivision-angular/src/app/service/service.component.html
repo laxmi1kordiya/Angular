@@ -1,6 +1,26 @@
-<h1>table using Json server api</h1>
+<h2>Get Request (https://jsonplaceholder.typicode.com/posts?userId=1)</h2>
 
-<table id="users">
-    
-    
+<table>
+    <tr>
+        <th>UserId</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+
+        
+
+
+    </tr >
+    <tr *ngFor= "let com of lstcomments">
+        <td>{{com.userId}}</td>
+        <td>{{com.id}}</td>
+        <td>{{com.title}}</td>
+        <td>{{com.body}}</td>
+
+
+
+
+    </tr>
+
+
 </table>

@@ -1,4 +1,4 @@
-<form [formGroup]="loginform"  (ngSubmit)="loginUser()">
+<form [formGroup]="loginForm"  (ngSubmit)="loginUser()">
     <div class="container">
     <h1>School markseet</h1>
     <div class="form-arry">
@@ -22,9 +22,9 @@
         <div *ngFor= "let skill of skills.controls; index as i ">
             <div [formGroupName]="i">
                 <label>Subject:</label>
-                <input type="text" formControlName="sub" class="form-control"  >
+                <input type="text" formControlName="subject1" class="form-control"  >
                 <label>Mark:</label>
-                <input type="number" formControlName="marks" class="form-control"  placeholder="enter your mark">   
+                <input type="number" formControlName="mark1" class="form-control"  placeholder="enter your mark">   
                 <button (click)="deleteskill(i)">delete</button>
                 <button (click)="addskill()">add</button>
             </div>
